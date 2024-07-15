@@ -4,5 +4,5 @@ Cnkav from Version two on.
 Tech Stack 
 Web:nextjs with react.
 Mobile:react native.
-backend: Python.
+backend: Python with flask.
 Database:mongodb.
