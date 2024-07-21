@@ -1,13 +1,15 @@
-import React from "react";
+import React from 'react';
 import {
-  fiverStars,
+  FiverStars,
+  Avatargroup,
   nextIcons,
   arrowIcon,
-  gentalMan,
-  computerLab,
+  fram1Image,
+  fram2Image,
   monyImage,
-} from "../images";
-import { AnimatedTooltip } from "../components/ui/animated-tooltip";
+  galleryImage,
+} from '../images';
+import { AnimatedTooltip } from '../components/ui/animated-tooltip';
 
 import {
   FiverStars1,
@@ -16,50 +18,50 @@ import {
   FiverStars4,
   FiverStars5,
   FiverStars6,
-} from "../images";
+} from '../images';
 
 const people = [
   {
     id: 1,
-    name: "John Doe",
-    designation: "Software Engineer",
+    name: 'John Doe',
+    designation: 'Software Engineer',
     image: FiverStars1,
   },
   {
     id: 2,
-    name: "Robert Johnson",
-    designation: "Product Manager",
+    name: 'Robert Johnson',
+    designation: 'Product Manager',
     image: FiverStars2,
   },
   {
     id: 3,
-    name: "Jane Smith",
-    designation: "Data Scientist",
+    name: 'Jane Smith',
+    designation: 'Data Scientist',
     image: FiverStars3,
   },
   {
     id: 4,
-    name: "Emily Davis",
-    designation: "UX Designer",
+    name: 'Emily Davis',
+    designation: 'UX Designer',
     image: FiverStars4,
   },
   {
     id: 5,
-    name: "Tyler Durden",
-    designation: "Soap Developer",
+    name: 'Tyler Durden',
+    designation: 'Soap Developer',
     image: FiverStars5,
   },
   {
     id: 6,
-    name: "Dora",
-    designation: "The Explorer",
+    name: 'Dora',
+    designation: 'The Explorer',
     image: FiverStars6,
   },
 ];
 
 export default function HeroSection() {
   return (
-    <section className="pt-64 flex flex-col-reverse md:flex-row px-8 relative">
+    <section className="md:pt-64 pt-36 flex flex-col-reverse md:flex-row px-8 relative">
       <div className="absolute inset-0 grid grid-cols-10 gap-6 mt-32 z-0">
         <div className="bg-gray-800 opacity-40"></div>
         <div className="bg-gray-800 opacity-40"></div>
@@ -92,7 +94,7 @@ export default function HeroSection() {
             <div className="ml-5 flex items-center">
               <div>
                 <p>Amazing Members</p>
-                <img src={fiverStars} alt="" />
+                <img src={FiverStars} alt="" />
               </div>
 
               <img src={nextIcons} className="h-4 ml-4" alt="" />
@@ -113,7 +115,7 @@ export default function HeroSection() {
       <div className="z-20">
         <div className="mt-12 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-2">
           <img
-            src={gentalMan}
+            src={fram1Image}
             alt="Image 1"
             className="w-[218px] h-[270px] object-cover rounded-lg mb-4"
           />
@@ -124,13 +126,13 @@ export default function HeroSection() {
               alt="Image 2"
               className="w-[218px] h-[214px] object-cover rounded-lg mb-4"
             />
-            <h3 className="text-4xl font-bold text-gray-400">Amazing</h3>
-            <p className="text-gray-400">Network of Exclusive Club</p>
+            <h3 className="md:text-4xl text-2xl font-bold text-gray-400">Amazing</h3>
+            <p className="  text-gray-400">Network of Exclusive Club</p>
           </div>
         </div>
         <div className="bg-black p-4 rounded-lg mt-2">
           <img
-            src={computerLab}
+            src={galleryImage}
             alt="Image 3"
             className="w-full h-40 object-cover rounded-lg mb-4"
           />

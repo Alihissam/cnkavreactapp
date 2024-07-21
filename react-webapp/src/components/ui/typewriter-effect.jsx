@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1989eadc088398ac7daa840e0bb1d25bea6d4039
 import { cn } from "../../lib/utils";
 import { motion, stagger, useAnimate, useInView } from "framer-motion";
 import { useEffect } from "react";
@@ -85,11 +89,15 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
   );
 };
 
+<<<<<<< HEAD
 export const TypewriterEffectSmooth = ({
   words,
   className,
   cursorClassName,
 }) => {
+=======
+export const TypewriterEffectSmooth = ({ words, className, cursorClassName }) => {
+>>>>>>> 1989eadc088398ac7daa840e0bb1d25bea6d4039
   // split text inside of words into array of characters
   const wordsArray = words.map((word) => {
     return {

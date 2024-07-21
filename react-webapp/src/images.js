@@ -9,12 +9,7 @@ import drinkMan from "./assets/images/drink.jpg";
 import dropDownIcon from "./assets/icons/drop.png";
 import fiverStars from "./assets/icons/five-stars.png";
 import facebookLogo from "./assets/icons/facebook.png";
-import FiverStars1 from "./assets/images/fiver/1.png";
-import FiverStars2 from "./assets/images/fiver/2.png";
-import FiverStars3 from "./assets/images/fiver/3.png";
-import FiverStars4 from "./assets/images/fiver/4.png";
-import FiverStars5 from "./assets/images/fiver/5.png";
-import FiverStars6 from "./assets/images/fiver/6.png";
+
 import galleryImage from "./assets/images/gallery.png";
 import gentalMan from "./assets/images/gentalman.jpg";
 import greenCheck from "./assets/icons/green-check.png";
@@ -23,6 +18,8 @@ import helloHand from "./assets/icons/hello-hand.png";
 import linkedinImage from "./assets/icons/linkedin.png";
 import modalMan from "./assets/images/modalman.png";
 import monyImage from "./assets/images/mony.png";
+import fram1Image from "./assets/images/mony.png";
+
 import nextIcons from "./assets/icons/next.png";
 import questImage from "./assets/images/quest.png";
 import questsBox1 from "./assets/images/quests-box-1.png";
@@ -40,45 +37,43 @@ import waveCnkav from "./assets/images/wave-cnkav.png";
 import waveER from "./assets/images/wave-er.png";
 import youtubeImage from "./assets/icons/youtube.png";
 
+import FiverStars from "./assets/icons/Fiver-stars.png";
+import Avatargroup from "./assets/icons/Avatar-group.png";
+import arrowIcon from "./assets/icons/arrow.png";
+import nextIcons from "./assets/icons/next.png";
+
+import FiverStars1 from "./assets/images/fiver/1.png";
+import FiverStars2 from "./assets/images/fiver/2.png";
+import FiverStars3 from "./assets/images/fiver/3.png";
+import FiverStars4 from "./assets/images/fiver/4.png";
+import FiverStars5 from "./assets/images/fiver/5.png";
+import FiverStars6 from "./assets/images/fiver/6.png";
+
 export {
-  arrowIcon,
-  avatarGroup,
-  appleLogo,
-  checkImage,
-  cnkavLogo,
-  crowdImage,
-  computerLab,
-  drinkMan,
-  dropDownIcon,
-  fiverStars,
-  facebookLogo,
   FiverStars1,
   FiverStars2,
   FiverStars3,
   FiverStars4,
   FiverStars5,
   FiverStars6,
-  galleryImage,
-  gentalMan,
-  greenCheck,
-  googleLogo,
-  helloHand,
-  linkedinImage,
-  modalMan,
-  monyImage,
   nextIcons,
+  arrowIcon,
+  Avatargroup,
+  FiverStars,
   questImage,
-  questsBox1,
-  rollsImage,
-  sideMan,
-  tabletsImage,
-  twitterImage,
-  twitterPost,
-  userLogedIn,
-  waveInflue,
-  waveCnkav,
-  waveER,
-  videoChat,
-  videoImage,
-  youtubeImage,
+  checkImage,
+  ThreeD1,
+  ThreeD2,
+  greencheck,
+  galleryImage,
+  arrowImage,
+  LogoImage,
+  drop,
+  video,
+  Image1,
+  Image2,
+  Image3,
+  Image4,
+  fram1Image,
+  monyImage,
 };

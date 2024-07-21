@@ -15,7 +15,13 @@ export const DirectionAwareHover = ({
 
   const [direction, setDirection] = useState("left");
 
+<<<<<<< HEAD
   const handleMouseEnter = (event) => {
+=======
+  const handleMouseEnter = (
+    event
+  ) => {
+>>>>>>> 1989eadc088398ac7daa840e0bb1d25bea6d4039
     if (!ref.current) return;
 
     const direction = getDirection(event, ref.current);
@@ -39,7 +45,14 @@ export const DirectionAwareHover = ({
     }
   };
 
+<<<<<<< HEAD
   const getDirection = (ev, obj) => {
+=======
+  const getDirection = (
+    ev,
+    obj
+  ) => {
+>>>>>>> 1989eadc088398ac7daa840e0bb1d25bea6d4039
     const { width: w, height: h, left, top } = obj.getBoundingClientRect();
     const x = ev.clientX - left - (w / 2) * (w > h ? h / w : 1);
     const y = ev.clientY - top - (h / 2) * (h > w ? w / h : 1);

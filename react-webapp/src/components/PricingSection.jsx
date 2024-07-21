@@ -1,23 +1,19 @@
 import React from "react";
-import { greenCheck, tabletsImage, rollsImage } from "../images";
+import { greencheck, ThreeD1, ThreeD2 } from "../images";
 
 export default function PricingSection() {
   return (
-    <div className="container mx-auto p-16">
+    <div className="container mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div className="bg-gray-900 p-4 rounded-xl shadow-lg">
           <div className="flex items-baseline justify-between">
-            <h2 className="text-2xl font-semibold mb-4 p-8">Influewave</h2>
+            <h2 className="text-2xl font-semibold mb-4 p-2">Influewave</h2>
             <button className="border border-green-500 text-green-500 rounded-lg p-2 outline-none m-2">
               most popular
             </button>
           </div>
           <div className="flex justify-center items-center m-4 flex-col">
-            <img
-              src={rollsImage}
-              alt="Shoes"
-              className="h-20 object-cover mb-4"
-            />
+            <img src={ThreeD1} alt="Shoes" className="h-20 object-cover mb-4" />
             <h2 className="text-xl font-bold m-4 text-gray-400">
               <span className="text-white text-4xl">€49.99</span> /month
             </h2>
@@ -85,11 +81,7 @@ export default function PricingSection() {
             <h2 className="text-2xl font-semibold mb-4 p-8">CNKAV</h2>
           </div>
           <div className="flex justify-center items-center m-4 flex-col">
-            <img
-              src={tabletsImage}
-              alt="Shoes"
-              className="h-20 object-cover mb-4"
-            />
+            <img src={ThreeD2} alt="Shoes" className="h-20 object-cover mb-4" />
             <h2 className="text-xl font-bold m-4 text-gray-400">
               <span className="text-white text-4xl">€199.99</span> /month
             </h2>
@@ -152,11 +144,7 @@ export default function PricingSection() {
             <h2 className="text-2xl font-semibold mb-4 p-8">Exclusive Room</h2>
           </div>
           <div className="flex justify-center items-center m-4 flex-col">
-            <img
-              src={rollsImage}
-              alt="Shoes"
-              className="h-20 object-cover mb-4"
-            />
+            <img src={ThreeD2} alt="Shoes" className="h-20 object-cover mb-4" />
             <h2 className="text-xl font-bold m-4 text-gray-400">
               <span className="text-white text-4xl">€499.99</span> /month
             </h2>
