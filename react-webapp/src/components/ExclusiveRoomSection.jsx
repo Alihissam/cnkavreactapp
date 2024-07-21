@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default function ExclusiveRoomSection() {
   return (
@@ -14,9 +14,7 @@ export default function ExclusiveRoomSection() {
         </p>
 
         <div class="mt-3 flex justify-center">
-          <button
-            class="hidden md:flex items-center border-2 border-red-500 px-8 py-3 rounded-md text-white"
-          >
+          <button class="hidden md:flex items-center border-2 border-red-500 px-8 py-3 rounded-md text-white">
             <span>Secure my Place</span>
             <img
               src="./images/arrow.png"

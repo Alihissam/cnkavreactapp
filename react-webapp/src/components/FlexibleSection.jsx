@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 export default function FlexibleSection() {
   return (
@@ -14,5 +14,5 @@ export default function FlexibleSection() {
         exclusive events.
       </p>
     </div>
-  )
+  );
 }

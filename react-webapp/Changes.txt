@@ -1,0 +1,5 @@
+1) images.js --> Images name change to camelCase in all components 
+2) component modal.jsx is changed to JoinUsModal.jsx
+3) dialogBox/PricingModal for Navbar.jsx
+4) icons for youtube, twitter, linkedin are added in Footer.jsx 
+5) Design ContactUs.jsx

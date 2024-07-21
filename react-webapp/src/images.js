@@ -1,25 +1,84 @@
-import drop from './assets/images/drop.png';
-import video from './assets/images/video.png';
-import Image1 from './assets/images/1.jpg';
-import Image2 from './assets/images/2.jpg';
-import Image3 from './assets/images/3.jpg';
-import Image4 from './assets/images/4.jpg';
-import questImage from './assets/images/quest.png'
-import videochat from './assets/images/videochat.png'
-import fram1Image from './assets/images/fram1.png';
-import monyImage from './assets/images/mony.png';
-import fram2Image from './assets/images/fram2.png';
-import LogoImage from './assets/images/logo.png';
-import galleryImage from './assets/images/gallery.png';
-import arrowImage from './assets/images/arrow.png';
-import greencheck from './assets/icons/green-check.png'
-import ThreeD1 from './assets/icons/3d-1.png'
-import ThreeD2 from './assets/icons/3d-2.png'
-import checkImage from './assets/icons/check.png'
+import arrowIcon from "./assets/icons/arrow.png";
+import avatarGroup from "./assets/icons/avatar-group.png";
+import appleLogo from "./assets/icons/apple.png";
+import checkImage from "./assets/icons/check.png";
+import cnkavLogo from "./assets/icons/cnkav-logo.png";
+import crowdImage from "./assets/images/crowd.jpg";
+import computerLab from "./assets/images/computer-lab.png";
+import drinkMan from "./assets/images/drink.jpg";
+import dropDownIcon from "./assets/icons/drop.png";
+import fiverStars from "./assets/icons/five-stars.png";
+import facebookLogo from "./assets/icons/facebook.png";
+import FiverStars1 from "./assets/images/fiver/1.png";
+import FiverStars2 from "./assets/images/fiver/2.png";
+import FiverStars3 from "./assets/images/fiver/3.png";
+import FiverStars4 from "./assets/images/fiver/4.png";
+import FiverStars5 from "./assets/images/fiver/5.png";
+import FiverStars6 from "./assets/images/fiver/6.png";
+import galleryImage from "./assets/images/gallery.png";
+import gentalMan from "./assets/images/gentalman.jpg";
+import greenCheck from "./assets/icons/green-check.png";
+import googleLogo from "./assets/icons/google.png";
+import helloHand from "./assets/icons/hello-hand.png";
+import linkedinImage from "./assets/icons/linkedin.png";
+import modalMan from "./assets/images/modalman.png";
+import monyImage from "./assets/images/mony.png";
+import nextIcons from "./assets/icons/next.png";
+import questImage from "./assets/images/quest.png";
+import questsBox1 from "./assets/images/quests-box-1.png";
+// import questsBox2 from "./assets/images/quests-box-2.png";
+import rollsImage from "./assets/icons/rolls.png";
+import sideMan from "./assets/images/sideman.jpg";
+import tabletsImage from "./assets/icons/tablets.png";
+import twitterImage from "./assets/icons/twitter.png";
+import twitterPost from "./assets/images/twitter-post.png";
+import userLogedIn from "./assets/images/user.gif";
+import videoChat from "./assets/images/videochat.png";
+import videoImage from "./assets/images/video.png";
+import waveInflue from "./assets/images/wave-influe.png";
+import waveCnkav from "./assets/images/wave-cnkav.png";
+import waveER from "./assets/images/wave-er.png";
+import youtubeImage from "./assets/icons/youtube.png";
 
-import FiverStars from './assets/icons/Fiver-stars.png'
-import Avatargroup from './assets/icons/Avatar-group.png'
-import arrowIcon from './assets/icons/arrow.png'
-import nextIcons from './assets/icons/next.png'
-
-export {nextIcons,arrowIcon,Avatargroup,FiverStars,videochat,questImage,checkImage,ThreeD1,ThreeD2,greencheck,galleryImage,arrowImage,LogoImage,drop, video, Image1, Image2, Image3, Image4 ,fram1Image,monyImage,fram2Image};
+export {
+  arrowIcon,
+  avatarGroup,
+  appleLogo,
+  checkImage,
+  cnkavLogo,
+  crowdImage,
+  computerLab,
+  drinkMan,
+  dropDownIcon,
+  fiverStars,
+  facebookLogo,
+  FiverStars1,
+  FiverStars2,
+  FiverStars3,
+  FiverStars4,
+  FiverStars5,
+  FiverStars6,
+  galleryImage,
+  gentalMan,
+  greenCheck,
+  googleLogo,
+  helloHand,
+  linkedinImage,
+  modalMan,
+  monyImage,
+  nextIcons,
+  questImage,
+  questsBox1,
+  rollsImage,
+  sideMan,
+  tabletsImage,
+  twitterImage,
+  twitterPost,
+  userLogedIn,
+  waveInflue,
+  waveCnkav,
+  waveER,
+  videoChat,
+  videoImage,
+  youtubeImage,
+};

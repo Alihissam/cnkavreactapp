@@ -1,5 +1,5 @@
-import React from 'react';
-import {greencheck,ThreeD1,ThreeD2} from '../images'
+import React from "react";
+import { greenCheck, tabletsImage, rollsImage } from "../images";
 
 export default function PricingSection() {
   return (
@@ -8,15 +8,13 @@ export default function PricingSection() {
         <div className="bg-gray-900 p-4 rounded-xl shadow-lg">
           <div className="flex items-baseline justify-between">
             <h2 className="text-2xl font-semibold mb-4 p-8">Influewave</h2>
-            <button
-              className="border border-green-500 text-green-500 rounded-lg p-2 outline-none m-2"
-            >
+            <button className="border border-green-500 text-green-500 rounded-lg p-2 outline-none m-2">
               most popular
             </button>
           </div>
           <div className="flex justify-center items-center m-4 flex-col">
             <img
-              src={ThreeD1}
+              src={rollsImage}
               alt="Shoes"
               className="h-20 object-cover mb-4"
             />
@@ -24,9 +22,7 @@ export default function PricingSection() {
               <span className="text-white text-4xl">€49.99</span> /month
             </h2>
             <p>Suitable for Individual looking to foster growth and income.</p>
-            <button
-              className="w-full m-4 text-white py-3 px-4 rounded-lg hover:bg-white hover:text-black border border-white transition text-xl font-bold"
-            >
+            <button className="w-full m-4 text-white py-3 px-4 rounded-lg hover:bg-white hover:text-black border border-white transition text-xl font-bold">
               Subscribe
             </button>
           </div>
@@ -35,7 +31,7 @@ export default function PricingSection() {
           <ul className="list-none space-y-4 opacity-50">
             <li className="flex items-center space-x-2">
               <img
-                src={greencheck}
+                src={greenCheck}
                 className="rounded-full h-4"
                 alt="Checkmark"
               />
@@ -43,7 +39,7 @@ export default function PricingSection() {
             </li>
             <li className="flex items-baseline space-x-2">
               <img
-                src={greencheck}
+                src={greenCheck}
                 className="rounded-full h-4"
                 alt="Checkmark"
               />
@@ -51,7 +47,7 @@ export default function PricingSection() {
             </li>
             <li className="flex items-baseline space-x-2">
               <img
-                src={greencheck}
+                src={greenCheck}
                 className="rounded-full h-4"
                 alt="Checkmark"
               />
@@ -61,7 +57,7 @@ export default function PricingSection() {
             </li>
             <li className="flex items-baseline space-x-2">
               <img
-                src={greencheck}
+                src={greenCheck}
                 className="rounded-full h-4"
                 alt="Checkmark"
               />
@@ -72,7 +68,7 @@ export default function PricingSection() {
             </li>
             <li className="flex items-baseline space-x-2">
               <img
-                src={greencheck}
+                src={greenCheck}
                 className="rounded-full h-4"
                 alt="Checkmark"
               />
@@ -90,7 +86,7 @@ export default function PricingSection() {
           </div>
           <div className="flex justify-center items-center m-4 flex-col">
             <img
-              src={ThreeD2}
+              src={tabletsImage}
               alt="Shoes"
               className="h-20 object-cover mb-4"
             />
@@ -98,9 +94,7 @@ export default function PricingSection() {
               <span className="text-white text-4xl">€199.99</span> /month
             </h2>
             <p>Suitable for Individual / Business looking to scale up.</p>
-            <button
-              className="w-full m-4 text-white py-3 px-4 rounded-lg hover:bg-white hover:text-black border border-white transition text-xl font-bold"
-            >
+            <button className="w-full m-4 text-white py-3 px-4 rounded-lg hover:bg-white hover:text-black border border-white transition text-xl font-bold">
               Subscribe
             </button>
           </div>
@@ -109,7 +103,7 @@ export default function PricingSection() {
           <ul className="list-none space-y-4 opacity-50">
             <li className="flex items-baseline space-x-2">
               <img
-                src={greencheck}
+                src={greenCheck}
                 className="rounded-full h-4"
                 alt="Checkmark"
               />
@@ -120,7 +114,7 @@ export default function PricingSection() {
             </li>
             <li className="flex items-baseline space-x-2">
               <img
-                src={greencheck}
+                src={greenCheck}
                 className="rounded-full h-4"
                 alt="Checkmark"
               />
@@ -131,7 +125,7 @@ export default function PricingSection() {
             </li>
             <li className="flex items-baseline space-x-2">
               <img
-                src={greencheck}
+                src={greenCheck}
                 className="rounded-full h-4"
                 alt="Checkmark"
               />
@@ -142,7 +136,7 @@ export default function PricingSection() {
             </li>
             <li className="flex items-baseline space-x-2">
               <img
-                src={greencheck}
+                src={greenCheck}
                 className="rounded-full h-4"
                 alt="Checkmark"
               />
@@ -159,7 +153,7 @@ export default function PricingSection() {
           </div>
           <div className="flex justify-center items-center m-4 flex-col">
             <img
-              src={ThreeD2}
+              src={rollsImage}
               alt="Shoes"
               className="h-20 object-cover mb-4"
             />
@@ -169,9 +163,7 @@ export default function PricingSection() {
             <p>
               Suitable for premium members looking to build a valuable network.
             </p>
-            <button
-              className="w-full m-4 text-white py-3 px-4 rounded-lg hover:bg-white hover:text-black border border-white transition text-xl font-bold"
-            >
+            <button className="w-full m-4 text-white py-3 px-4 rounded-lg hover:bg-white hover:text-black border border-white transition text-xl font-bold">
               Subscribe
             </button>
           </div>
@@ -180,7 +172,7 @@ export default function PricingSection() {
           <ul className="list-none space-y-4 opacity-50">
             <li className="flex items-baseline space-x-2">
               <img
-                src={greencheck}
+                src={greenCheck}
                 className="rounded-full h-4"
                 alt="Checkmark"
               />
@@ -188,7 +180,7 @@ export default function PricingSection() {
             </li>
             <li className="flex items-baseline space-x-2">
               <img
-                src={greencheck}
+                src={greenCheck}
                 className="rounded-full h-4"
                 alt="Checkmark"
               />
@@ -200,7 +192,7 @@ export default function PricingSection() {
             </li>
             <li className="flex items-baseline space-x-2">
               <img
-                src={greencheck}
+                src={greenCheck}
                 className="rounded-full h-4"
                 alt="Checkmark"
               />
@@ -212,7 +204,7 @@ export default function PricingSection() {
             </li>
             <li className="flex items-baseline space-x-2">
               <img
-                src={greencheck}
+                src={greenCheck}
                 className="rounded-full h-4"
                 alt="Checkmark"
               />
