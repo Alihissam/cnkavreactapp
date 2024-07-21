@@ -1,8 +1,6 @@
 import React from 'react'
 import {FiverStars,Avatargroup, nextIcons,arrowIcon, fram1Image,fram2Image,monyImage} from '../images'
 import { AnimatedTooltip } from "../components/ui/animated-tooltip";
-import { DirectionAwareHover } from "../components/ui/direction-aware-hover";
-
 
 
 import {   FiverStars1,
@@ -10,7 +8,6 @@ import {   FiverStars1,
   FiverStars3,
   FiverStars4,
   FiverStars5,FiverStars6} from '../images'
-import { TypewriterEffectSmooth } from './ui/typewriter-effect';
 
 
 
@@ -64,21 +61,6 @@ const people = [
 
 
 
-  const words = [
-    {
-      text: "Different",
-      className: "text-white text-5xl md:text-7xl font-bold mb-4",
-
-    },
-    {
-      text: "Social",
-      className: "text-white text-5xl md:text-7xl font-bold mb-4",
-
-    },
-
-  ];
- 
-
 
 
 export default function HeroSection() {
@@ -97,8 +79,7 @@ export default function HeroSection() {
       <div className="bg-gray-800 opacity-40"></div>
     </div>
     <div className="container mx-auto px-4 py-20 md:w-1/2 z-20">
-    <TypewriterEffectSmooth cursorClassName={" bg-white"} words={words} />
-      {/* <h1 className="text-7xl font-bold mb-4">Different Social</h1> */}
+      <h1 className="text-white text-5xl md:text-7xl font-bold mb-4">Different Social</h1>
       <h2 className="text-xl mb-6">
         Quest, Connect & Earn:
         <span className="font-semibold text-gray-400">An Exclusive Club</span>
