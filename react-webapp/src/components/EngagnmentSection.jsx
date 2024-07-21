@@ -1,9 +1,9 @@
 import React from 'react'
 import {galleryImage,arrowImage} from '../images'
 export default function EngagnmentSection() {
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-24 p-5 mb-6 mt-32">
-    <div className="px-16">
+  return (<div className='container '>
+    <div className=" grid grid-cols-1 md:grid-cols-2 gap-24 p-5 mb-6 mt-32">
+    <div className="md:px-8">
       <h2 className="text-4xl font-black mt-4 mb-4">Engage and Innovate</h2>
       <h2 className="text-2xl mb-4 font-bold">Outsource and Accomplish</h2>
       <p className="mb-4">
@@ -44,6 +44,7 @@ export default function EngagnmentSection() {
       </div>
     </div>
     <div><img src={galleryImage} alt="" /></div>
+  </div>
   </div>
   )
 }

@@ -3,13 +3,13 @@ import {LogoImage} from '../images'
 
 export default function Footer() {
   return (
-    <footer className="px-20 py-6 mt-40">
+    <footer className="container md:px-10 py-6 mt-40">
     <div className="flex flex-col md:flex-row justify-between mb-4">
       <div className="w-full md:w-1/2 mb-6 md:mb-0">
         <img
           src={LogoImage}
           alt="Logo"
-          className="h-24"
+          className="h-12 md:h-20"
         />
         <p className="mt-3 px-4 text-gray-400">
           At CNKAV, we envision a world where anyone, regardless of their
