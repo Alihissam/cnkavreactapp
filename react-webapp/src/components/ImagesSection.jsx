@@ -2,10 +2,10 @@ import React from 'react'
 import {Image1,Image2,Image3,Image4} from '../images'
 export default function ImagesSection() {
   return (
-    <div class="flex flex-col md:flex-row stify-between gap-3 p-8">
+    <div class="flex flex-col md:flex-row stify-between gap-3 px-20">
     <div class="border rounded-lg p-4 relative">
       <div class="absolute bottom-0 left-0 bg-black bg-opacity-75 p-2 z-10">
-        <h1>Embrace the Experience</h1>
+        <h1 class="text-2xl mb-4 font-bold">Embrace the Experience</h1>
         <p>
           Join us for intellectual conversations in our exclusive chat rooms
           and memorable annual events. Start your journey with Exclusive Room
@@ -24,7 +24,7 @@ export default function ImagesSection() {
           assured that your information and privacy stay well-protected.
         </p>
 
-        <img src={Image3}  class="rounded-lg" />
+        <img src={Image3} class="rounded-lg" />
       </div>
       <div class="border rounded-lg p-4 relative">
         <p class="absolute bottom-0 left-0 bg-black bg-opacity-75 p-2 z-10">
@@ -38,7 +38,9 @@ export default function ImagesSection() {
     </div>
     <div class="border rounded-lg p-4 relative">
       <div class="absolute bottom-0 left-0 bg-black bg-opacity-75 p-2 z-10">
-        <h1>The Grandeur of Our Annual Events</h1>
+        <h1 class="text-2xl mb-4 font-bold">
+          The Grandeur of Our Annual Events
+        </h1>
         <p>
           n this exclusive club, we don’t just stop at chats. Exclusive Room
           holds an annual event, giving you an opportunity to engage in a
