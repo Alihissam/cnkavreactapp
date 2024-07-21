@@ -22,4 +22,19 @@ import Avatargroup from './assets/icons/Avatar-group.png'
 import arrowIcon from './assets/icons/arrow.png'
 import nextIcons from './assets/icons/next.png'
 
-export {nextIcons,arrowIcon,Avatargroup,FiverStars,videochat,questImage,checkImage,ThreeD1,ThreeD2,greencheck,galleryImage,arrowImage,LogoImage,drop, video, Image1, Image2, Image3, Image4 ,fram1Image,monyImage,fram2Image};
+
+import FiverStars1 from './assets/images/fiver/1.png'
+import FiverStars2 from './assets/images/fiver/2.png'
+import FiverStars3 from './assets/images/fiver/3.png'
+import FiverStars4 from './assets/images/fiver/4.png'
+import FiverStars5 from './assets/images/fiver/5.png'
+import FiverStars6 from './assets/images/fiver/6.png'
+
+
+export {
+    FiverStars1,
+    FiverStars2,
+    FiverStars3,
+    FiverStars4,
+    FiverStars5,FiverStars6,
+    nextIcons,arrowIcon,Avatargroup,FiverStars,videochat,questImage,checkImage,ThreeD1,ThreeD2,greencheck,galleryImage,arrowImage,LogoImage,drop, video, Image1, Image2, Image3, Image4 ,fram1Image,monyImage,fram2Image};

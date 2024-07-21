@@ -2,33 +2,33 @@ import React from 'react'
 import {checkImage,questImage} from '../images'
 export default function QuestSection() {
   return (
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 p-5 mb-6">
-    <div class="">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-5 mb-6">
+    <div className="">
       <img
         src={questImage}
       />
     </div>
 
-    <div class="p-5 z-20">
-      <h1 class="text-6xl font-black mb-4">The Quest System</h1>
-      <h2 class="text-2xl mb-4 font-bold">Outsource and Accomplish</h2>
-      <p class="mb-4 leading-loose">
+    <div className="p-5 z-20">
+      <h1 className="text-5xl md:text-6xl font-black mb-4">The Quest System</h1>
+      <h2 className="text-2xl mb-4 font-bold">Outsource and Accomplish</h2>
+      <p className="mb-4 leading-loose">
         Welcome to our innovative quest system, combining the flexibility of
         on-demand services with the assurance of video call verification.
       </p>
-      <ul class="list-none leading-loose space-y-4">
-        <li class="flex items-center space-x-2">
+      <ul className="list-none leading-loose space-y-4">
+        <li className="flex items-center space-x-2">
           <img
             src={checkImage}
-            class="rounded-full bg-white h-3"
+            className="rounded-full bg-white h-3"
             alt="Checkmark"
           />
           <span>Post your tasks and connect.</span>
         </li>
-        <li class="flex items-baseline space-x-2">
+        <li className="flex items-baseline space-x-2">
           <img
             src={checkImage}
-            class="rounded-full bg-white h-3"
+            className="rounded-full bg-white h-3"
             alt="Checkmark"
           />
           <span>
@@ -36,10 +36,10 @@ export default function QuestSection() {
             hand.
           </span>
         </li>
-        <li class="flex items-baseline space-x-2">
+        <li className="flex items-baseline space-x-2">
           <img
             src={checkImage}
-            class="rounded-full bg-white h-3"
+            className="rounded-full bg-white h-3"
             alt="Checkmark"
           />
           <span>
