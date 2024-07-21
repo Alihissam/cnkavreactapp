@@ -1,6 +1,6 @@
 import React from 'react';
 import 'tailwindcss/tailwind.css';
-import { video } from '../images';
+import {videoImage } from '../images';
 
 export default function InfluewaveSection() {
   return (
@@ -31,7 +31,7 @@ export default function InfluewaveSection() {
         </div>
       </div>
 
-      <img src={video} class="w-full md:p-12 rounded-lg" />
+      <img src={videoImage} class="w-full md:p-12 rounded-lg" />
     </section>
   );
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { arrowIcon, dropDownIcon, cnkavLogo } from "../images";
 import JoinUsModal from "./JoinUsModal";
 import PricingModal from "./PricingModal";
+import { cnkavLogo,dropDownIcon,arrowIcon } from "../images";
 
 export default function NavBar() {
   const [isModal, setModal] = useState(false);
@@ -13,7 +13,7 @@ export default function NavBar() {
         <div className="flex items-center justify-between">
           <div className="flex gap-12 items-center">
             <img
-              src={LogoImage}
+              src={cnkavLogo}
               alt="Logo"
               className="h-20"
             />
@@ -30,7 +30,7 @@ export default function NavBar() {
                   Influewave
                 </a>
                 <img
-                  src={drop}
+                  src={dropDownIcon}
                   className="h-6 bg-white rounded-full ml-2"
                   alt="Dropdown Icon"
                 />
@@ -47,7 +47,7 @@ export default function NavBar() {
           >
             <span>Join Us</span>
             <img
-              src={arrowImage}
+              src={arrowIcon}
               className="bg-white rounded-full h-6 ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1"
               alt=""
             />

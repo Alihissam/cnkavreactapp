@@ -1,19 +1,11 @@
-<<<<<<< HEAD
 import React, { useState } from "react";
-=======
-import React, { useState } from 'react';
->>>>>>> 1989eadc088398ac7daa840e0bb1d25bea6d4039
 import {
   motion,
   useTransform,
   AnimatePresence,
   useMotionValue,
   useSpring,
-<<<<<<< HEAD
-} from "framer-motion";
-=======
 } from 'framer-motion';
->>>>>>> 1989eadc088398ac7daa840e0bb1d25bea6d4039
 
 export const AnimatedTooltip = ({ items }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -52,11 +44,7 @@ export const AnimatedTooltip = ({ items }) => {
                   y: 0,
                   scale: 1,
                   transition: {
-<<<<<<< HEAD
-                    type: "spring",
-=======
                     type: 'spring',
->>>>>>> 1989eadc088398ac7daa840e0bb1d25bea6d4039
                     stiffness: 260,
                     damping: 10,
                   },
@@ -65,11 +53,7 @@ export const AnimatedTooltip = ({ items }) => {
                 style={{
                   translateX: translateX,
                   rotate: rotate,
-<<<<<<< HEAD
-                  whiteSpace: "nowrap",
-=======
                   whiteSpace: 'nowrap',
->>>>>>> 1989eadc088398ac7daa840e0bb1d25bea6d4039
                 }}
                 className="absolute -top-16 -left-1/2 translate-x-1/2 flex text-xs  flex-col items-center justify-center rounded-md bg-black z-50 shadow-xl px-4 py-2"
               >

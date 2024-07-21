@@ -36,7 +36,7 @@ export default function EngagnmentSection() {
         >
           <span>I am Ready to Join</span>
           <img
-            src={arrowImage}
+            src={arrowIcon}
             className="bg-white rounded-full h-6 ml-2"
             alt=""
           />

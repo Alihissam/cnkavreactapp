@@ -1,24 +1,20 @@
 import React from 'react';
 import {
-  FiverStars,
-  Avatargroup,
   nextIcons,
   arrowIcon,
-  fram1Image,
-  fram2Image,
   monyImage,
   galleryImage,
-} from '../images';
-import { AnimatedTooltip } from '../components/ui/animated-tooltip';
-
-import {
-  FiverStars1,
+    FiverStars1,
   FiverStars2,
   FiverStars3,
   FiverStars4,
   FiverStars5,
   FiverStars6,
+  modalMan,
+  labImage
 } from '../images';
+import { AnimatedTooltip } from '../components/ui/animated-tooltip';
+
 
 const people = [
   {
@@ -94,7 +90,7 @@ export default function HeroSection() {
             <div className="ml-5 flex items-center">
               <div>
                 <p>Amazing Members</p>
-                <img src={FiverStars} alt="" />
+                {/* <img src={FiverStars} alt="" /> */}
               </div>
 
               <img src={nextIcons} className="h-4 ml-4" alt="" />
@@ -115,7 +111,7 @@ export default function HeroSection() {
       <div className="z-20">
         <div className="mt-12 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-2">
           <img
-            src={fram1Image}
+            src={modalMan}
             alt="Image 1"
             className="w-[218px] h-[270px] object-cover rounded-lg mb-4"
           />
@@ -132,7 +128,7 @@ export default function HeroSection() {
         </div>
         <div className="bg-black p-4 rounded-lg mt-2">
           <img
-            src={galleryImage}
+            src={labImage}
             alt="Image 3"
             className="w-full h-40 object-cover rounded-lg mb-4"
           />

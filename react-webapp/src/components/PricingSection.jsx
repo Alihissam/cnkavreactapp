@@ -1,5 +1,5 @@
 import React from "react";
-import { greencheck, ThreeD1, ThreeD2 } from "../images";
+import { greenCheck, price1Image,price2Image } from "../images";
 
 export default function PricingSection() {
   return (
@@ -12,8 +12,8 @@ export default function PricingSection() {
               most popular
             </button>
           </div>
-          <div className="flex justify-center items-center m-4 flex-col">
-            <img src={ThreeD1} alt="Shoes" className="h-20 object-cover mb-4" />
+          <div className="flex pt-10 justify-center items-center m-4 flex-col">
+            <img src={price1Image} alt="Shoes" className="h-20 object-cover mb-4" />
             <h2 className="text-xl font-bold m-4 text-gray-400">
               <span className="text-white text-4xl">€49.99</span> /month
             </h2>
@@ -81,7 +81,7 @@ export default function PricingSection() {
             <h2 className="text-2xl font-semibold mb-4 p-8">CNKAV</h2>
           </div>
           <div className="flex justify-center items-center m-4 flex-col">
-            <img src={ThreeD2} alt="Shoes" className="h-20 object-cover mb-4" />
+            <img src={price2Image} alt="Shoes" className="h-20 object-cover mb-4" />
             <h2 className="text-xl font-bold m-4 text-gray-400">
               <span className="text-white text-4xl">€199.99</span> /month
             </h2>
@@ -144,7 +144,7 @@ export default function PricingSection() {
             <h2 className="text-2xl font-semibold mb-4 p-8">Exclusive Room</h2>
           </div>
           <div className="flex justify-center items-center m-4 flex-col">
-            <img src={ThreeD2} alt="Shoes" className="h-20 object-cover mb-4" />
+            <img src={price1Image} alt="Shoes" className="h-20 object-cover mb-4" />
             <h2 className="text-xl font-bold m-4 text-gray-400">
               <span className="text-white text-4xl">€499.99</span> /month
             </h2>

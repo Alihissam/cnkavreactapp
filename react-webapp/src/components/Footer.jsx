@@ -4,6 +4,7 @@ import {
   youtubeImage,
   twitterImage,
   linkedinImage,
+  facebookLogo,
 } from "../images";
 
 export default function Footer() {
@@ -11,7 +12,7 @@ export default function Footer() {
     <footer className="container md:px-10 py-6 mt-40">
       <div className="flex flex-col md:flex-row justify-between mb-4">
         <div className="w-full md:w-1/2 mb-6 md:mb-0">
-          <img src={LogoImage} alt="Logo" className="h-12 md:h-20" />
+          <img src={cnkavLogo} alt="Logo" className="h-12 md:h-20" />
           <p className="mt-3 px-4 text-gray-400">
             At CNKAV, we envision a world where anyone, regardless of their
             location, can tap into the potential of digital platforms to enrich
@@ -60,21 +61,21 @@ export default function Footer() {
         <div className="flex gap-4">
           <a href="https://www.facebook.com" target="_blank">
             <img
-              src="https://example.com/icons/facebook.png"
+              src={facebookLogo}
               alt="Facebook"
               className="h-6 w-6"
             />
           </a>
           <a href="https://www.twitter.com" target="_blank">
             <img
-              src="https://example.com/icons/twitter.png"
+              src={twitterImage}
               alt="Twitter"
               className="h-6 w-6"
             />
           </a>
-          <a href="https://www.instagram.com" target="_blank">
+          <a href="https://www.linkedin.com" target="_blank">
             <img
-              src="https://example.com/icons/instagram.png"
+              src={linkedinImage}
               alt="Instagram"
               className="h-6 w-6"
             />
