@@ -1,62 +1,30 @@
 import React from "react";
-import { waveInflue, waveCnkav, waveER } from "../images";
 
 const QuestsDashboard = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2  bg-black ">
-      <div className="flex flex-col justify-center items-center mt-32">
-        <form className="space-y-4 py-5 w-3/4">
-          <div>
-            <input
-              type="text"
-              id="questName"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-              placeholder="Select Options"
-            />
-          </div>
-
-          <div>
-            <input
-              type="text"
-              id="questName"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-              placeholder="Select Products"
-            />
-          </div>
-          <div>
-            <input
-              type="text"
-              id="questName"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-              placeholder="Request New Affiliate Product"
-            />
-          </div>
-          <div>
-            <input
-              type="text"
-              id="questName"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-              placeholder="Select Affiliate marketing links"
-            />
-          </div>
-          <div>
-            <input
-              type="text"
-              id="questName"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-              placeholder="Affiliate marketing links Option (Edit/Delete)"
-            />
-          </div>
-        </form>
-
-        <img src={waveInflue} alt="" className="w-3/5 py-5" />
-        <img src={waveCnkav} alt="" className="w-3/5 py-5" />
-        <img src={waveER} alt="" className="w-3/5 py-5" />
-
-        <button className="bg-white text-black py-3 w-4/6 mt-12 rounded-xl">
-          Load More
-        </button>
-      </div>
+    <div>
+      QuestsDashboard Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      Aperiam repudiandae quae temporibus rerum quis perferendis alias
+      accusantium tenetur repellat. Illum dolorem harum nesciunt nam magni quod
+      quaerat laudantium optio nostrum similique natus eveniet ullam commodi
+      sequi dignissimos amet, voluptates iusto aliquam quia? Aliquid accusantium
+      odit temporibus. Delectus eligendi expedita provident sapiente,
+      repudiandae tempore molestias architecto nemo voluptate ex vel debitis
+      earum ad magni sint facilis maiores amet, aspernatur magnam. Expedita hic
+      molestias eligendi dicta, ipsum ad veritatis officia ipsa iste eius!
+      Facere, at nihil. Provident ea velit laudantium veniam cumque vel esse
+      consequatur, minima et voluptatem earum aperiam ipsa eius dolorem voluptas
+      alias ducimus voluptates veritatis voluptatibus! Sunt hic perspiciatis sed
+      omnis nulla porro neque eius doloremque quo! Tenetur sapiente nulla
+      consequuntur excepturi, dolor delectus explicabo facere accusamus
+      suscipit. Laborum exercitationem dolorum voluptas ab debitis qui iste
+      blanditiis tenetur, quae, vero expedita ipsum officiis? A cupiditate cum
+      nulla aspernatur alias. Explicabo ab eum magnam pariatur quia commodi
+      dolorem, harum nam deleniti facilis eaque. Necessitatibus nostrum sapiente
+      eligendi, et error amet consectetur doloribus rerum molestiae excepturi,
+      assumenda dolorum natus voluptatem eius. Cumque natus perspiciatis iste
+      tenetur nam culpa cupiditate, facilis accusamus assumenda obcaecati,
+      architecto repellendus, ratione placeat aliquam veritatis molestiae ipsam.
     </div>
   );
 };

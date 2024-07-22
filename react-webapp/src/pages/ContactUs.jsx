@@ -7,7 +7,7 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic
+
     console.log("Email:", email);
     console.log("Full Name:", fullName);
   };

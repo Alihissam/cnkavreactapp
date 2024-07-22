@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { cnkavLogo, dropDownIcon, arrowIcon } from "../images";
 import JoinUsModal from "./JoinUsModal";
 import PricingModal from "./PricingModal";
-import { cnkavLogo,dropDownIcon,arrowIcon } from "../images";
 
 export default function NavBar() {
   const [isModal, setModal] = useState(false);
@@ -12,33 +13,59 @@ export default function NavBar() {
       <div className="fixed w-full z-10 shadow-md px-10 py-8">
         <div className="flex items-center justify-between">
           <div className="flex gap-12 items-center">
-            <img
-              src={cnkavLogo}
-              alt="Logo"
-              className="h-20"
-            />
-            <nav
-              className="hidden md:flex space-x-12 text-[17px] ml-20 items-baseline"
-            >
-              <a className="text-white font-bold" href="#">Home</a>
+            <img src={cnkavLogo} alt="Logo" className="h-20" />
+            <nav className="hidden md:flex space-x-12 text-[17px] ml-20 items-baseline">
+              <Link className="text-white font-bold" to="/">
+                Home
+              </Link>
               <div className="relative group flex items-center">
-                <a
+                <Link
                   className="hover:text-white text-gray-400"
-                  href="#"
+                  to="#"
                   id="influewave-link"
                 >
                   Influewave
-                </a>
+                </Link>
                 <img
                   src={dropDownIcon}
-                  className="h-6 bg-white rounded-full ml-2"
+                  className="h-6 bg-white rounded-full ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1"
                   alt="Dropdown Icon"
                 />
+                <div className="absolute hidden group-hover:block w-[220px] bg-white text-black mt-[150px] leading-2  shadow-lg">
+                  <Link
+                    to="/register"
+                    className="block px-4 py-2 hover:bg-black hover:text-white"
+                  >
+                    Register
+                  </Link>
+                  <Link
+                    to="/quests"
+                    className="block px-4 py-2 hover:bg-black hover:text-white"
+                  >
+                    Quest
+                  </Link>
+                  <Link
+                    to="/affilink"
+                    className="block px-4 py-2 hover:bg-black hover:text-white"
+                  >
+                    Affilink Listing Request
+                  </Link>
+                </div>
               </div>
-              <a className="hover:text-white text-gray-400" href="#"
-              >Exclusive Room</a>
-              <a className="hover:text-white text-gray-400" href="#">Pricing</a>
-              <a className="hover:text-white text-gray-400" href="#">Contact Us</a>
+              <Link className="hover:text-white text-gray-400" to="exclusive">
+                Exclusive Room
+              </Link>
+
+              <Link
+                className="hover:text-white text-gray-400"
+                to="#"
+                onClick={() => setCardVisible(true)}
+              >
+                Pricing
+              </Link>
+              <Link className="hover:text-white text-gray-400" to="contact">
+                Contact Us
+              </Link>
             </nav>
           </div>
           <button
