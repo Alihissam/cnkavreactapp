@@ -1,11 +1,13 @@
 import React from "react";
 import { googleLogo, facebookLogo, appleLogo, cnkavLogo } from "../../images";
-
+import {useNavigate} from 'react-router-dom'
 export default function JoinUsModal({ isModal, setModal }) {
+
+  const navigate=useNavigate()
   return (
     <>
       {isModal && (
-        <div className="fixed overflow-auto inset-0 flex items-center justify-center z-50 bg-transparent">
+        <div className="fixed overflow-auto inset-0 flex items-center justify-center joinModal bg-transparent">
           <div
             className="fixed inset-0 bg-black opacity-50"
             onClick={() => setModal(false)}
@@ -61,6 +63,9 @@ export default function JoinUsModal({ isModal, setModal }) {
                 />
               </div>
               <button
+              onClick={()=>
+                navigate("/dashboard")
+              }
                 type="submit"
                 className="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition"
               >
