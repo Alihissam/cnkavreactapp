@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { galleryImage, arrowIcon } from "../../images";
 export default function EngagnmentSection() {
   return (
@@ -33,14 +34,17 @@ export default function EngagnmentSection() {
             Influewave.
           </p>
           <div className="mt-3">
-            <button className="hidden md:flex items-center border-2 border-red-500 px-8 py-3 rounded-md text-white transition-transform duration-300 ease-in-out transform hover:scale-105">
+            <Link
+              to="subscriptions"
+              className="hidden w-2/4 md:flex items-center border-2 border-red-500 px-8 py-3 rounded-md text-white transition-transform duration-300 ease-in-out transform hover:scale-105"
+            >
               <span>I am Ready to Join</span>
               <img
                 src={arrowIcon}
                 className="bg-white rounded-full h-6 ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1"
                 alt=""
               />
-            </button>
+            </Link>
           </div>
         </div>
         <div>

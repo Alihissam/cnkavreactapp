@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+import PublishNewQuestModal from "./PublishNewQuestModal";
 
 const QuestsDashboard = () => {
+  const [isPublishModalOpen, setIsPublishModalOpen] = useState(false);
+
+  const handlePublishNewQuestClick = () => {
+    setIsPublishModalOpen(true);
+  };
+
+  const handlePublishNewQuestClose = () => {
+    setIsPublishModalOpen(false);
+  };
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2  bg-black ">
       <div className="flex flex-col justify-center  mt-32">
@@ -13,12 +23,14 @@ const QuestsDashboard = () => {
               placeholder="Select Quest Status"
             />
           </div>
-
-          <div className="my-6">
+          {/* Publish Quest */}
+          <div>
             <input
               type="text"
               id="questName"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+              onClick={handlePublishNewQuestClick}
+              readOnly
+              className="bg-gray-50 border text-black border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 cursor-pointer"
               placeholder="Publish New Quest"
             />
           </div>
@@ -48,7 +60,7 @@ const QuestsDashboard = () => {
             <div className="left-list w-3/4">
               <input
                 type="text"
-                value="Ctegory"
+                value="Category"
                 className="bg-gray-400 mx-2 mt-3 rounded-xl w-[430px]"
               />
               <div>
@@ -183,6 +195,10 @@ const QuestsDashboard = () => {
           Load More
         </button>
       </div>
+      <PublishNewQuestModal
+        isOpen={isPublishModalOpen}
+        onClose={handlePublishNewQuestClose}
+      />
     </div>
   );
 };

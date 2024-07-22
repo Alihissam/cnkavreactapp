@@ -17,7 +17,7 @@ export default function QuestsNavBar() {
       <div className="fixed w-full z-10 shadow-md px-10 py-8 ">
         <div className="flex items-center justify-between">
           <div className="flex gap-12 items-center">
-          <img src={cnkavLogo} alt="Logo" className="h-16 w-16" />
+            <img src={cnkavLogo} alt="Logo" className="h-16 w-16" />
             <nav className="hidden md:flex text-sm cursor-pointer space-x-10 text-[17px] ml-20 items-baseline">
               <Link className="text-white font-bold" to="/dashboard">
                 Home
@@ -35,7 +35,7 @@ export default function QuestsNavBar() {
                   className="h-6 bg-white rounded-full ml-2"
                   alt="Dropdown Icon"
                 />
-                <div className="absolute hidden group-hover:block w-[200px] bg-white text-black mt-[100px] shadow-lg">
+                <div className="absolute hidden group-hover:block w-[200px] bg-white text-black mt-[90px] shadow-lg">
                   <Link
                     to="/dashboard/quests-dashboard"
                     className="block px-4 py-2 hover:bg-black hover:text-white"

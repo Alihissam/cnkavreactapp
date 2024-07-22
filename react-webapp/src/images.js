@@ -22,6 +22,7 @@ import labImage from "./assets/images/lab.png";
 import nextIcons from "./assets/icons/next.png";
 import questImage from "./assets/images/quest.png";
 import questsBox1 from "./assets/images/quests-box-1.png";
+import questsBox2 from "./assets/images/quests-box-2.png";
 import price1Image from "./assets/images/price/rolls.png";
 import price2Image from "./assets/images/price/price2.png";
 
@@ -76,6 +77,7 @@ export {
   linkedinImage,
   modalMan,
   questsBox1,
+  questsBox2,
   price2Image,
   price1Image,
   sideMan,

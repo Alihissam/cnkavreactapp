@@ -1,56 +1,51 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import { cnkavLogo } from "../../images";
 
-const ContactUs = () => {
-  const [email, setEmail] = useState("");
-  const [fullName, setFullName] = useState("");
+const ContactUsStep2 = () => {
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    console.log("Email:", email);
-    console.log("Full Name:", fullName);
+    navigate("/contact-step3");
   };
 
   return (
-    <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6 ">
+    <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6">
       <div>
         <img src={cnkavLogo} alt="cnkav logo" className="h-40 mt-32 mb-10" />
       </div>
       <div className="bg-black text-white p-8 rounded-lg shadow-lg w-full max-w-md">
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label htmlFor="email" className="block text-sm font-medium mb-2">
-              Email
+            <label htmlFor="gender" className="block text-sm font-medium mb-2">
+              Gender
             </label>
             <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-              placeholder="Enter Email"
+              type="text"
+              id="gender"
+             
+              className="w-full px-4 py-2 border text-black border-gray-300 rounded-lg"
+              placeholder="Enter Gender"
             />
           </div>
           <div>
             <label
-              htmlFor="fullName"
+              htmlFor="maternalState"
               className="block text-sm font-medium mb-2"
             >
-              Fullname
+              Maternal State
             </label>
             <input
               type="text"
-              id="fullName"
-              value={fullName}
-              onChange={(e) => setFullName(e.target.value)}
-              required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-              placeholder="Name and Surname"
+              id="maternalState"
+             
+              className="w-full px-4 py-2 border text-black border-gray-300 rounded-lg"
+              placeholder="Enter Maternal State"
             />
           </div>
-          <div className="pt-6 ">
+          <div className="pt-6">
             <button
               type="submit"
               className="rounded-3xl w-full bg-black text-white py-3 px-4 font-bold"
@@ -76,4 +71,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default ContactUsStep2;

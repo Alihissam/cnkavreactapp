@@ -1,5 +1,6 @@
 import React from "react";
 import { greenCheck, price1Image, price2Image } from "../../images";
+import { Link } from "react-router-dom";
 
 export default function PricingSection() {
   return (
@@ -22,9 +23,14 @@ export default function PricingSection() {
               <span className="text-white text-4xl">€49.99</span> /month
             </h2>
             <p>Suitable for Individual looking to foster growth and income.</p>
-            <button className="w-full m-4 text-white py-3 px-4 rounded-lg hover:bg-white hover:text-black border border-white text-xl font-bold transition-transform duration-300 ease-in-out transform hover:scale-105">
+
+            <Link
+              to="subscriptions"
+              className="w-full m-4 text-center text-white py-3 px-4 rounded-lg hover:bg-white hover:text-black border border-white text-xl font-bold transition-transform duration-300 ease-in-out transform hover:scale-105"
+              onClick={() => setCardVisible(false)}
+            >
               Subscribe
-            </button>
+            </Link>
           </div>
           <div className="my-4 border-t border-gray-300"></div>
           <h2 className="text-lg font-semibold mb-2">Plan Features</h2>
@@ -94,9 +100,13 @@ export default function PricingSection() {
               <span className="text-white text-4xl">€199.99</span> /month
             </h2>
             <p>Suitable for Individual / Business looking to scale up.</p>
-            <button className="w-full m-4 text-white py-3 px-4 rounded-lg hover:bg-white hover:text-black border border-white text-xl font-bold transition-transform duration-300 ease-in-out transform hover:scale-105">
+            <Link
+              to="subscriptions"
+              className="w-full m-4 text-center text-white py-3 px-4 rounded-lg hover:bg-white hover:text-black border border-white text-xl font-bold transition-transform duration-300 ease-in-out transform hover:scale-105"
+              onClick={() => setCardVisible(false)}
+            >
               Subscribe
-            </button>
+            </Link>
           </div>
           <div className="my-4 border-t border-gray-300"></div>
           <h2 className="text-lg font-semibold mb-2">Plan Features</h2>
@@ -163,9 +173,13 @@ export default function PricingSection() {
             <p>
               Suitable for premium members looking to build a valuable network.
             </p>
-            <button className="w-full m-4 text-white py-3 px-4 rounded-lg hover:bg-white hover:text-black border border-white text-xl font-bold transition-transform duration-300 ease-in-out transform hover:scale-105">
+            <Link
+              to="subscriptions"
+              className="w-full m-4 text-center text-white py-3 px-4 rounded-lg hover:bg-white hover:text-black border border-white text-xl font-bold transition-transform duration-300 ease-in-out transform hover:scale-105"
+              onClick={() => setCardVisible(false)}
+            >
               Subscribe
-            </button>
+            </Link>
           </div>
           <div className="my-4 border-t border-gray-300"></div>
           <h2 className="text-lg font-semibold mb-2">Plan Features</h2>

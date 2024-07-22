@@ -14,6 +14,7 @@ import {
   labImage,
 } from "../../images";
 import { AnimatedTooltip } from "../ui/animated-tooltip";
+import { Link } from "react-router-dom";
 
 const people = [
   {
@@ -87,32 +88,37 @@ export default function HeroSection() {
           <div className="flex items-center">
             <AnimatedTooltip cursorClassName="bg-red" items={people} />
             <div className="ml-10 flex items-center">
-              <div>
+              <Link to="/aboutus">
                 <p>Amazing Members</p>
                 <img
                   src={starsGroup}
                   alt="Five Stars"
                   className="transition-transform duration-300 ease-in-out transform hover:translate-y-2"
                 />
-              </div>
+              </Link>
 
-              <img
-                src={nextIcons}
-                className="h-4 ml-4 transition-transform duration-300 ease-in-out transform hover:translate-x-1"
-                alt=""
-              />
+              <Link to="aboutus">
+                <img
+                  src={nextIcons}
+                  className="h-4 ml-4 transition-transform duration-300 ease-in-out transform  hover:scale-110 hover:-rotate-90"
+                  alt=""
+                />
+              </Link>
             </div>
           </div>
         </div>
         <div className="mt-12">
-          <button className="hidden md:flex items-center border border-white px-8 py-2.5 rounded-md text-white transition-transform duration-300 ease-in-out transform hover:scale-105">
+          <Link
+            to="subscriptions"
+            className="hidden md:flex items-center border border-white w-[35%] pl-8 py-2.5 rounded-md text-white transition-transform duration-300 ease-in-out transform hover:scale-105"
+          >
             <span>Secure my Spot</span>
             <img
               src={arrowIcon}
-              className="bg-white rounded-full h-6 ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1"
+              className="bg-white rounded-full h-6 ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1 hover:scale-110 hover:rotate-45"
               alt=""
             />
-          </button>
+          </Link>
         </div>
       </div>
       <div className="z-20 pr-20">

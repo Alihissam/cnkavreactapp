@@ -5,6 +5,15 @@ const Profile = () => {
   const navigate = useNavigate();
 
   const profilePaths = [
+    { path: "/dashboard/account-details", label: "Account Details" },
+    { path: "/dashboard/order-page", label: "Order" },
+    { path: "/dashboard/notifications-page", label: "Notifications" },
+    { path: "/dashboard/subscriptions-page", label: "Subscriptions" },
+    { path: "/dashboard/address-page", label: "Addresses" },
+    { path: "/dashboard/deploy-quests", label: "Upload Quest plugin" },
+    { path: "/dashboard/quests-dashboard", label: "Quest Dashboard" },
+    { path: "/dashboard/payment-method", label: "Payment Method" },
+    { path: "/dashboard/events", label: "My Events and Purchased Events" },
     { path: "/dashboard/wallet", label: "Wallet" },
     { path: "/dashboard/downloads-plugins", label: "Downloads and plugins" },
     { path: "/dashboard/profile", label: "General" },
