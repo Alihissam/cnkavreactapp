@@ -15,12 +15,12 @@ export default function LogInPage() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-
-    if (email === "root@gmail.com" && password === "12345") {
-      navigate("/dashboard");
-    } else {
-      alert("Invalid email or password.");
-    }
+    navigate("/dashboard");
+    // if (email === "root@gmail.com" && password === "12345") {
+     
+    // } else {
+    //   alert("Invalid email or password.");
+    // }
   };
 
   return (

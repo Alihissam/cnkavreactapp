@@ -10,15 +10,15 @@ export default function NavBar() {
 
   return (
     <>
-      <div className="fixed w-full z-10 shadow-md px-10 py-8">
+      <div className="fixed w-full  shadow-md px-10 py-8 navbar">
         <div className="flex items-center justify-between">
           <div className="flex gap-12 items-center">
-            <img src={cnkavLogo} alt="Logo" className="h-20" />
+            <img src={cnkavLogo} alt="Logo" className="h-16 w-16" />
             <nav className="hidden md:flex space-x-12 text-[17px] ml-20 items-baseline">
               <Link className="text-white font-bold" to="/">
                 Home
               </Link>
-              <div className="relative group flex items-center">
+              <div className="relative group flex items-center dropdown">
                 <Link
                   className="hover:text-white text-gray-400"
                   to="#"
@@ -70,7 +70,7 @@ export default function NavBar() {
           </div>
           <button
             onClick={() => setModal(!isModal)}
-            className="hidden cursor-pointer md:flex items-center border border-white px-8 py-2 rounded-md text-white transition-transform duration-300 ease-in-out transform hover:scale-105"
+            className="hidden cursor-pointer md:flex items-center border border-white px-6 py-2 rounded-md text-white transition-transform duration-300 ease-in-out transform hover:scale-105"
           >
             <span>Join Us</span>
             <img
