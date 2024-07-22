@@ -1,23 +1,26 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import Layout from "./pages/visitorPages/Layout";
 import Home from "./pages/visitorPages/Home";
 import ContactUs from "./pages/visitorPages/ContactUs";
 import LogInPage from "./pages/visitorPages/LogInPage";
 import ExclusiveRoomSection from "./components/visitorComponents/ExclusiveRoomSection";
-
 import QuestsLandingPage from "./pages/userPages/QuestsLandingPage";
 import DashbaordLayout from "./pages/userPages/DashboardLayout";
 import Community from "./pages/userPages/Community";
 import Profile from "./pages/userPages/Profile";
 import AffiliatedTools from "./pages/userPages/AffiliatedTools";
-import Notifications from "./pages/userPages/Notifications";
-import Addresses from "./pages/userPages/Addresses";
-import Subscriptions from "./pages/userPages/Subscriptions";
 import Chats from "./pages/userPages/Chats";
 import QuestsDashboard from "./pages/userPages/QuestsDashboard";
 import DeployQuests from "./pages/userPages/DeployQuests";
-import AccountDetails from "./components/userComponents/AccountDetails";
-import Orders from "./components/userComponents/Orders";
+import AboutUs from "./pages/userProfileDashboard/AboutUs";
+import TermsOfServices from "./pages/userProfileDashboard/TermsOfServices";
+import PrivacyPolicy from "./pages/userProfileDashboard/PrivacyPolicy";
+import DownloadsPlugins from "./pages/userProfileDashboard/DownloadsPlugins";
 
 function App() {
   return (
@@ -37,13 +40,13 @@ function App() {
           <Route path="quests-dashboard" element={<QuestsDashboard />} />
           <Route path="deploy-quests" element={<DeployQuests />} />
           <Route path="contact" element={<ContactUs />} />
-          <Route path="profile" element={<Profile />}></Route>
-          <Route path="profile/account-details" element={<AccountDetails />} />
-          <Route path="profile/orders" element={<Orders />} />
-          <Route path="profile/notifications" element={<Notifications />} />
-          <Route path="profile/addresses" element={<Addresses />} />
-          <Route path="profile/subscriptions" element={<Subscriptions />} />
+          <Route path="profile" element={<Profile />} />
+          <Route path="about" element={<AboutUs />} />
+          <Route path="termsofservices" element={<TermsOfServices />} />
+          <Route path="privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="downloads-plugins" element={<DownloadsPlugins />} />
         </Route>
+        <Route path="/logout" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
   );

@@ -1,39 +1,44 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Profile = () => {
-  const profileOptions = [
-    { path: "account-details", label: "Account Details" },
-    { path: "orders", label: "Orders" },
-    { path: "notifications", label: "Notifications" },
-    { path: "addresses", label: "Addresses" },
-    { path: "uploadquest-plugin", label: "Uploadquest Plugin" },
-    { path: "quest-dashboard", label: "Quest Dashboard" },
-    { path: "payment-methods", label: "Payment Methods" },
-    { path: "my-events", label: "My Events and Purchased Events" },
-    { path: "wallet", label: "Wallet" },
-    { path: "download-plugins", label: "Download and Plugins" },
-    { path: "general", label: "General" },
-    { path: "privacy-policy", label: "Privacy Policy" },
-    { path: "terms-of-service", label: "Terms of Service" },
-    { path: "about-us", label: "About Us" },
-    { path: "logout", label: "Log Out" },
+  const navigate = useNavigate();
+
+  const profilePaths = [
+    { path: "/dashboard/downloads-plugins", label: "Downloads and plugins" },
+    { path: "/dashboard/profile", label: "General" },
+    { path: "/dashboard/privacypolicy", label: "Privacy Policy" },
+    { path: "/dashboard/termsofservices", label: "Terms Of Services" },
+    { path: "/dashboard/about", label: "About Us" },
+    { path: "/logout", label: "Log Out" },
   ];
 
+  const handleLogout = () => {
+    navigate("/", { replace: true });
+  };
+
   return (
-    <div className="pt-10 w-full z-10 shadow-md px-10  ">
+    <div className="pt-10 w-full z-10 shadow-md px-10">
       <div className="mt-60">
-        {profileOptions.map((option) => (
-          <>
+        {profilePaths.map((option) => (
+          <div key={option.path}>
             <hr />
-            <Link
-              key={option.path}
-              to={option.path}
-              className="block w-3/4  text-white py-2  rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105"
-            >
-              <h3 className="text-xl font-semibold ">{option.label}</h3>
-            </Link>
-          </>
+            {option.label === "Log Out" ? (
+              <button
+                onClick={handleLogout}
+                className="block text-white py-2 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105"
+              >
+                <h3 className="text-xl font-semibold">{option.label}</h3>
+              </button>
+            ) : (
+              <Link
+                to={option.path}
+                className="block text-white py-2 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105"
+              >
+                <h3 className="text-xl font-semibold">{option.label}</h3>
+              </Link>
+            )}
+          </div>
         ))}
       </div>
     </div>
