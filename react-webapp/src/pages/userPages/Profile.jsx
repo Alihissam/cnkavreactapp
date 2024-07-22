@@ -5,6 +5,7 @@ const Profile = () => {
   const navigate = useNavigate();
 
   const profilePaths = [
+    { path: "/dashboard/wallet", label: "Wallet" },
     { path: "/dashboard/downloads-plugins", label: "Downloads and plugins" },
     { path: "/dashboard/profile", label: "General" },
     { path: "/dashboard/privacypolicy", label: "Privacy Policy" },

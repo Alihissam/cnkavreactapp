@@ -18,9 +18,10 @@ import Chats from "./pages/userPages/Chats";
 import QuestsDashboard from "./pages/userPages/QuestsDashboard";
 import DeployQuests from "./pages/userPages/DeployQuests";
 import AboutUs from "./pages/userProfileDashboard/AboutUs";
-import TermsOfServices from "./pages/userProfileDashboard/TermsOfServices";
+import TermsofServices from "./pages/userProfileDashboard/TermsofServices";
 import PrivacyPolicy from "./pages/userProfileDashboard/PrivacyPolicy";
-import DownloadsPlugins from "./pages/userProfileDashboard/DownloadsPlugins";
+import DownloadsPlugins from "./pages/userProfileDashboard/DownloadsAndPlugins";
+import Wallet from "./pages/userProfileDashboard/Wallet";
 
 function App() {
   return (
@@ -42,9 +43,10 @@ function App() {
           <Route path="contact" element={<ContactUs />} />
           <Route path="profile" element={<Profile />} />
           <Route path="about" element={<AboutUs />} />
-          <Route path="termsofservices" element={<TermsOfServices />} />
+          <Route path="termsofservices" element={<TermsofServices />} />
           <Route path="privacypolicy" element={<PrivacyPolicy />} />
           <Route path="downloads-plugins" element={<DownloadsPlugins />} />
+          <Route path="wallet" element={<Wallet />} />
         </Route>
         <Route path="/logout" element={<Navigate to="/" replace />} />
       </Routes>
