@@ -27,6 +27,6 @@ To set up the React app module, follow these steps:
 ## Tech Stack
 
 - **Web**: Next.js with React or React
-- **Mobile**: React Native
+- **Mobile**: React Native with Expo
 - **Backend**: Python with FastAPI
 - **Database**: MongoDB
