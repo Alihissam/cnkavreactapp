@@ -1,5 +1,5 @@
 import React from "react";
-import { videoChat } from "../images";
+import { videoChat } from "../../images";
 
 export default function VideoChat() {
   return (

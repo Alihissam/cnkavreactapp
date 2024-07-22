@@ -1,5 +1,5 @@
 import React from 'react';
-import { checkImage, questImage } from '../images';
+import { checkImage, questImage } from '../../images';
 export default function QuestSection() {
   return (
     <div className="container ">

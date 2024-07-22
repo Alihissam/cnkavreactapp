@@ -6,7 +6,7 @@ import crowdImage from "./assets/images/crowd.jpg";
 import computerLab from "./assets/images/computer-lab.png";
 import drinkMan from "./assets/images/drink.jpg";
 import dropDownIcon from "./assets/icons/drop.png";
-import fiverStars from "./assets/icons/five-stars.png";
+import starsGroup from "./assets/icons/five-stars.png";
 import facebookLogo from "./assets/icons/facebook.png";
 
 import galleryImage from "./assets/images/gallery.png";
@@ -37,7 +37,6 @@ import waveCnkav from "./assets/images/wave-cnkav.png";
 import waveER from "./assets/images/wave-er.png";
 import youtubeImage from "./assets/icons/youtube.png";
 
-
 import FiverStars1 from "./assets/images/fiver/1.png";
 import FiverStars2 from "./assets/images/fiver/2.png";
 import FiverStars3 from "./assets/images/fiver/3.png";
@@ -45,13 +44,10 @@ import FiverStars4 from "./assets/images/fiver/4.png";
 import FiverStars5 from "./assets/images/fiver/5.png";
 import FiverStars6 from "./assets/images/fiver/6.png";
 
-
-
-
-
+import cameraIcon from "./assets/icons/camera.png";
 
 export {
-
+  cameraIcon,
   cnkavLogo,
   FiverStars1,
   FiverStars2,
@@ -59,6 +55,7 @@ export {
   FiverStars4,
   FiverStars5,
   FiverStars6,
+  starsGroup,
   nextIcons,
   arrowIcon,
   questImage,
@@ -92,5 +89,4 @@ export {
   waveCnkav,
   waveER,
   youtubeImage,
-  
 };

@@ -1,7 +1,17 @@
-import { dropDownIcon, cnkavLogo, userLogedIn } from "../images";
+import React, { useState } from "react";
+import { dropDownIcon, cnkavLogo, userLogedIn } from "../../images";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import PricingModal from "../visitorComponents/PricingModal";
 
 export default function QuestsNavBar() {
+  const [isCardVisible, setCardVisible] = useState(false);
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate("/dashboard/profile");
+  };
+
   return (
     <>
       <div className="fixed w-full z-10 shadow-md px-10 py-8">
@@ -25,15 +35,15 @@ export default function QuestsNavBar() {
                   className="h-6 bg-white rounded-full ml-2"
                   alt="Dropdown Icon"
                 />
-                <div className="absolute hidden group-hover:block w-[200px] bg-white text-black mt-[110px]  shadow-lg">
+                <div className="absolute hidden group-hover:block w-[200px] bg-white text-black mt-[110px] shadow-lg">
                   <Link
-                    to="/dashboard/questsdashboard"
+                    to="/dashboard/quests-dashboard"
                     className="block px-4 py-2 hover:bg-black hover:text-white"
                   >
                     Quest Dashboard
                   </Link>
                   <Link
-                    to="/dashboard/deployquests"
+                    to="/dashboard/deploy-quests"
                     className="block px-4 py-2 hover:bg-black hover:text-white"
                   >
                     Deploy Quest
@@ -58,7 +68,7 @@ export default function QuestsNavBar() {
               <div className="relative group flex items-center">
                 <Link
                   className="hover:text-white text-gray-400"
-                  to="#"
+                  to="/dashboard/chats"
                   id="influewave-link"
                 >
                   Chat
@@ -72,7 +82,7 @@ export default function QuestsNavBar() {
               <div className="relative group flex items-center">
                 <Link
                   className="hover:text-white text-gray-400"
-                  to="/dashboard/affiliatedtools"
+                  to="/dashboard/affiliatetools"
                   id="influewave-link"
                 >
                   Affiliate tools
@@ -86,34 +96,37 @@ export default function QuestsNavBar() {
               <Link
                 className="hover:text-white text-gray-400"
                 to="#"
-                // onClick={() => setCardVisible(true)}
+                onClick={() => setCardVisible(true)}
               >
                 Pricing
               </Link>
-              <Link className="hover:text-white text-gray-400" to="#">
+              <Link
+                className="hover:text-white text-gray-400"
+                to="/dashboard/contact"
+              >
                 Contact Us
               </Link>
             </nav>
           </div>
           <button
-            // onClick={() => setModal(!isModal)}
-            className="hidden cursor-pointer md:flex items-center border border-white px-4 py-2 rounded-md text-white"
+            className="hidden cursor-pointer md:flex items-center border border-white px-4 py-2 rounded-md text-white transition-transform duration-300 ease-in-out transform hover:scale-105"
+            onClick={handleButtonClick}
           >
             <img
               src={userLogedIn}
-              className="bg-white rounded-full h-6  mr-4"
+              className="bg-white rounded-full h-6 mr-4"
               alt=""
             />
             <span>Username</span>
             <img
               src={dropDownIcon}
-              className="h-6 bg-white rounded-full ml-2"
+              className="h-6 bg-white rounded-full ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1"
               alt="Dropdown Icon"
             />
           </button>
         </div>
       </div>
-      {/* {isCardVisible && <PricingModal setCardVisible={setCardVisible} />}  */}
+      {isCardVisible && <PricingModal setCardVisible={setCardVisible} />}
     </>
   );
 }

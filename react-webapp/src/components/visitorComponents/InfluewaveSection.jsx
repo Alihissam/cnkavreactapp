@@ -1,6 +1,6 @@
 import React from 'react';
 import 'tailwindcss/tailwind.css';
-import {videoImage } from '../images';
+import {videoImage } from '../../images';
 
 export default function InfluewaveSection() {
   return (

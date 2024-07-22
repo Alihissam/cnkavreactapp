@@ -1,5 +1,5 @@
 import React from 'react';
-import { gentalMan, sideMan, drinkMan, crowdImage } from '../images';
+import { gentalMan, sideMan, drinkMan, crowdImage } from '../../images';
 export default function ImagesSection() {
   return (
     <div className='container py-6   md:px-4 '>

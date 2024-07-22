@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { cnkavLogo } from "../images";
+import { cnkavLogo } from "../../images";
 
 const ContactUs = () => {
   const [email, setEmail] = useState("");
@@ -7,7 +7,7 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic
+
     console.log("Email:", email);
     console.log("Full Name:", fullName);
   };

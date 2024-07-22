@@ -1,5 +1,5 @@
 import React from "react";
-import { greenCheck, price1Image,price2Image } from "../images";
+import { greenCheck, price1Image, price2Image } from "../../images";
 
 export default function PricingSection() {
   return (
@@ -8,17 +8,21 @@ export default function PricingSection() {
         <div className="bg-gray-900 p-4 rounded-xl shadow-lg">
           <div className="flex items-baseline justify-between">
             <h2 className="text-2xl font-semibold mb-4 p-2">Influewave</h2>
-            <button className="border border-green-500 text-green-500 rounded-lg p-2 outline-none m-2">
+            <button className="border border-green-500 text-green-500 rounded-lg p-2 outline-none m-2 transition-transform duration-300 ease-in-out transform hover:scale-110">
               most popular
             </button>
           </div>
           <div className="flex pt-10 justify-center items-center m-4 flex-col">
-            <img src={price1Image} alt="Shoes" className="h-20 object-cover mb-4" />
+            <img
+              src={price1Image}
+              alt="Shoes"
+              className="h-20 object-cover mb-4"
+            />
             <h2 className="text-xl font-bold m-4 text-gray-400">
               <span className="text-white text-4xl">€49.99</span> /month
             </h2>
             <p>Suitable for Individual looking to foster growth and income.</p>
-            <button className="w-full m-4 text-white py-3 px-4 rounded-lg hover:bg-white hover:text-black border border-white transition text-xl font-bold">
+            <button className="w-full m-4 text-white py-3 px-4 rounded-lg hover:bg-white hover:text-black border border-white text-xl font-bold transition-transform duration-300 ease-in-out transform hover:scale-105">
               Subscribe
             </button>
           </div>
@@ -81,12 +85,16 @@ export default function PricingSection() {
             <h2 className="text-2xl font-semibold mb-4 p-8">CNKAV</h2>
           </div>
           <div className="flex justify-center items-center m-4 flex-col">
-            <img src={price2Image} alt="Shoes" className="h-20 object-cover mb-4" />
+            <img
+              src={price2Image}
+              alt="Shoes"
+              className="h-20 object-cover mb-4"
+            />
             <h2 className="text-xl font-bold m-4 text-gray-400">
               <span className="text-white text-4xl">€199.99</span> /month
             </h2>
             <p>Suitable for Individual / Business looking to scale up.</p>
-            <button className="w-full m-4 text-white py-3 px-4 rounded-lg hover:bg-white hover:text-black border border-white transition text-xl font-bold">
+            <button className="w-full m-4 text-white py-3 px-4 rounded-lg hover:bg-white hover:text-black border border-white text-xl font-bold transition-transform duration-300 ease-in-out transform hover:scale-105">
               Subscribe
             </button>
           </div>
@@ -144,14 +152,18 @@ export default function PricingSection() {
             <h2 className="text-2xl font-semibold mb-4 p-8">Exclusive Room</h2>
           </div>
           <div className="flex justify-center items-center m-4 flex-col">
-            <img src={price1Image} alt="Shoes" className="h-20 object-cover mb-4" />
+            <img
+              src={price1Image}
+              alt="Shoes"
+              className="h-20 object-cover mb-4"
+            />
             <h2 className="text-xl font-bold m-4 text-gray-400">
               <span className="text-white text-4xl">€499.99</span> /month
             </h2>
             <p>
               Suitable for premium members looking to build a valuable network.
             </p>
-            <button className="w-full m-4 text-white py-3 px-4 rounded-lg hover:bg-white hover:text-black border border-white transition text-xl font-bold">
+            <button className="w-full m-4 text-white py-3 px-4 rounded-lg hover:bg-white hover:text-black border border-white text-xl font-bold transition-transform duration-300 ease-in-out transform hover:scale-105">
               Subscribe
             </button>
           </div>
