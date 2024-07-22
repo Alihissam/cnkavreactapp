@@ -1,11 +1,10 @@
 import React from "react";
 import {
   cnkavLogo,
-  youtubeImage,
   twitterImage,
   linkedinImage,
   facebookLogo,
-} from "../images";
+} from "../../images";
 
 export default function Footer() {
   return (

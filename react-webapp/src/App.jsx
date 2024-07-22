@@ -1,22 +1,23 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Layout from "./pages/Layout";
-import Home from "./pages/Home";
-import ContactUs from "./pages/ContactUs";
-import LogInPage from "./pages/LogInPage";
-import QuestsLandingPage from "./pages/QuestsLandingPage";
-import DashbaordLayout from "./pages/DashboardLayout";
-import Community from "./pages/Community";
-import Profile from "./pages/Profile";
-import ExclusiveRoomSection from "./components/ExclusiveRoomSection";
-import AffiliatedTools from "./pages/AffiliatedTools";
-import AccountDetails from "./components/AccountDetails";
-import Orders from "./components/Orders";
-import Notifications from "./pages/Notifications";
-import Addresses from "./pages/Addresses";
-import Subscriptions from "./pages/Subscriptions";
-import Chats from "./pages/Chats";
-import QuestsDashboard from "./pages/QuestsDashboard";
-import DeployQuest from "./pages/DeployQuest";
+import Layout from "./pages/visitorPages/Layout";
+import Home from "./pages/visitorPages/Home";
+import ContactUs from "./pages/visitorPages/ContactUs";
+import LogInPage from "./pages/visitorPages/LogInPage";
+import ExclusiveRoomSection from "./components/visitorComponents/ExclusiveRoomSection";
+
+import QuestsLandingPage from "./pages/userPages/QuestsLandingPage";
+import DashbaordLayout from "./pages/userPages/DashboardLayout";
+import Community from "./pages/userPages/Community";
+import Profile from "./pages/userPages/Profile";
+import AffiliatedTools from "./pages/userPages/AffiliatedTools";
+import Notifications from "./pages/userPages/Notifications";
+import Addresses from "./pages/userPages/Addresses";
+import Subscriptions from "./pages/userPages/Subscriptions";
+import Chats from "./pages/userPages/Chats";
+import QuestsDashboard from "./pages/userPages/QuestsDashboard";
+import DeployQuests from "./pages/userPages/DeployQuests";
+import AccountDetails from "./components/userComponents/AccountDetails";
+import Orders from "./components/userComponents/Orders";
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
           <Route path="chats" element={<Chats />} />
           <Route path="affiliatetools" element={<AffiliatedTools />} />
           <Route path="quests-dashboard" element={<QuestsDashboard />} />
-          <Route path="deployquests" element={<DeployQuest />} />
+          <Route path="deploy-quests" element={<DeployQuests />} />
           <Route path="contact" element={<ContactUs />} />
           <Route path="profile" element={<Profile />}></Route>
           <Route path="profile/account-details" element={<AccountDetails />} />

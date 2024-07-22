@@ -1,5 +1,5 @@
 import React from "react";
-import { googleLogo, facebookLogo, appleLogo, cnkavLogo } from "../images";
+import { googleLogo, facebookLogo, appleLogo, cnkavLogo } from "../../images";
 
 export default function JoinUsModal({ isModal, setModal }) {
   return (

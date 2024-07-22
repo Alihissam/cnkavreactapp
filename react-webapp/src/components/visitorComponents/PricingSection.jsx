@@ -1,5 +1,5 @@
 import React from "react";
-import { greenCheck, price1Image, price2Image } from "../images";
+import { greenCheck, price1Image, price2Image } from "../../images";
 
 export default function PricingSection() {
   return (

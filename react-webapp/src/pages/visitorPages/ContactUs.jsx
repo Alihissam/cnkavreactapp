@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { cnkavLogo } from "../images";
+import { cnkavLogo } from "../../images";
 
 const ContactUs = () => {
   const [email, setEmail] = useState("");

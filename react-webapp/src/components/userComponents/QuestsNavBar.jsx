@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { dropDownIcon, cnkavLogo, userLogedIn } from "../images";
+import { dropDownIcon, cnkavLogo, userLogedIn } from "../../images";
 import { Link } from "react-router-dom";
-import PricingModal from "./PricingModal";
 import { useNavigate } from "react-router-dom";
+import PricingModal from "../visitorComponents/PricingModal";
 
 export default function QuestsNavBar() {
   const [isCardVisible, setCardVisible] = useState(false);
@@ -25,7 +25,7 @@ export default function QuestsNavBar() {
               <div className="relative group flex items-center">
                 <Link
                   className="hover:text-white text-gray-400"
-                  to="/dashboard/quests-dashboard"
+                  to="#"
                   id="influewave-link"
                 >
                   Quest
@@ -43,7 +43,7 @@ export default function QuestsNavBar() {
                     Quest Dashboard
                   </Link>
                   <Link
-                    to="/dashboard/deployquests"
+                    to="/dashboard/deploy-quests"
                     className="block px-4 py-2 hover:bg-black hover:text-white"
                   >
                     Deploy Quest

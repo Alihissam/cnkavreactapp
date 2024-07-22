@@ -1,5 +1,5 @@
 import React from "react";
-import { waveInflue, waveCnkav, waveER } from "../images";
+import { waveInflue, waveCnkav, waveER } from "../../images";
 
 const AffiliatedTools = () => {
   return (

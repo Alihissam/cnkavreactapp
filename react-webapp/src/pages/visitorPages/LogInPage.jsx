@@ -6,7 +6,7 @@ import {
   appleLogo,
   cnkavLogo,
   helloHand,
-} from "../images";
+} from "../../images";
 
 export default function LogInPage() {
   const navigate = useNavigate();

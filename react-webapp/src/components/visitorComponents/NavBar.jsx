@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { cnkavLogo, dropDownIcon, arrowIcon } from "../images";
+import { cnkavLogo, dropDownIcon, arrowIcon } from "../../images";
 import JoinUsModal from "./JoinUsModal";
 import PricingModal from "./PricingModal";
 

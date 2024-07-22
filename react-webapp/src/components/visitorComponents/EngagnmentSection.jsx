@@ -1,5 +1,5 @@
 import React from "react";
-import { galleryImage, arrowIcon } from "../images";
+import { galleryImage, arrowIcon } from "../../images";
 export default function EngagnmentSection() {
   return (
     <div className="container ">

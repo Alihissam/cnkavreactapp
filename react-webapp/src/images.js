@@ -44,7 +44,10 @@ import FiverStars4 from "./assets/images/fiver/4.png";
 import FiverStars5 from "./assets/images/fiver/5.png";
 import FiverStars6 from "./assets/images/fiver/6.png";
 
+import cameraIcon from "./assets/icons/camera.png";
+
 export {
+  cameraIcon,
   cnkavLogo,
   FiverStars1,
   FiverStars2,

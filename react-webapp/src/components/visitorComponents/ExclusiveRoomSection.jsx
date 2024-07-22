@@ -1,5 +1,5 @@
 import React from "react";
-import { arrowIcon } from "../images";
+import { arrowIcon } from "../../images";
 
 export default function ExclusiveRoomSection() {
   return (

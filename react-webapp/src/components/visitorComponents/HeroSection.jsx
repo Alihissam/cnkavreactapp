@@ -12,8 +12,8 @@ import {
   starsGroup,
   modalMan,
   labImage,
-} from "../images";
-import { AnimatedTooltip } from "../components/ui/animated-tooltip";
+} from "../../images";
+import { AnimatedTooltip } from "../ui/animated-tooltip";
 
 const people = [
   {
