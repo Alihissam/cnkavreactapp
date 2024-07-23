@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   nextIcons,
   arrowIcon,
@@ -12,58 +12,69 @@ import {
   starsGroup,
   modalMan,
   labImage,
-  herobg
-} from "../../images";
-import { AnimatedTooltip } from "../ui/animated-tooltip";
-import { Link } from "react-router-dom";
+  herobg,
+} from '../../images';
+import { AnimatedTooltip } from '../ui/animated-tooltip';
+import { Link } from 'react-router-dom';
 
 const people = [
   {
     id: 1,
-    name: "John Doe",
-    designation: "Software Engineer",
+    name: 'John Doe',
+    designation: 'Software Engineer',
     image: FiverStars1,
   },
   {
     id: 2,
-    name: "Robert Johnson",
-    designation: "Product Manager",
+    name: 'Robert Johnson',
+    designation: 'Product Manager',
     image: FiverStars2,
   },
   {
     id: 3,
-    name: "Jane Smith",
-    designation: "Data Scientist",
+    name: 'Jane Smith',
+    designation: 'Data Scientist',
     image: FiverStars3,
   },
   {
     id: 4,
-    name: "Emily Davis",
-    designation: "UX Designer",
+    name: 'Emily Davis',
+    designation: 'UX Designer',
     image: FiverStars4,
   },
   {
     id: 5,
-    name: "Tyler Durden",
-    designation: "Soap Developer",
+    name: 'Tyler Durden',
+    designation: 'Soap Developer',
     image: FiverStars5,
   },
   {
     id: 6,
-    name: "Dora",
-    designation: "The Explorer",
+    name: 'Dora',
+    designation: 'The Explorer',
     image: FiverStars6,
   },
 ];
 
 export default function HeroSection() {
   return (
-    <section 
-    // style={{ backgroundImage: `url(${herobg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-
-    className="px-[1.5rem] md:pt-[20rem] pt-36  flex flex-col-reverse md:flex-row  relative">
-     {/*  <div 
-      className="  inset-0 grid grid-cols-10 mt-32 z-0">
+    <section className=" md:pt-[20rem] pt-36  flex flex-col-reverse md:flex-row  relative">
+      <div
+        style={{
+          backgroundImage: `url(${herobg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          height: '80%',
+          width: '100%',
+          top: 150,
+          bottom: 0,
+          opacity:0.9
+        
+        }}
+        className="absolute bg-gray-950"
+      ></div>
+      {/* <div className="bg-gray-800 opacity-40"> */}
+      {/* <div className="bg-gray-800 opacity-40"></div>
         <div className="bg-gray-800 opacity-40"></div>
         <div className="bg-gray-800 opacity-40"></div>
         <div className="bg-gray-800 opacity-40"></div>
@@ -71,17 +82,17 @@ export default function HeroSection() {
         <div className="bg-gray-800 opacity-40"></div>
         <div className="bg-gray-800 opacity-40"></div>
         <div className="bg-gray-800 opacity-40"></div>
-        <div className="bg-gray-800 opacity-40"></div>
-        <div className="bg-gray-800 opacity-40"></div>
-        <div className="bg-gray-800 opacity-40"></div> 
-      </div> */}
-      <div className="py-20 px-5 md:w-[60%] z-20 ">
+        <div className="bg-gray-800 opacity-40"></div>  */}
+      <div className="py-20 px-[2rem] md:w-[60%] z-20 ">
         <h1 className="text-white text-6xl md:text-7xl font-extrabold mb-4">
           Different Social
         </h1>
         <h2 className="text-2xl mb-6">
           Quest, Connect & Earn:
-          <span className="font-semibold text-gray-400"> An Exclusive Club</span>
+          <span className="font-semibold text-gray-400">
+            {' '}
+            An Exclusive Club
+          </span>
         </h2>
         <p className="text-xl mb-6 leading-relaxed">
           Welcome to a place where you don't just connect, you form alliances -
@@ -126,19 +137,11 @@ export default function HeroSection() {
           </Link>
         </div>
       </div>
-      <div className="z-20  mr-8">
+      <div className="z-20 px-[2rem] mr-8">
         <div className="grid gap-2  grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
-          <img
-            src={modalMan}
-            alt="Image 1"
-            className="w-full h-96"
-          /> 
+          <img src={modalMan} alt="Image 1" className="w-full h-96" />
           <div className="z-10 space-y-2">
-            <img
-              src={monyImage}
-              alt="Image 2"
-              className="w-full  rounded-lg"
-            />
+            <img src={monyImage} alt="Image 2" className="w-full  rounded-lg" />
             <h3 className="md:text-5xl text-2xl font-extrabold text-gray-400">
               Amazing
             </h3>
