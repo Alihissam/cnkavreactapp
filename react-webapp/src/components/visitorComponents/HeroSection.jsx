@@ -122,7 +122,6 @@ export default function HeroSection() {
             <span>Secure my Spot</span>
             <FaArrowUp
               className=" h-6 ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1   hover:scale-110 group-hover:rotate-90 rotate-45"
-            
             />
             {/* <img
               src={arrowIcon}
@@ -132,11 +131,11 @@ export default function HeroSection() {
           </Link>
         </div>
       </div>
-      <div className="z-20 px-[2rem] mr-8">
+      <div className="z-20 px-4 md:px-[2rem] mr-8">
         <div className="grid gap-2  grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
-          <img src={modalMan} alt="Image 1" className="w-full h-80 md:h-96" />
+          <img src={modalMan} alt="Image 1" className="w-full h-64 md:h-96" />
           <div className="z-10 space-y-2 ">
-            <img src={monyImage} alt="Image 2" className="w-full md:ml-5 h-60 md:h-52  rounded-lg" />
+            <img src={monyImage} alt="Image 2" className="w-full md:ml-5 h-40 md:h-52  rounded-lg" />
             <h3 className="md:text-5xl md:ml-5  text-3xl font-extrabold text-gray-400">
               Amazing
             </h3>

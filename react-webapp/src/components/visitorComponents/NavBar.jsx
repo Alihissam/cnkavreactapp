@@ -90,7 +90,7 @@ export default function NavBar() {
               <img src={cnkavLogo} alt="Logo" className="h-24 w-24" />
             </Link>
 
-            <nav className="hidden text-lg md:text-sm md:flex space-x-12 text-[17px] ml-16 items-baseline">
+            <nav className="hidden text-lg md:text-md md:flex space-x-12 text-[17px] ml-16 items-baseline">
               <Link className="text-white font-bold" to="/">
                 Home
               </Link>

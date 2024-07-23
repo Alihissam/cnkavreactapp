@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { galleryImage, arrowIcon } from "../../images";
+import { FaArrowUp } from "react-icons/fa6";
 export default function EngagnmentSection() {
   return (
     <div className="px-[1.5rem]">
@@ -36,14 +37,12 @@ export default function EngagnmentSection() {
           <div className="mt-3">
             <Link
               to="subscriptions"
-               className="w-64  md:flex items-center border-2 border-red-500 px-8 py-3 rounded-md text-white transition-transform duration-300 ease-in-out transform hover:scale-105"
+               className="w-56 group  flex items-center border-2 border-red-500 px-6 py-3 rounded-md text-white transition-transform duration-300 ease-in-out transform hover:scale-105"
             >
-              <span className="font-bold">   I am Ready to Join</span>
-              <img
-                src={arrowIcon}
-                className="bg-white rounded-full h-6 ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1"
-                alt=""
-              />
+              <span className="font-bold">I am Ready to Join</span>
+              <FaArrowUp
+              className="h-6 ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1   hover:scale-110 group-hover:rotate-90 rotate-45"
+            />
             </Link>
           </div>
         </div>
