@@ -12,6 +12,7 @@ import {
   starsGroup,
   modalMan,
   labImage,
+  herobg
 } from "../../images";
 import { AnimatedTooltip } from "../ui/animated-tooltip";
 import { Link } from "react-router-dom";
@@ -57,8 +58,12 @@ const people = [
 
 export default function HeroSection() {
   return (
-    <section className="md:pt-64 pt-36 flex flex-col-reverse md:flex-row px-2 relative">
-      <div className="absolute inset-0 grid grid-cols-10 gap-6 mt-32 z-0">
+    <section 
+    className=" md:pt-64 pt-36 flex flex-col-reverse md:flex-row px-2 relative">
+      <div 
+    style={{ backgroundImage: `url(${herobg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+      className="absolute inset-0 grid grid-cols-10 gap-6 mt-32 z-0">
+        {/* <div className="bg-gray-800 opacity-40"></div>
         <div className="bg-gray-800 opacity-40"></div>
         <div className="bg-gray-800 opacity-40"></div>
         <div className="bg-gray-800 opacity-40"></div>
@@ -67,9 +72,8 @@ export default function HeroSection() {
         <div className="bg-gray-800 opacity-40"></div>
         <div className="bg-gray-800 opacity-40"></div>
         <div className="bg-gray-800 opacity-40"></div>
-        <div className="bg-gray-800 opacity-40"></div>
-        <div className="bg-gray-800 opacity-40"></div>
-      </div>
+        <div className="bg-gray-800 opacity-40"></div> */}
+      </div> 
       <div className="container mx-auto px-1 py-20 md:w-1/2 z-20">
         <h1 className="text-white text-5xl md:text-7xl font-bold mb-4">
           Different Social

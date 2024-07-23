@@ -2,15 +2,15 @@ import arrowIcon from "./assets/icons/arrow.png";
 import appleLogo from "./assets/icons/apple.png";
 import checkImage from "./assets/icons/check.png";
 import cnkavLogo from "./assets/icons/cnkav-logo.png";
-import crowdImage from "./assets/images/crowd.jpg";
+import crowdImage from "./assets/images/crowd.png";
 import computerLab from "./assets/images/computer-lab.png";
-import drinkMan from "./assets/images/drink.jpg";
+import drinkMan from "./assets/images/drink.png";
 import dropDownIcon from "./assets/icons/drop.png";
 import starsGroup from "./assets/icons/five-stars.png";
 import facebookLogo from "./assets/icons/facebook.png";
 
 import galleryImage from "./assets/images/gallery.png";
-import gentalMan from "./assets/images/gentalman.jpg";
+import gentalMan from "./assets/images/gentalman.png";
 import greenCheck from "./assets/icons/green-check.png";
 import googleLogo from "./assets/icons/google.png";
 import helloHand from "./assets/icons/hello-hand.png";
@@ -26,7 +26,7 @@ import questsBox2 from "./assets/images/quests-box-2.png";
 import price1Image from "./assets/images/price/rolls.png";
 import price2Image from "./assets/images/price/price2.png";
 
-import sideMan from "./assets/images/sideman.jpg";
+import sideMan from "./assets/images/sideman.png";
 import tabletsImage from "./assets/icons/tablets.png";
 import twitterImage from "./assets/icons/twitter.png";
 import twitterPost from "./assets/images/twitter-post.png";
@@ -46,8 +46,10 @@ import FiverStars5 from "./assets/images/fiver/5.png";
 import FiverStars6 from "./assets/images/fiver/6.png";
 
 import cameraIcon from "./assets/icons/camera.png";
+import herobg from "./assets/herobg.png";
 
 export {
+  herobg,
   cameraIcon,
   cnkavLogo,
   FiverStars1,
