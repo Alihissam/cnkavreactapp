@@ -33,9 +33,9 @@ import twitterPost from "./assets/images/twitter-post.png";
 import userLogedIn from "./assets/images/user.gif";
 import videoChat from "./assets/images/videochat.png";
 import videoImage from "./assets/images/video.png";
-import waveInflue from "./assets/images/wave-influe.png";
-import waveCnkav from "./assets/images/wave-cnkav.png";
-import waveER from "./assets/images/wave-er.png";
+import waveInflue from "./assets/images/price/sub2.png";
+import waveCnkav from "./assets/images/price/sub1.png";
+import waveER from "./assets/images/price/sub3.png";
 import youtubeImage from "./assets/icons/youtube.png";
 
 import FiverStars1 from "./assets/images/fiver/1.png";

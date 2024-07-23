@@ -68,32 +68,32 @@ const AffiliatedTools = () => {
           </div>
         </form>
 
-        <div className="w-3/5 py-5  p-3 mb-3">
-          <img src={waveInflue} alt="" className="w-full" />
+        <div className="w-full md:w-[30%] p-5 mb-3">
+          <img src={waveCnkav} alt="" className="" />
 
-          <div>
+          <div className="p-2">
             <p className="text-xl">Cnkav Subscription</p>
-            <p>$99.99/ month</p>
+            <p>€199.99/ month</p>
 
           </div>
         </div>
 
-        <div className="w-3/5 py-5  p-3 mb-3">
+        <div className="w-full md:w-[30%] p-5 mb-3">
           <img src={waveER} alt="" className="w-full" />
 
-          <div>
+          <div className="p-2">
             <p className="text-xl">Exclusive Room Subscription</p>
-            <p>$99.99/ month</p>
+            <p>€49.99/ month</p>
 
           </div>
         </div>
 
-        <div className="w-3/5 py-5  p-3 mb-3">
-          <img src={waveCnkav} alt="" className="w-full" />
+        <div className="w-full md:w-[30%] p-5 mb-3">
+          <img src={waveInflue} alt="" className="w-full" />
 
-          <div>
+          <div className="p-2">
             <p className="text-xl">Influwave Subscription</p>
-            <p>$2.99/ month</p>
+            <p>€499.99/ month</p>
 
           </div>
         </div>
