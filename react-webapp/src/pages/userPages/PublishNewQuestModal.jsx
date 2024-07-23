@@ -9,11 +9,11 @@ const PublishNewQuestModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed  inset-0 overflow-auto bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div className="fixed h-[100vh] mt-11 inset-0 overflow-auto bg-black bg-opacity-50 flex items-center justify-center PublishNewQuestmodal">
       <div className="bg-black text-white p-8 rounded-lg shadow-lg mt-60 flex flex-col max-w-md relative">
         <button
           onClick={onClose}
-          className="absolute top-2 right-2 text-white mt-40 text-2xl hover:text-gray-400"
+          className="absolute top-12 right-2 text-white mt-40 text-2xl hover:text-gray-400"
         >
           &times;
         </button>

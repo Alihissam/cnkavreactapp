@@ -37,26 +37,27 @@ const DeployQuests = () => {
           <div className="flex flex-row justify-center mt-4">
             <input
               type="text"
-              value="Quest Plugin Title"
+              placeholder="Quest Plugin Title"
               className="w-full rounded-xl bg-gray-700 text-white ml-2  py-1 "
             />
-            <input
-              type="text"
-              value="Upload"
-              className="w-1/5 rounded-xl bg-gray-700 text-white mr-2 py-1"
-            />
-            <input
-              type="text"
-              value="Edit"
-              className="w-1/5 rounded-xl bg-gray-700 text-white mr-2 py-1"
-            />
-            <input
-              type="text"
-              value="Delete"
-              className="w-1/5 rounded-xl bg-gray-700 text-white mr-2 py-1"
-            />
+            <button className="w-1/5 rounded-xl bg-gray-700 text-white mr-2 py-1">
+              Upload
+            </button>
+            <button className="w-1/5 rounded-xl bg-gray-700 text-white mr-2 py-1">
+              Edit
+            </button>
+            <button className="w-1/5 rounded-xl bg-gray-700 text-white mr-2 py-1">
+              Delete
+            </button>
           </div>
-          <div className="bg-gray-400 px-4 rounded-2xl py-4 mx-24 h-[200px] my-4">
+          <div 
+            className="bg-gray-400 px-4 rounded-2xl py-4 mx-24 h-[200px] my-4"
+            onClick={() => {
+              const fileInput = document.createElement('input');
+              fileInput.type = 'file';
+              fileInput.click();
+            }}
+          >
             <div className="flex justify-center pt-12">
               <img src={cameraIcon} alt="" className="h-16" />
             </div>
@@ -66,8 +67,8 @@ const DeployQuests = () => {
             <div className="left-list w-3/4">
               <input
                 type="text"
-                value="Ctegory"
-                className="bg-gray-400 mx-2 mt-3 rounded-xl w-[430px]"
+                placeholder="Category"
+                className="bg-gray-400 mx-2 mt-3 rounded-xl w-[430px] placeholder-white"
               />
               <div>
                 <ul className="bg-gray-200 py-2 mx-2 rounded-xl h-[250px] p-2 mt-2">

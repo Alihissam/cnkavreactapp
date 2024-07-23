@@ -4,7 +4,7 @@ export default function ImagesSection() {
   return (
     <div className='container py-6   md:px-4 '>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
-     <div className="shadow-lg rounded-2xl  relative">
+     <div className="shadow-lg  border border-gray-400 rounded-2xl  relative">
         <div className="absolute rounded-2xl bottom-0 left-0 bg-black bg-opacity-75 p-2 z-10">
           <h1 className="text-md font-bold ml-3">Embrace the Experience</h1>
           <p className=" font-sans text-[13px]">
@@ -20,9 +20,9 @@ export default function ImagesSection() {
           />
       </div>
       <div className="  ">
-        <div className="shadow-lg h-48  md:w-86 lg:w-96    rounded-2xl relative mb-4">
+        <div className="shadow-lg  h-48  border border-gray-400 md:w-86 lg:w-96    rounded-2xl relative mb-4">
 
-           <div className="absolute rounded-2xl bottom-0 left-0 bg-black bg-opacity-75 p-2 z-10">
+           <div className="absolute rounded-2xl  bottom-0 left-0 bg-black bg-opacity-75 p-2 z-10">
             <p className="p-2 font-sans text-[13px]">
               Our platform promises state-of-the-art security and an
               easy-to-navigate design. You can converse freely and fearlessly,
@@ -30,11 +30,11 @@ export default function ImagesSection() {
             </p>
           </div> 
 
-          <img src={sideMan} className="rounded-lg h-48  w-96 " />
+          <img src={sideMan} className="rounded-lg h-48  w-96 p-1" />
         </div>
-        <div className="shadow-lg rounded-2xl h-48  md:w-86 lg:w-96  relative">
+        <div className="shadow-lg  border border-gray-400  rounded-2xl h-48  md:w-86 lg:w-96  relative">
 
-          <div className="absolute rounded-2xl bottom-0 left-0 bg-black bg-opacity-75 p-2 z-10">
+          <div className="absolute rounded-2xl bottom-0 left-0 bg-black bg-opacity-50 p-2 z-10">
             <p className="p-2 font-sans text-[13px]">
               We understand how important it is to stay connected and grow. Our
               platform allows you to meet with individuals from various
@@ -44,11 +44,11 @@ export default function ImagesSection() {
           </div> 
          <img
             src={drinkMan}
-            className="object-cover filter grayscale  h-48 w-96 rounded-2xl"
+            className="object-cover filter grayscale  h-48 w-96 rounded-2xl p-1"
           /> 
         </div>
       </div>
-      <div className="shadow-lg    rounded-2xl relative">
+      <div className="shadow-lg   border border-gray-400  rounded-2xl relative">
 
          <div className="absolute rounded-2xl bottom-0 left-0 bg-black bg-opacity-75 p-2 z-10">
           <h1 className="text-lg font-bold ml-2">

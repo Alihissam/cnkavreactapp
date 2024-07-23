@@ -38,6 +38,8 @@ import OrderPage from "./pages/userProfileDashboard/OrderPage";
 import NotificationsPage from "./pages/userProfileDashboard/NotificationsPage";
 import AddressPage from "./pages/userProfileDashboard/AddressPage";
 import SubscriptionsPage from "./pages/userProfileDashboard/SubscriptionsPage";
+import ContactUs from "./pages/userProfileDashboard/ContactUs";
+
 import AffiliateProductRequestPage from "./pages/visitorPages/AffiliateProductRequestPage ";
 
 function ScrollToTop() {
@@ -98,6 +100,8 @@ function App() {
           <Route path="wallet" element={<Wallet />} />
           <Route path="events" element={<MyEventsPurchasedEvents />} />
           <Route path="payment-method" element={<PaymentMethod />} />
+          <Route path="contact" element={<ContactUs />} />
+
         </Route>
         <Route path="/logout" element={<Navigate to="/" replace />} />
       </Routes>
