@@ -27,7 +27,7 @@ import Chats from "./pages/userPages/Chats";
 import QuestsDashboard from "./pages/userPages/QuestsDashboard";
 import DeployQuests from "./pages/userPages/DeployQuests";
 import AboutUs from "./pages/userProfileDashboard/AboutUs";
-import TermsofServices from "./pages/userProfileDashboard/TermsofServices";
+import TermsofServices from "./pages/userProfileDashboard/TermsOfServices";
 import PrivacyPolicy from "./pages/userProfileDashboard/PrivacyPolicy";
 import DownloadsPlugins from "./pages/userProfileDashboard/DownloadsAndPlugins";
 import Wallet from "./pages/userProfileDashboard/Wallet";

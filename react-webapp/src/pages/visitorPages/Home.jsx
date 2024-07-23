@@ -12,13 +12,18 @@ export default function Home() {
   return (
     <div>
       <HeroSection />
-      <InfluewaveSection />
+      <div id="influewave-section">
+        <InfluewaveSection />
+      </div>
       <QuestSection />
       <VideoChat />
       <FlexibleSection />
       <PricingSection />
       <EngagnmentSection />
+      <div id="exclusive-section">
       <ExclusiveRoomSection />
+
+      </div>
       <ImagesSection />
     </div>
   );

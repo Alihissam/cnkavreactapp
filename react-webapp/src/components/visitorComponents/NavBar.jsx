@@ -20,9 +20,17 @@ export default function NavBar() {
               </Link>
               <div className="relative group flex items-center dropdown">
                 <Link
-                  className="hover:text-white text-gray-400"
-                  to="#"
-                  id="influewave-link"
+                  className="hover:text-white text-gray-400 cursor-pointer"
+                  to="/"
+                  onClick={(e) => {
+                    if (window.location.pathname !== "/") {
+                      e.preventDefault();
+                      window.location.href = "/";
+                    }
+                    setTimeout(() => {
+                      document.getElementById("influewave-section").scrollIntoView({ behavior: "smooth" });
+                    }, 100);
+                  }}
                 >
                   Influewave
                 </Link>
@@ -32,22 +40,28 @@ export default function NavBar() {
                   alt="Dropdown Icon"
                 />
                 <div className="absolute hidden group-hover:block w-[220px] bg-white text-black mt-[100px] leading-2  shadow-lg">
-                  <Link
+                  {/* <Link
                     to="/register"
                     className="block px-4 py-2 hover:bg-black hover:text-white"
                   >
                     Register
-                  </Link>
+                  </Link> */}
 
-                  <Link
+                  {/* <Link
                     to="/affilink"
                     className="block px-4 py-2 hover:bg-black hover:text-white"
                   >
                     Affilink Listing Request
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
-              <Link className="hover:text-white text-gray-400" to="exclusive">
+              <Link
+                onClick={() => {
+                  document.getElementById("exclusive-section").scrollIntoView({ behavior: "smooth" });
+                }}
+                className="hover:text-white text-gray-400"
+                to="/"
+              >
                 Exclusive Room
               </Link>
 
