@@ -59,11 +59,11 @@ const people = [
 export default function HeroSection() {
   return (
     <section 
-    className=" md:pt-64 pt-36 flex flex-col-reverse md:flex-row px-2 relative">
-      <div 
-    style={{ backgroundImage: `url(${herobg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-      className="absolute inset-0 grid grid-cols-10 gap-6 mt-32 z-0">
-        {/* <div className="bg-gray-800 opacity-40"></div>
+    // style={{ backgroundImage: `url(${herobg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+
+    className="px-[1.5rem] md:pt-[20rem] pt-36  flex flex-col-reverse md:flex-row  relative">
+     {/*  <div 
+      className="  inset-0 grid grid-cols-10 mt-32 z-0">
         <div className="bg-gray-800 opacity-40"></div>
         <div className="bg-gray-800 opacity-40"></div>
         <div className="bg-gray-800 opacity-40"></div>
@@ -72,17 +72,18 @@ export default function HeroSection() {
         <div className="bg-gray-800 opacity-40"></div>
         <div className="bg-gray-800 opacity-40"></div>
         <div className="bg-gray-800 opacity-40"></div>
-        <div className="bg-gray-800 opacity-40"></div> */}
-      </div> 
-      <div className="container mx-auto px-1 py-20 md:w-1/2 z-20">
-        <h1 className="text-white text-5xl md:text-7xl font-bold mb-4">
+        <div className="bg-gray-800 opacity-40"></div>
+        <div className="bg-gray-800 opacity-40"></div> 
+      </div> */}
+      <div className="py-20 px-5 md:w-[60%] z-20 ">
+        <h1 className="text-white text-6xl md:text-7xl font-extrabold mb-4">
           Different Social
         </h1>
-        <h2 className="text-xl mb-6">
+        <h2 className="text-2xl mb-6">
           Quest, Connect & Earn:
-          <span className="font-semibold text-gray-400">An Exclusive Club</span>
+          <span className="font-semibold text-gray-400"> An Exclusive Club</span>
         </h2>
-        <p className="text-lg mb-6">
+        <p className="text-xl mb-6 leading-relaxed">
           Welcome to a place where you don't just connect, you form alliances -
           meld creativity and skills, and produce something outstanding. From
           hobbyists seeking advice to professionals exchanging expertise; you're
@@ -125,31 +126,30 @@ export default function HeroSection() {
           </Link>
         </div>
       </div>
-      <div className="z-20 pr-20">
-        <div className="mt-12 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-2">
+      <div className="z-20  mr-8">
+        <div className="grid gap-2  grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
           <img
             src={modalMan}
             alt="Image 1"
-            className="w-[218px] h-[270px] object-cover rounded-lg mb-4"
-          />
-
-          <div className="z-10">
+            className="w-full h-96"
+          /> 
+          <div className="z-10 space-y-2">
             <img
               src={monyImage}
               alt="Image 2"
-              className="w-[218px] h-[214px] object-cover rounded-lg mb-4"
+              className="w-full  rounded-lg"
             />
-            <h3 className="md:text-4xl text-2xl font-bold text-gray-400">
+            <h3 className="md:text-5xl text-2xl font-extrabold text-gray-400">
               Amazing
             </h3>
-            <p className="  text-gray-400">Network of Exclusive Club</p>
+            <p className="text-gray-200 text-lg">Network of Exclusive Club</p>
           </div>
         </div>
         <div className="bg-black p-4 rounded-lg mt-2">
           <img
             src={labImage}
             alt="Image 3"
-            className="w-full h-40 object-cover rounded-lg mb-4"
+            className="w-full object-cover rounded-lg mb-4"
           />
         </div>
       </div>

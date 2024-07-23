@@ -10,17 +10,17 @@ export default function NavBar() {
 
   return (
     <>
-      <div className="fixed w-full  shadow-md px-10 py-8 navbar">
+      <div className="fixed w-full px-[1.5rem]  shadow-md py-8 navbar">
         <div className="flex items-center justify-between">
           <div className="flex gap-12 items-center">
-            <img src={cnkavLogo} alt="Logo" className="h-16 w-16" />
-            <nav className="hidden md:flex space-x-12 text-[17px] ml-20 items-baseline">
+            <img src={cnkavLogo} alt="Logo" className="h-24 w-24" />
+            <nav className="hidden text-lg  md:flex space-x-12 text-[17px] ml-16 items-baseline">
               <Link className="text-white font-bold" to="/">
                 Home
               </Link>
               <div className="relative group flex items-center dropdown">
                 <Link
-                  className="hover:text-white text-gray-400 cursor-pointer"
+                  className="hover:text-white text-[##7A7A7A] cursor-pointer"
                   to="/"
                   onClick={(e) => {
                     if (window.location.pathname !== "/") {
@@ -54,14 +54,14 @@ export default function NavBar() {
               </Link>
 
               <Link
-                className="hover:text-white text-gray-400"
+                className="hover:text-white text-[##7A7A7A]"
                 to="#"
                 onClick={() => setCardVisible(true)}
               >
                 Pricing
               </Link>
               <Link
-                className="hover:text-white text-gray-400"
+                className="hover:text-white text-[##7A7A7A]"
                 to="contact-step1"
               >
                 Contact Us
@@ -70,9 +70,9 @@ export default function NavBar() {
           </div>
           <button
             onClick={() => setModal(!isModal)}
-            className="hidden cursor-pointer md:flex items-center border border-white px-6 py-2 rounded-md text-white transition-transform duration-300 ease-in-out transform hover:scale-105"
+            className="hidden font-bold cursor-pointer md:flex items-center border border-white px-7 py-3 rounded-md text-white transition-transform duration-300 ease-in-out transform hover:scale-105"
           >
-            <span>Join Us</span>
+            <span className="text-white ">Join Us</span>
             <img
               src={arrowIcon}
               className="bg-white rounded-full h-6 ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1   hover:scale-110 hover:rotate-45"
