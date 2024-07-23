@@ -82,7 +82,7 @@ export default function Footer() {
 
       <div className="flex justify-between gap-3 mt-12">
         <div className="flex justify-between gap-3 text-white">
-          © 2024 Welcome. All right reserved.{" "}
+          © 2024 All right reserved.{" "}
           <Link
             to="/privacy-policy"
             className="hover:text-gray-400 hover:underline"
