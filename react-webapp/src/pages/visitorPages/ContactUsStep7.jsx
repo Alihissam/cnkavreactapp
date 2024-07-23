@@ -30,7 +30,7 @@ const ContactUsStep7 = () => {
               type="text"
               id="location"
               className="w-full px-4 py-2 border text-black border-gray-300 rounded-lg"
-              placeholder="Enter your location"
+              placeholder="Enter Text"
             />
           </div>
           <div>
@@ -44,7 +44,8 @@ const ContactUsStep7 = () => {
               type="text"
               id="religion"
               className="w-full px-4 py-2 border text-black border-gray-300 rounded-lg"
-              placeholder="Enter your religion"
+              placeholder="Enter Text"
+
             />
           </div>
           <div className="pt-6">

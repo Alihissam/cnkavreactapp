@@ -65,7 +65,7 @@ function App() {
           <Route path="contact-step6" element={<ContactUsStep6 />} />
           <Route path="contact-step7" element={<ContactUsStep7 />} />
           <Route path="contact-step8" element={<ContactUsStep8 />} />
-          <Route path="affilink" element={<AffiliateProductRequestPage />} />
+          <Route path="affiliate-marketting-tool" element={<AffiliateProductRequestPage />} />
           <Route path="login" element={<LogInPage />} />
           <Route path="register" element={<LogInPage />} />
           <Route path="aboutus" element={<AboutUs />} />

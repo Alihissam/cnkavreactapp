@@ -29,7 +29,7 @@ const ContactUsStep6 = () => {
               type="text"
               id="location"
               className="w-full px-4 py-2 border text-black border-gray-300 rounded-lg"
-              placeholder="Enter your location"
+              placeholder="Enter Text"
             />
           </div>
           <div>
@@ -37,14 +37,13 @@ const ContactUsStep6 = () => {
               htmlFor="religion"
               className="block text-sm font-medium mb-2"
             >
-              Last time you encountered the issue regarding mentioned products
-              in the survey?
+             Last time you encountered the issue regarding mentioned products in the survey?
             </label>
             <input
               type="text"
               id="religion"
               className="w-full px-4 py-2 border text-black border-gray-300 rounded-lg"
-              placeholder="Enter your religion"
+              placeholder="Enter Text"
             />
           </div>
           <div className="pt-6">

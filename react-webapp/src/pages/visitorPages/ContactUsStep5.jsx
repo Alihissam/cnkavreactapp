@@ -18,34 +18,48 @@ const ContactUsStep5 = () => {
       </div>
       <div className="bg-black text-white p-8 rounded-lg shadow-lg w-full max-w-md">
         <form onSubmit={handleSubmit} className="space-y-4">
-          <div>
+        <div>
             <label
-              htmlFor="location"
+              htmlFor="investmentAmount"
               className="block text-sm font-medium mb-2"
             >
-              How much capital do you have to invest ?
+             How much capital do you have to invest ?
+
             </label>
-            <input
-              type="text"
-              id="location"
+            <select
+              id="investmentAmount"
               className="w-full px-4 py-2 border text-black border-gray-300 rounded-lg"
-              placeholder="Enter your location"
-            />
+            >
+              <option value="" disabled selected>
+                Select an amount
+              </option>
+              <option value="0-50">0-50</option>
+              <option value="50-250">50-250</option>
+              <option value="250-2k">250-2k</option>
+              <option value="2k-8k">2k-8k</option>
+              <option value="8k-15k">8k-15k</option>
+              <option value="15k-30k">15k-30k</option>
+              <option value="30k-100k">30k-100k</option>
+              <option value="100k-150k">100k-150k</option>
+              <option value="150k+">150k+</option>
+              <option value="other">Other</option>
+            </select>
           </div>
           <div>
             <label
-              htmlFor="religion"
+              htmlFor="location"
               className="block text-sm font-medium mb-2"
             >
               Any similar product you are using ?
             </label>
             <input
               type="text"
-              id="religion"
+              id="location"
               className="w-full px-4 py-2 border text-black border-gray-300 rounded-lg"
-              placeholder="Enter your religion"
+              placeholder="Enter text"
             />
           </div>
+         
           <div className="pt-6">
             <button
               type="submit"

@@ -1,14 +1,14 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-import { cnkavLogo } from "../../images";
+import { cnkavLogo } from '../../images';
 
 const ContactUsStep3 = () => {
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate("/contact-step4");
+    navigate('/contact-step4');
   };
 
   return (
@@ -27,7 +27,6 @@ const ContactUsStep3 = () => {
             </label>
             <select
               id="employmentStatus"
-             
               className="w-full px-4 py-2 border text-black border-gray-300 rounded-lg"
             >
               <option value="" disabled>
@@ -46,21 +45,31 @@ const ContactUsStep3 = () => {
             >
               Have you ever tried or want to try any product?
             </label>
-            <input
-              type="text"
+            <select
               id="productInterest"
-         
               className="w-full px-4 py-2 border text-black border-gray-300 rounded-lg"
-              placeholder="Enter product interest"
-            />
+            >
+              <option value="" disabled>
+                Select an option
+              </option>
+              <option value="tried">
+                Select Influewave (Affiliate Marketing)
+              </option>
+              <option value="want-to-try">Influewave ( communities and Events)</option>
+              <option value="want-to-try">Influewave (Quest Platform to post tasks online)</option>
+              <option value="want-to-try">(Seller Platform that means accepting task online)</option>
+              <option value="want-to-try">Exclusive Room (Exclusive Business Network)</option>
+              <option value="want-to-try">Purchasing Real Estate</option>
+
+            </select>
           </div>
           <div className="pt-6">
             <button
               type="submit"
               className="rounded-3xl w-full bg-black text-white py-3 px-4 font-bold"
               style={{
-                border: "2px solid transparent",
-                borderImage: "linear-gradient(120deg, red, yellow)",
+                border: '2px solid transparent',
+                borderImage: 'linear-gradient(120deg, red, yellow)',
                 borderImageSlice: 1,
               }}
             >

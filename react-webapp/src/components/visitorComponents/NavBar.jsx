@@ -40,19 +40,7 @@ export default function NavBar() {
                   alt="Dropdown Icon"
                 />
                 <div className="absolute hidden group-hover:block w-[220px] bg-white text-black mt-[100px] leading-2  shadow-lg">
-                  {/* <Link
-                    to="/register"
-                    className="block px-4 py-2 hover:bg-black hover:text-white"
-                  >
-                    Register
-                  </Link> */}
-
-                  {/* <Link
-                    to="/affilink"
-                    className="block px-4 py-2 hover:bg-black hover:text-white"
-                  >
-                    Affilink Listing Request
-                  </Link> */}
+               
                 </div>
               </div>
               <Link

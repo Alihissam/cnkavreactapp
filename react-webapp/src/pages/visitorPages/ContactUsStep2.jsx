@@ -20,30 +20,40 @@ const ContactUsStep2 = () => {
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label htmlFor="gender" className="block text-sm font-medium mb-2">
-              Gender
+              What is your gender?
             </label>
-            <input
-              type="text"
+            <select
               id="gender"
-             
               className="w-full px-4 py-2 border text-black border-gray-300 rounded-lg"
-              placeholder="Enter Gender"
-            />
+            >
+              <option value="" disabled selected>
+                Select Gender
+              </option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="non-binary">Non-binary</option>
+              <option value="prefer-not-to-say">Prefer not to say</option>
+            </select>
           </div>
           <div>
             <label
-              htmlFor="maternalState"
+              htmlFor="maritalStatus"
               className="block text-sm font-medium mb-2"
             >
-              Maternal State
+              Marital Status
             </label>
-            <input
-              type="text"
-              id="maternalState"
-             
+            <select
+              id="maritalStatus"
               className="w-full px-4 py-2 border text-black border-gray-300 rounded-lg"
-              placeholder="Enter Maternal State"
-            />
+            >
+              <option value="" disabled selected>
+                Select Marital Status
+              </option>
+              <option value="single">Single</option>
+              <option value="married">Married</option>
+              <option value="divorced">Divorced</option>
+              <option value="widowed">Widowed</option>
+            </select>
           </div>
           <div className="pt-6">
             <button

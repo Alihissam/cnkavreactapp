@@ -25,12 +25,21 @@ const ContactUsStep4 = () => {
             >
               Where are you from?
             </label>
-            <input
-              type="text"
+            <select
               id="location"
               className="w-full px-4 py-2 border text-black border-gray-300 rounded-lg"
-              placeholder="Enter your location"
-            />
+            >
+              <option value="" disabled selected>
+                Select your location
+              </option>
+              <option value="north_america">North America</option>
+              <option value="south_america">South America</option>
+              <option value="europe">Europe</option>
+              <option value="asia">Asia</option>
+              <option value="africa">Africa</option>
+              <option value="australia">Australia</option>
+              <option value="antarctica">Antarctica</option>
+            </select>
           </div>
           <div>
             <label
@@ -39,12 +48,21 @@ const ContactUsStep4 = () => {
             >
               What is your religion?
             </label>
-            <input
-              type="text"
+            <select
               id="religion"
               className="w-full px-4 py-2 border text-black border-gray-300 rounded-lg"
-              placeholder="Enter your religion"
-            />
+            >
+              <option value="" disabled selected>
+                Select your religion
+              </option>
+              <option value="christianity">Christianity</option>
+              <option value="islam">Islam</option>
+              <option value="hinduism">Hinduism</option>
+              <option value="buddhism">Buddhism</option>
+              <option value="judaism">Judaism</option>
+              <option value="other">Other</option>
+              <option value="prefer-not-to-say">Prefer not to say</option>
+            </select>
           </div>
           <div className="pt-6">
             <button

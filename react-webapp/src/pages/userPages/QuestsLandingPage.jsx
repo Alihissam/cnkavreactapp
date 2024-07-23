@@ -1,9 +1,10 @@
-import React, { useState } from "react";
-import { questsBox1, questsBox2 } from "../../images";
-import QuestsCategory from "./questsManipulations/QuestsCategory";
-import QuestsStyles from "./questsManipulations/QuestsStyles";
-import PublishNewQuestModal from "./PublishNewQuestModal";
-import QuestsVerificationModal from "./QuestsVerificationModal";
+import React, { useState } from 'react';
+import { questsBox1, questsBox2 } from '../../images';
+import QuestsCategory from './questsManipulations/QuestsCategory';
+import QuestsStyles from './questsManipulations/QuestsStyles';
+import PublishNewQuestModal from './PublishNewQuestModal';
+import QuestsVerificationModal from './QuestsVerificationModal';
+import { FaEdit } from 'react-icons/fa';
 
 const QuestslandingPage = () => {
   const [isPublishModalOpen, setIsPublishModalOpen] = useState(false);
@@ -26,9 +27,9 @@ const QuestslandingPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-black">
+    <div className="flex flex-col  items-center justify-center min-h-screen py-2 bg-black">
       <div className="flex flex-col justify-center items-center mt-32">
-        <form className="space-y-4 py-5 w-2/3">
+        <form className="space-y-4 py-5 w-full mb-4">
           <QuestsCategory />
           <QuestsStyles />
           <div>
@@ -50,19 +51,78 @@ const QuestslandingPage = () => {
           </div>
         </form>
 
-        <p className="border p-3 my-10"> Click on Image to Edit Quest</p>
-        <button
-          onClick={handlePublishNewQuestClick}
-          className="flex justify-center"
-        >
-          <img
-            src={questsBox1}
-            alt="Quests Box"
-            className="w-3/4 py-5 transition-transform duration-300 ease-out transform hover:scale-105"
-          />
+        {/* <p className="border p-3 my-10"> Click on Image to Edit Quest</p> */}
+        <button className="flex justify-center">
+          <div className="w-[500px]  relative bg-red-200 ">
+            <div className="bg-red-400 absolute right-0 rounded-md p-1 mt-[-10px]">
+              <span className="font-bold">€ 0</span> Double Start, Single
+              Star,Rookies
+            </div>
+            <div className="flex justify-between items-center py-8 bg-gray-600 px-5">
+              <div className="flex items-center gap-2">
+                <img
+                  className="rounded-full w-12 h-12"
+                  src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                />
+                <p className="text-xl">Kikexi</p>
+              </div>
+              <p className="text-white text-2xl">Discussion about...</p>
+            </div>
+            <div className="bg-gray-800">
+              <p className="text-white text-1xl font-semibold py-10">
+                Philothory task
+              </p>
+            </div>
+
+            <div className="flex justify-center items-center py-4 bg-gray-600 px-8">
+              <div className="flex items-center gap-2">
+                <div
+                  onClick={handleVerificationClick}
+                  className="bg-blue-700 px-10 py-5"
+                >
+                  <FaEdit />
+                </div>
+              </div>
+            </div>
+          </div>
         </button>
-        <p className="border p-3 my-10"> Click on Image to Verify Quest</p>
-        <button
+
+        <button className="flex justify-center ">
+          <div className="w-[500px]  relative bg-red-200 mt-10">
+            <div className="bg-red-400 absolute right-0 rounded-md p-1 mt-[-10px]">
+              <span className="font-bold">€ 0</span> Double Start, Single
+              Star,Rookies
+            </div>
+            <div className="flex justify-between items-center py-8 bg-gray-600 px-5">
+              <div className="flex items-center gap-2">
+                <img
+                  className="rounded-full w-12 h-12"
+                  src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                />
+                <p className="text-xl">Kikexi</p>
+              </div>
+              <p className="text-white text-2xl">Discussion about...</p>
+            </div>
+            <div className="bg-gray-800">
+              <p className="text-white text-1xl font-semibold py-10">
+                Philothory task
+              </p>
+            </div>
+
+            <div className="flex justify-center items-center py-4 bg-gray-600 px-8">
+              <div className="flex items-center gap-2 ">
+                <div
+                  onClick={handlePublishNewQuestClick}
+                  className="bg-blue-700 px-8 py-8 rounded-full"
+                >
+                  <FaEdit />
+                </div>
+              </div>
+            </div>
+          </div>
+        </button>
+        {/* <p className="border p-3 my-10"> Click on Image to Verify Quest</p> */}
+        {/* <button
           onClick={handleVerificationClick}
           className="flex justify-center"
         >
@@ -71,7 +131,7 @@ const QuestslandingPage = () => {
             alt="Quests Box"
             className="w-[60%] y-5 transition-transform duration-300 ease-out transform hover:scale-105"
           />
-        </button>
+        </button> */}
 
         <button className="bg-white text-black py-3 w-4/6 mt-12 rounded-xl">
           Load More
@@ -85,10 +145,10 @@ const QuestslandingPage = () => {
         isOpen={isVerificationModalOpen}
         onClose={handleVerificationClose}
         questDetails={{
-          title: "Sample Quest Title",
-          description: "Sample quest description.",
-          category: "Digital Marketing",
-          style: "Remote",
+          title: 'Sample Quest Title',
+          description: 'Sample quest description.',
+          category: 'Digital Marketing',
+          style: 'Remote',
         }}
       />
     </div>
