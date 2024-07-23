@@ -31,8 +31,14 @@ export default function Footer() {
             <h1 className="text-xl mb-4 font-bold">Product</h1>
             <div className="text-white flex flex-col">
               <Link
-                to="subscriptions"
+                to="/"
                 className="hover:text-gray-400 hover:underline my-1"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setTimeout(() => {
+                    document.getElementById("subscriptions").scrollIntoView({ behavior: "smooth" });
+                  }, 100);
+                }}
               >
                 Features
               </Link>

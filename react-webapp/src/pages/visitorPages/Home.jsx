@@ -18,7 +18,10 @@ export default function Home() {
       <QuestSection />
       <VideoChat />
       <FlexibleSection />
+      <div id="subscriptions">
       <PricingSection />
+
+      </div>
       <EngagnmentSection />
       <div id="exclusive-section">
       <ExclusiveRoomSection />
