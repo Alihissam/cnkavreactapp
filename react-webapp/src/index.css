@@ -28,3 +28,7 @@
 
     z-index: 200;
 }
+
+.sidebar{
+    z-index: 1000;
+}

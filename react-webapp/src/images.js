@@ -47,8 +47,11 @@ import FiverStars6 from "./assets/images/fiver/6.png";
 
 import cameraIcon from "./assets/icons/camera.png";
 import herobg from "./assets/herobg.png";
+import humburger from "./assets/humburger.png";
+
 
 export {
+  humburger,
   herobg,
   cameraIcon,
   cnkavLogo,

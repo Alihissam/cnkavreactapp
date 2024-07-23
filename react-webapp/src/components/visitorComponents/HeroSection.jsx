@@ -16,6 +16,7 @@ import {
 } from '../../images';
 import { AnimatedTooltip } from '../ui/animated-tooltip';
 import { Link } from 'react-router-dom';
+import { FaArrowUp } from 'react-icons/fa6';
 
 const people = [
   {
@@ -73,16 +74,6 @@ export default function HeroSection() {
         }}
         className="absolute bg-gray-950"
       ></div>
-      {/* <div className="bg-gray-800 opacity-40"> */}
-      {/* <div className="bg-gray-800 opacity-40"></div>
-        <div className="bg-gray-800 opacity-40"></div>
-        <div className="bg-gray-800 opacity-40"></div>
-        <div className="bg-gray-800 opacity-40"></div>
-        <div className="bg-gray-800 opacity-40"></div>
-        <div className="bg-gray-800 opacity-40"></div>
-        <div className="bg-gray-800 opacity-40"></div>
-        <div className="bg-gray-800 opacity-40"></div>
-        <div className="bg-gray-800 opacity-40"></div>  */}
       <div className="py-20 px-[2rem] md:w-[60%] z-20 ">
         <h1 className="text-white text-6xl md:text-7xl font-extrabold mb-4">
           Different Social
@@ -126,26 +117,30 @@ export default function HeroSection() {
         <div className="mt-12">
           <Link
             to="subscriptions"
-            className="hidden md:flex items-center border border-white w-[35%] pl-8 py-2.5 rounded-md text-white transition-transform duration-300 ease-in-out transform hover:scale-105"
+            className="hidden group md:flex items-center border border-white w-[35%] pl-8 py-2.5 rounded-md text-white transition-transform duration-300 ease-in-out transform hover:scale-105"
           >
             <span>Secure my Spot</span>
-            <img
+            <FaArrowUp
+              className=" h-6 ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1   hover:scale-110 group-hover:rotate-90 rotate-45"
+            
+            />
+            {/* <img
               src={arrowIcon}
               className="bg-white rounded-full h-6 ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1 hover:scale-110 hover:rotate-45"
               alt=""
-            />
+            /> */}
           </Link>
         </div>
       </div>
       <div className="z-20 px-[2rem] mr-8">
         <div className="grid gap-2  grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
-          <img src={modalMan} alt="Image 1" className="w-full h-96" />
-          <div className="z-10 space-y-2">
-            <img src={monyImage} alt="Image 2" className="w-full  rounded-lg" />
-            <h3 className="md:text-5xl text-2xl font-extrabold text-gray-400">
+          <img src={modalMan} alt="Image 1" className="w-full h-80 md:h-96" />
+          <div className="z-10 space-y-2 ">
+            <img src={monyImage} alt="Image 2" className="w-full md:ml-5 h-60 md:h-52  rounded-lg" />
+            <h3 className="md:text-5xl md:ml-5  text-3xl font-extrabold text-gray-400">
               Amazing
             </h3>
-            <p className="text-gray-200 text-lg">Network of Exclusive Club</p>
+            <p className="text-gray-200 md:ml-5  text-lg">Network of Exclusive Club</p>
           </div>
         </div>
         <div className="bg-black p-4 rounded-lg mt-2">
