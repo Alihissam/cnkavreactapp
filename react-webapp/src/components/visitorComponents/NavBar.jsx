@@ -31,19 +31,14 @@ export default function NavBar() {
                   className="h-6 bg-white rounded-full ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1"
                   alt="Dropdown Icon"
                 />
-                <div className="absolute hidden group-hover:block w-[220px] bg-white text-black mt-[150px] leading-2  shadow-lg">
+                <div className="absolute hidden group-hover:block w-[220px] bg-white text-black mt-[100px] leading-2  shadow-lg">
                   <Link
                     to="/register"
                     className="block px-4 py-2 hover:bg-black hover:text-white"
                   >
                     Register
                   </Link>
-                  <Link
-                    to="/quests"
-                    className="block px-4 py-2 hover:bg-black hover:text-white"
-                  >
-                    Quest
-                  </Link>
+
                   <Link
                     to="/affilink"
                     className="block px-4 py-2 hover:bg-black hover:text-white"
@@ -63,7 +58,10 @@ export default function NavBar() {
               >
                 Pricing
               </Link>
-              <Link className="hover:text-white text-gray-400" to="contact">
+              <Link
+                className="hover:text-white text-gray-400"
+                to="contact-step1"
+              >
                 Contact Us
               </Link>
             </nav>
@@ -75,7 +73,7 @@ export default function NavBar() {
             <span>Join Us</span>
             <img
               src={arrowIcon}
-              className="bg-white rounded-full h-6 ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1"
+              className="bg-white rounded-full h-6 ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1   hover:scale-110 hover:rotate-45"
               alt=""
             />
           </button>
