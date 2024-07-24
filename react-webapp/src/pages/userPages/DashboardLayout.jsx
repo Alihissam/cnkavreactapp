@@ -8,7 +8,7 @@ export default function DashbaordLayout() {
     <div>
       <QuestsNavBar />
       <div className="container">
-      <Outlet />
+        <Outlet />
       </div>
       <Footer />
     </div>

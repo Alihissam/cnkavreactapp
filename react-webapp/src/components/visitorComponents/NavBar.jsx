@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { cnkavLogo, dropDownIcon, arrowIcon, humburger } from '../../images';
-import JoinUsModal from './JoinUsModal';
+import { cnkavLogo, dropDownIcon, arrowIcon, humburger } from "../../images";
+
 import LoginModal from './LoginModal';
 import ForgotModal from './ForgotModal';
-
-
-import PricingModal from './PricingModal';
 import { FaArrowUp } from 'react-icons/fa';
+import JoinUsModal from "./JoinUsModal";
+import PricingModal from "./PricingModal";
 
 export default function NavBar() {
   const [isModal, setModal] = useState(false);
@@ -53,7 +52,7 @@ export default function NavBar() {
   const Sidebar = (
     <div
       className={`fixed sidebar right-0 h-full w-64 bg-black text-white transform ${
-        isSidebarOpen ? ' top-0  -translate-x-0 ' : 'translate-x-full'
+        isSidebarOpen ? " top-0  -translate-x-0 " : "translate-x-full"
       } transition-transform duration-300 ease-in-out z-50 rounded-tl-xl`}
     >
       <div className="flex justify-between items-center p-4">
@@ -88,8 +87,8 @@ export default function NavBar() {
           className="hover:text-gray-400 bg-[#141414] rounded-lg p-2"
           onClick={() => {
             document
-              .getElementById('exclusive-section')
-              .scrollIntoView({ behavior: 'smooth' });
+              .getElementById("exclusive-section")
+              .scrollIntoView({ behavior: "smooth" });
             closeSidebar();
           }}
         >
@@ -100,8 +99,8 @@ export default function NavBar() {
           className="hover:text-gray-400 bg-[#141414] rounded-lg p-2"
           onClick={() => {
             document
-              .getElementById('exclusive-section')
-              .scrollIntoView({ behavior: 'smooth' });
+              .getElementById("exclusive-section")
+              .scrollIntoView({ behavior: "smooth" });
             closeSidebar();
           }}
         >
@@ -135,14 +134,14 @@ export default function NavBar() {
                   className="hover:text-white text-[##7A7A7A] cursor-pointer"
                   to="/"
                   onClick={(e) => {
-                    if (window.location.pathname !== '/') {
+                    if (window.location.pathname !== "/") {
                       e.preventDefault();
-                      window.location.href = '/';
+                      window.location.href = "/";
                     }
                     setTimeout(() => {
                       document
-                        .getElementById('subscriptions')
-                        .scrollIntoView({ behavior: 'smooth' });
+                        .getElementById("subscriptions")
+                        .scrollIntoView({ behavior: "smooth" });
                     }, 100);
                   }}
                 >

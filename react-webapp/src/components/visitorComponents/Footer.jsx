@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   cnkavLogo,
   twitterImage,
   linkedinImage,
   facebookLogo,
-} from '../../images';
-import PricingModal from './PricingModal';
-import JoinUsModal from './JoinUsModal';
-import { FaFacebook } from 'react-icons/fa';
+} from "../../images";
+import PricingModal from "./PricingModal";
+import JoinUsModal from "./JoinUsModal";
+import { FaFacebook } from "react-icons/fa";
 
 export default function Footer() {
   const [isCardVisible, setCardVisible] = useState(false);
@@ -56,8 +56,8 @@ export default function Footer() {
                   e.preventDefault();
                   setTimeout(() => {
                     document
-                      .getElementById('subscriptions')
-                      .scrollIntoView({ behavior: 'smooth' });
+                      .getElementById("subscriptions")
+                      .scrollIntoView({ behavior: "smooth" });
                   }, 100);
                 }}
               >
@@ -104,19 +104,19 @@ export default function Footer() {
 
       <div className="flex justify-between gap-3 mt-12">
         <div className="flex justify-between gap-3 text-white">
-          © 2024 All right reserved.{' '}
+          © 2024 All right reserved.{" "}
           <Link
             to="/privacy-policy"
             className="hover:text-gray-400 hover:underline"
           >
-            {' '}
+            {" "}
             Privacy Policy
-          </Link>{' '}
+          </Link>{" "}
           <Link
             to="/terms-of-services"
             className="hover:text-gray-400 hover:underline"
           >
-            {' '}
+            {" "}
             Terms of Service
           </Link>
         </div>

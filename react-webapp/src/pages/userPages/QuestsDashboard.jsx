@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import PublishNewQuestModal from "./PublishNewQuestModal";
+import QuestsPluginModal from "./QuestsPluginModal";
 
 const QuestsDashboard = () => {
   const [isPublishModalOpen, setIsPublishModalOpen] = useState(false);
+  const [isModalVisible, setIsModalVisible] = useState(false);
 
   const handlePublishNewQuestClick = () => {
     setIsPublishModalOpen(true);
@@ -11,11 +13,12 @@ const QuestsDashboard = () => {
   const handlePublishNewQuestClose = () => {
     setIsPublishModalOpen(false);
   };
+
   return (
     <>
-      <div className="flex flex-col items-center joinModal justify-center min-h-screen py-2  bg-black ">
-        <div className="flex flex-col justify-center  mt-32">
-          <form className="">
+      <div className="flex flex-col items-center joinModal justify-center min-h-screen py-2 bg-black">
+        <div className="flex flex-col justify-center mt-32">
+          <form>
             <div className="my-6">
               <input
                 type="text"
@@ -24,7 +27,6 @@ const QuestsDashboard = () => {
                 placeholder="Select Quest Status"
               />
             </div>
-            {/* Publish Quest */}
             <div>
               <input
                 type="text"
@@ -49,15 +51,15 @@ const QuestsDashboard = () => {
               <input
                 type="text"
                 value="Quest Title"
-                className="w-full rounded-xl bg-gray-700 text-white ml-2  py-1 "
+                className="w-full rounded-xl bg-gray-700 text-white ml-2 py-1"
               />
               <input
                 type="text"
                 value="Quest Status"
-                className="w-1/5 rounded-xl bg-gray-700 text-white mr-2 py-1"
+                className="w-[30%] text-center rounded-xl bg-gray-700 text-white mr-2 py-1"
               />
             </div>
-            <div className="main-conteent flex flex-row justify-between">
+            <div className="main-content flex flex-row justify-between">
               <div className="left-list w-3/4">
                 <input
                   type="text"
@@ -75,7 +77,10 @@ const QuestsDashboard = () => {
                 </div>
               </div>
               <div className="right-buttons flex flex-col w-3/12">
-                <button className="border py-2 my-2 mx-2 rounded-xl border-red-500">
+                <button
+                  className="border py-2 my-2 mx-2 rounded-xl border-red-500"
+                  onClick={() => setIsModalVisible(true)}
+                >
                   Attach Quest plugin
                 </button>
                 <button className="border py-2 my-2 mx-2 rounded-xl border-red-500">
@@ -124,7 +129,10 @@ const QuestsDashboard = () => {
                 </div>
               </div>
               <div className="right-buttons flex flex-col w-3/12">
-                <button className="border py-2 my-2 mx-2 rounded-xl border-red-500">
+                <button
+                  className="border py-2 my-2 mx-2 rounded-xl border-red-500"
+                  onClick={() => setIsModalVisible(true)}
+                >
                   Attach Quest plugin
                 </button>
                 <button className="border py-2 my-2 mx-2 rounded-xl border-red-500">
@@ -173,7 +181,10 @@ const QuestsDashboard = () => {
                 </div>
               </div>
               <div className="right-buttons flex flex-col w-3/12">
-                <button className="border py-2 my-2 mx-2 rounded-xl border-red-500">
+                <button
+                  className="border py-2 my-2 mx-2 rounded-xl border-red-500"
+                  onClick={() => setIsModalVisible(true)}
+                >
                   Attach Quest plugin
                 </button>
                 <button className="border py-2 my-2 mx-2 rounded-xl border-red-500">
@@ -192,15 +203,20 @@ const QuestsDashboard = () => {
             </div>
           </div>
 
-          <button className="bg-white text-black py-3 w-4/6 mt-12 rounded-xl">
-            Load More
-          </button>
+          <div className="flex justify-center py-4">
+            <button className="w-[70%] py-3 bg-white text-black rounded-lg hover:bg-gray-900 transition duration-300">
+              Load More
+            </button>
+          </div>
         </div>
         <PublishNewQuestModal
           isOpen={isPublishModalOpen}
           onClose={handlePublishNewQuestClose}
         />
       </div>
+      {isModalVisible && (
+        <QuestsPluginModal setIsModalVisible={setIsModalVisible} />
+      )}
     </>
   );
 };

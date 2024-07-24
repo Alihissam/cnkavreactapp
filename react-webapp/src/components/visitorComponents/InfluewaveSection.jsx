@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import 'tailwindcss/tailwind.css';
-import { videoImage } from '../../images';
-import VideoPlayingModal from './VideoPlayingModal';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "tailwindcss/tailwind.css";
+import { videoImage } from "../../images";
+import VideoPlayingModal from "./VideoPlayingModal";
 
 export default function InfluewaveSection() {
   const [isVideoVisible, setVideoVisible] = useState(false);
@@ -36,11 +36,11 @@ export default function InfluewaveSection() {
   );
 }
 
-document.addEventListener('scroll', () => {
-  const elements = document.querySelectorAll('[data-scroll]');
+document.addEventListener("scroll", () => {
+  const elements = document.querySelectorAll("[data-scroll]");
   elements.forEach((element) => {
     if (element.getBoundingClientRect().top < window.innerHeight) {
-      element.classList.add('opacity-100', 'translate-y-0');
+      element.classList.add("opacity-100", "translate-y-0");
     }
   });
 });

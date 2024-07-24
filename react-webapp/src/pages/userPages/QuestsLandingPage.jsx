@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { questsBox1, questsBox2 } from '../../images';
-import QuestsCategory from './questsManipulations/QuestsCategory';
-import QuestsStyles from './questsManipulations/QuestsStyles';
-import PublishNewQuestModal from './PublishNewQuestModal';
-import QuestsVerificationModal from './QuestsVerificationModal';
-import { FaEdit } from 'react-icons/fa';
+import React, { useState } from "react";
+import { questsBox1, questsBox2 } from "../../images";
+import QuestsCategory from "./questsManipulations/QuestsCategory";
+import QuestsStyles from "./questsManipulations/QuestsStyles";
+import PublishNewQuestModal from "./PublishNewQuestModal";
+import QuestsVerificationModal from "./QuestsVerificationModal";
+import { FaEdit } from "react-icons/fa";
 
 const QuestslandingPage = () => {
   const [isPublishModalOpen, setIsPublishModalOpen] = useState(false);
@@ -51,7 +51,7 @@ const QuestslandingPage = () => {
           </div>
         </form>
 
-         <p className="border p-3 my-10"> Click on Image to Edit Quest</p>
+        <p className="border p-3 my-10"> Click on Image to Edit Quest</p>
         <button className="flex justify-center">
           <div className="w-[360px] md:w-[500px]  relative bg-red-200 ">
             <div className="bg-red-400 absolute right-0 rounded-md p-1 mt-[-10px]">
@@ -78,7 +78,6 @@ const QuestslandingPage = () => {
               <div className="flex items-center gap-2">
                 <div
                   onClick={handlePublishNewQuestClick}
-
                   className="bg-blue-700 px-10 py-5"
                 >
                   <FaEdit />
@@ -114,7 +113,6 @@ const QuestslandingPage = () => {
               <div className="flex items-center gap-2 ">
                 <div
                   onClick={handleVerificationClick}
-
                   className="bg-blue-700 px-8 py-8 rounded-full"
                 >
                   <FaEdit />
@@ -126,7 +124,7 @@ const QuestslandingPage = () => {
 
         <button className="bg-white text-black py-3 w-4/6 mt-12 rounded-xl">
           Load More
-        </button> 
+        </button>
       </div>
       <PublishNewQuestModal
         isOpen={isPublishModalOpen}
@@ -136,10 +134,10 @@ const QuestslandingPage = () => {
         isOpen={isVerificationModalOpen}
         onClose={handleVerificationClose}
         questDetails={{
-          title: 'Sample Quest Title',
-          description: 'Sample quest description.',
-          category: 'Digital Marketing',
-          style: 'Remote',
+          title: "Sample Quest Title",
+          description: "Sample quest description.",
+          category: "Digital Marketing",
+          style: "Remote",
         }}
       />
     </div>

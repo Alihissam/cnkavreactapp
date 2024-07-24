@@ -66,7 +66,7 @@ export default function HeroSection() {
           backgroundPosition: "center",
           height: "100%",
           width: "100%",
-          top: '140px',
+          top: "140px",
           opacity: 0.9,
           boxShadow: "0 -10px 15px rgba(0, 0, 0, 0.5)",
         }}
@@ -143,7 +143,7 @@ export default function HeroSection() {
             className="w-full object-cover rounded-lg mb-4"
           />
         </div>
-      </div> 
+      </div>
     </section>
   );
 }

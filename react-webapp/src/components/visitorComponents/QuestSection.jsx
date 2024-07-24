@@ -1,5 +1,5 @@
-import React from 'react';
-import { checkImage, questImage } from '../../images';
+import React from "react";
+import { checkImage, questImage } from "../../images";
 export default function QuestSection() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 py-8 mb-6 justify-center items-center">
