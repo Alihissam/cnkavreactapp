@@ -8,7 +8,7 @@ const Profile = () => {
     { path: "/dashboard/account-details", label: "Account Details" },
     { path: "/dashboard/order-page", label: "Order" },
     { path: "/dashboard/notifications-page", label: "Notifications" },
-    { path: "/dashboard/subscriptions-page", label: "Subscriptions" },
+    { path: "/dashboard/subscriptions", label: "Subscriptions" },
     { path: "/dashboard/address-page", label: "Addresses" },
     { path: "/dashboard/deploy-quests", label: "Upload Quest plugin" },
     { path: "/dashboard/quests-dashboard", label: "Quest Dashboard" },
