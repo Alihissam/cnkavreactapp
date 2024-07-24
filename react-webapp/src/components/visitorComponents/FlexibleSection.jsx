@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function FlexibleSection() {
   return (
-    <div className="p-[1.5rem]">
-      <div className="md:p-8 mx-auto text-center py-20">
+    <div >
+      <div className="md:p-6 mx-auto text-center py-20">
         <div className="mx-auto  space-y-5">
           <h1 className="text-3xl font-extrabold md:text-6xl">
             Flexible Subscription Models
