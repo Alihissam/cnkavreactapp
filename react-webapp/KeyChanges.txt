@@ -1,5 +1,9 @@
-1 - add videoPlayingModal when clciking influe-section image
-2 - add userPages - A dropdown on chats navigation 
-3 - a Popup Modal on Request new Affiliate product in AffiliateTools page
-4 - add Commenting in images.js file
-5 - see why the hover effect on NavBar is not working on all tags pricing - contact
+--->    24/7/2024
+
+1) - Added 'QuestPluginPage' when the user clcik on the 'Attact Quest plugin in } 
+   'QuestsDashboard' Page
+
+
+
+
+ 
