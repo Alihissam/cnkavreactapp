@@ -43,6 +43,7 @@ import appleLogo from "./assets/icons/apple.png";
 import helloHand from "./assets/icons/hello-hand.png";
 // /dashboard
 import userLogedIn from "./assets/images/user.gif";
+import userName from "./assets/images/username.png";
 import nextIcons from "./assets/icons/next.png";
 import questsBox1 from "./assets/images/quests-box-1.png";
 import questsBox2 from "./assets/images/quests-box-2.png";
@@ -54,8 +55,6 @@ import waveER from "./assets/images/price/sub3.png";
 import cameraIcon from "./assets/icons/camera.png";
 import loginbg from "./assets/images/login.png";
 import signupbg from "./assets/images/signup.jpg";
-
-
 
 export {
   signupbg,
@@ -103,4 +102,5 @@ export {
   waveInflue,
   waveCnkav,
   waveER,
+  userName,
 };

@@ -92,15 +92,10 @@ function App() {
           <Route path="exclusive-room-chat" element={<ExclusiveRoomChat />} />
           <Route path="quests-community" element={<QuestsCommunity />} />
           <Route path="affiliatetools" element={<AffiliatedTools />} />
-          {/* <Route
-            path="request-affiliation"
-            element={<RequestAffilateProduct />}
-          /> */}
-
           {/* User Dashboard router */}
           <Route path="quests-dashboard" element={<QuestsDashboard />} />
           <Route path="deploy-quests" element={<DeployQuests />} />
-          <Route path="subscriptions-page" element={<SubscriptionsPage />} />
+          <Route path="subscriptions" element={<SubscriptionsPage />} />
           <Route path="profile" element={<Profile />} />
           <Route path="account-details" element={<AccountDetails />} />
           <Route path="order-page" element={<OrderPage />} />
@@ -114,6 +109,10 @@ function App() {
           <Route path="events" element={<MyEventsPurchasedEvents />} />
           <Route path="payment-method" element={<PaymentMethod />} />
           <Route path="contact" element={<ContactUs />} />
+          {/* <Route
+            path="request-affiliation"
+            element={<RequestAffilateProduct />}
+          /> */}
         </Route>
         <Route path="/logout" element={<Navigate to="/" replace />} />
       </Routes>

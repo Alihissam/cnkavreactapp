@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { dropDownIcon, cnkavLogo, userLogedIn, humburger } from "../../images";
+import { dropDownIcon, cnkavLogo, humburger, userName } from "../../images";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import PricingModal from "../visitorComponents/PricingModal";
-import CommunityChats from "../../pages/userPages/CommunityChats";
 
 export default function QuestsNavBar() {
   const [isCardVisible, setCardVisible] = useState(false);
@@ -211,7 +210,7 @@ export default function QuestsNavBar() {
             onClick={handleButtonClick}
           >
             <img
-              src={userLogedIn}
+              src={userName}
               className="bg-white rounded-full h-6 mr-4"
               alt=""
             />

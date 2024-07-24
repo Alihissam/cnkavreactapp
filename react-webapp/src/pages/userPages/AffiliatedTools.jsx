@@ -9,8 +9,8 @@ const AffiliatedTools = () => {
   const [isAffiliMarketLinkModal, setAffiliMarketLinkModal] = useState(false);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2  bg-black ">
-      <div className="flex flex-col justify-center items-center mt-32">
+    <div className="min-h-screen py-2  bg-black ">
+      <div className="flex flex-col justify-center items-center mt-32  mx-[20%]">
         <form className="space-y-4 py-5 w-3/4">
           <div>
             <select

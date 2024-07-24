@@ -1,44 +1,26 @@
-import { useState } from "react";
-import AddNewShipingAddress from "./AddNewShipingAddress";
-
-const AddressesPage = () => {
-  const [isAddNewShipingAddress, setAddNewShipingAddress] = useState(false);
-
+const AddNewShipingAddress = ({ setAddNewShipingAddress }) => {
   return (
-    <div className="container mx-auto p-8">
-      <div className="flex flex-col mx-[30%]">
+    <div className="fixed inset-0 bg-black bg-opacity-50  items-center justify-center z-50 overflow-auto">
+      <div className="flex flex-col mx-[30%] bg-black text-white mt-40 joinModal">
+        <div className="text-right">
+          <button
+            className="text-2xl text-white"
+            onClick={() => setAddNewShipingAddress(false)}
+          >
+            &times;
+          </button>
+        </div>
         <section className="shadow-md rounded-lg p-6 mb-8">
           <form>
-            <div className="mb-16 mt-40">
-              <div className="mb-4 text-white">
-                <input
-                  type="text"
-                  name="email"
-                  className="w-full p-3 border-2 border-gray-300 rounded-lg"
-                  placeholder="Edit"
-                />
-              </div>
-              <div className="mb-4 text-white">
-                <button
-                  type="button"
-                  className="w-full p-3 border-2 border-gray-300 rounded-lg bg-white text-black text-left"
-                  onClick={() =>
-                    setAddNewShipingAddress(!isAddNewShipingAddress)
-                  }
-                >
-                  Add new Shipping Address
-                </button>
-              </div>
-            </div>
             <div className="mb-4 text-white">
               <label className="block text-sm font-medium mb-2">Email</label>
               <input
-                type="text"
+                type="email"
                 name="email"
                 className="w-full p-3 border-2 text-black border-gray-300 rounded-lg"
               />
             </div>
-            <div className="mb-4 text-white">
+            <div className="mb-4 text-hite">
               <label className="block text-sm font-medium mb-2">
                 Company Name (Optional)
               </label>
@@ -110,13 +92,8 @@ const AddressesPage = () => {
           </form>
         </section>
       </div>
-      {isAddNewShipingAddress && (
-        <AddNewShipingAddress
-          setAddNewShipingAddress={setAddNewShipingAddress}
-        />
-      )}
     </div>
   );
 };
 
-export default AddressesPage;
+export default AddNewShipingAddress;
