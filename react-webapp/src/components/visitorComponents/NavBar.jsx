@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { cnkavLogo, dropDownIcon, arrowIcon, humburger } from '../../images';
 import JoinUsModal from './JoinUsModal';
+import LoginModal from './LoginModal';
+import ForgotModal from './ForgotModal';
+
+
 import PricingModal from './PricingModal';
 import { FaArrowUp } from 'react-icons/fa';
 
@@ -9,9 +13,37 @@ export default function NavBar() {
   const [isModal, setModal] = useState(false);
   const [isCardVisible, setCardVisible] = useState(false);
   const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const [isLoginModal, setisLoginModal] = useState(false);
+  const [isForgotModal, setisForgotModal] = useState(false);
 
+
+  const toggleModal = (type) => {
+    if (type == 'open-login') {
+      setisLoginModal(true);
+      setModal(false);
+    }
+
+    if (type == 'open-signup') {
+      setisLoginModal(false);
+      setModal(true);
+    }
+
+    if (type == 'closed') {
+      setisLoginModal(false);
+      setModal(false);
+      setisForgotModal(false);
+
+    }
+    if (type == 'open-forgot') {
+      setisForgotModal(true);
+      setModal(false);
+      setisLoginModal(false);
+
+    }
+  };
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
+
   };
 
   const closeSidebar = () => {
@@ -114,7 +146,7 @@ export default function NavBar() {
                     }, 100);
                   }}
                 >
-                  Features
+                  Featurs
                 </Link>
 
                 <div className="absolute hidden group-hover:block w-[220px] bg-white text-black mt-[100px] leading-2 shadow-lg"></div>
@@ -152,7 +184,11 @@ export default function NavBar() {
         </div>
       </div>
       {Sidebar}
-      <JoinUsModal isModal={isModal} setModal={setModal} />
+      <JoinUsModal isModal={isModal} toggleModal={toggleModal} />
+      <LoginModal isModal={isLoginModal} toggleModal={toggleModal} />
+      <ForgotModal isModal={isForgotModal} toggleModal={toggleModal} />
+
+
       {isCardVisible && <PricingModal setCardVisible={setCardVisible} />}
     </>
   );
