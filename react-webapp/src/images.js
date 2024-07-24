@@ -52,8 +52,14 @@ import waveInflue from "./assets/images/price/sub2.png";
 import waveCnkav from "./assets/images/price/sub1.png";
 import waveER from "./assets/images/price/sub3.png";
 import cameraIcon from "./assets/icons/camera.png";
+import loginbg from "./assets/images/login.png";
+import signupbg from "./assets/images/signup.jpg";
+
+
 
 export {
+  signupbg,
+  loginbg,
   humburger,
   herobg,
   cameraIcon,

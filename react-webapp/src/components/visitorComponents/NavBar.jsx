@@ -166,7 +166,7 @@ export default function NavBar() {
         </div>
       </div>
       {Sidebar}
-      {isModal && <JoinUsModal isModal={isModal} setModal={setModal} />}
+       <JoinUsModal isModal={isModal} setModal={setModal} />
       {isCardVisible && <PricingModal setCardVisible={setCardVisible} />}
     </>
   );
