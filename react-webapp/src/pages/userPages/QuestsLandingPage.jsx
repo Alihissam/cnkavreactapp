@@ -77,7 +77,8 @@ const QuestslandingPage = () => {
             <div className="flex justify-center items-center py-4 bg-gray-600 px-8">
               <div className="flex items-center gap-2">
                 <div
-                  onClick={handleVerificationClick}
+                  onClick={handlePublishNewQuestClick}
+
                   className="bg-blue-700 px-10 py-5"
                 >
                   <FaEdit />
@@ -112,7 +113,8 @@ const QuestslandingPage = () => {
             <div className="flex justify-center items-center py-4 bg-gray-600 px-8">
               <div className="flex items-center gap-2 ">
                 <div
-                  onClick={handlePublishNewQuestClick}
+                  onClick={handleVerificationClick}
+
                   className="bg-blue-700 px-8 py-8 rounded-full"
                 >
                   <FaEdit />
@@ -121,17 +123,6 @@ const QuestslandingPage = () => {
             </div>
           </div>
         </button>
-        {/* <p className="border p-3 my-10"> Click on Image to Verify Quest</p> */}
-        {/* <button
-          onClick={handleVerificationClick}
-          className="flex justify-center"
-        >
-          <img
-            src={questsBox2}
-            alt="Quests Box"
-            className="w-[60%] y-5 transition-transform duration-300 ease-out transform hover:scale-105"
-          />
-        </button> */}
 
         <button className="bg-white text-black py-3 w-4/6 mt-12 rounded-xl">
           Load More

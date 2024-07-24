@@ -107,14 +107,14 @@ const PublishNewQuestModal = ({ isOpen, onClose }) => {
               Book Availability{" "}
             </label>
             <input
-              type="text"
-              id="questTitle"
+              type="date"
+              id="questDate"
               className="w-full px-4 py-2 border text-black border-gray-300 rounded-lg"
-              placeholder="Select Date "
+              placeholder="Select Date"
             />
             <input
-              type="text"
-              id="questTitle"
+              type="time"
+              id="questTime"
               className="w-full px-4 py-2 border text-black border-gray-300 rounded-lg my-3"
               placeholder="Select Time Slots"
             />

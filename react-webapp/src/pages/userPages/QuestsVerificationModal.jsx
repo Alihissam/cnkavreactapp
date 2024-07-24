@@ -40,20 +40,29 @@ const QuestsVerificationModal = ({ isOpen, onClose, questDetails }) => {
                 Book Availability{" "}
               </label>
               <input
-                type="text"
-                id="questTitle"
+                type="date"
+                id="questDate"
                 className="w-full px-4 py-2 border text-black border-gray-300 rounded-lg"
-                placeholder="Select Date "
+                placeholder="Select Date"
               />
               <input
-                type="text"
-                id="questTitle"
+                type="time"
+                id="questTime"
                 className="w-full px-4 py-2 border text-black border-gray-300 rounded-lg my-3"
-                placeholder="Select Time Slots"
+                placeholder="Select Time"
               />
             </div>
 
-            <h3 className="border p-2">Confirm and Verify Quest Details.</h3>
+            <div className="flex items-center">
+              <input
+                type="checkbox"
+                id="confirmQuestDetails"
+                className="mr-2"
+              />
+              <label htmlFor="confirmQuestDetails" className="text-sm">
+                Confirm and Verify Quest Details
+              </label>
+            </div>
 
             <div className="pt-6">
               <button
