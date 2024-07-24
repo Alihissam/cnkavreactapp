@@ -10,7 +10,7 @@ import QuestSection from '../../components/visitorComponents/QuestSection';
 import HeroSection from '../../components/visitorComponents/HeroSection';
 export default function Home() {
   return (
-    <div className="container ">
+    <div className="container">
       <HeroSection />
       <div id="influewave-section">
         <InfluewaveSection />

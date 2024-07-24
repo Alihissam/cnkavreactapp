@@ -74,7 +74,7 @@ export default function Footer() {
                 onClick={() => setModal(!isModal)}
                 className="hover:text-gray-400 hover:underline  my-1"
               >
-                <a>Book a demo</a>
+                <a>Newsletter</a>
               </button>
             </div>
           </div>
