@@ -27,9 +27,9 @@ const QuestslandingPage = () => {
   };
 
   return (
-    <div className="flex flex-col  items-center justify-center min-h-screen py-2 bg-black">
-      <div className="flex flex-col justify-center items-center mt-32">
-        <form className="space-y-4 py-5 w-full mb-4">
+    <div className="flex flex-col   items-center w-full justify-center min-h-screen py-2 ">
+      <div className="flex flex-col justify-center  items-center pt-48">
+        <form className="space-y-4 p-6  mb-4 w-[380px] md:w-[500px]">
           <QuestsCategory />
           <QuestsStyles />
           <div>
@@ -38,22 +38,22 @@ const QuestslandingPage = () => {
               id="questName"
               onClick={handlePublishNewQuestClick}
               readOnly
-              className="bg-gray-50 border text-black border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 cursor-pointer"
+              className="bg-gray-50 border w-full text-black border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 cursor-pointer"
               placeholder="Publish New Quest"
             />
           </div>
           <div>
             <input
               type="text"
-              placeholder="Search Quests"
+              placeholder="Search Quests w-full"
               className="bg-gray-50 border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
             />
           </div>
         </form>
 
-        {/* <p className="border p-3 my-10"> Click on Image to Edit Quest</p> */}
+         <p className="border p-3 my-10"> Click on Image to Edit Quest</p>
         <button className="flex justify-center">
-          <div className="w-[500px]  relative bg-red-200 ">
+          <div className="w-[360px] md:w-[500px]  relative bg-red-200 ">
             <div className="bg-red-400 absolute right-0 rounded-md p-1 mt-[-10px]">
               <span className="font-bold">€ 0</span> Double Start, Single
               Star,Rookies
@@ -89,7 +89,7 @@ const QuestslandingPage = () => {
         </button>
 
         <button className="flex justify-center ">
-          <div className="w-[500px]  relative bg-red-200 mt-10">
+          <div className="w-[360px] md:w-[500px]  relative bg-red-200 mt-10">
             <div className="bg-red-400 absolute right-0 rounded-md p-1 mt-[-10px]">
               <span className="font-bold">€ 0</span> Double Start, Single
               Star,Rookies
@@ -126,7 +126,7 @@ const QuestslandingPage = () => {
 
         <button className="bg-white text-black py-3 w-4/6 mt-12 rounded-xl">
           Load More
-        </button>
+        </button> 
       </div>
       <PublishNewQuestModal
         isOpen={isPublishModalOpen}

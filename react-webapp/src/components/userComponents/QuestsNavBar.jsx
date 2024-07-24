@@ -205,8 +205,6 @@ export default function QuestsNavBar() {
                 Contact Us
               </Link>
             </nav>
-
-         
           </div>
           <button
             className="hidden cursor-pointer lg:flex items-center border border-white px-4 py-2 rounded-md text-white transition-transform duration-300 ease-in-out transform hover:scale-105"
