@@ -1,13 +1,11 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import AffiliateProductModal from "../../components/userComponents/AffiliateProductModal";
+
 import { waveInflue, waveCnkav, waveER } from "../../images";
 
-
 const AffiliatedTools = () => {
-  const navigate = useNavigate();
-  const handleAffilateNewProduct = () => {
-    navigate("/dashboard/request-affiliation");
-  };
+  const [isAffiliateProductModal, setAffiliateProductModal] = useState(false);
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2  bg-black ">
       <div className="flex flex-col justify-center items-center mt-32">
@@ -44,7 +42,7 @@ const AffiliatedTools = () => {
               type="text"
               id="questName"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-              onClick={handleAffilateNewProduct}
+              onClick={() => setAffiliateProductModal(!isAffiliateProductModal)}
               placeholder="Request New Affiliate Product"
             />
           </div>
@@ -107,6 +105,7 @@ const AffiliatedTools = () => {
           Load More
         </button>
       </div>
+      {isAffiliateProductModal && <AffiliateProductModal />}
     </div>
   );
 };
