@@ -1,9 +1,12 @@
 import React from "react";
 
-const Chats = () => {
+const CommunityChats = () => {
   return (
     <div className="flex flex-col justify-center items-center min-h-screen py-8 bg-gray-900">
       <div className="w-full max-w-lg mt-16">
+        <h1 className="text-white text-2xl text-center my-40">
+          Community Chat
+        </h1>
         <form className="space-y-4 flex flex-col justify-center items-center">
           <input
             type="text"
@@ -35,4 +38,4 @@ const Chats = () => {
   );
 };
 
-export default Chats;
+export default CommunityChats;

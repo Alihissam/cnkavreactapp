@@ -23,7 +23,9 @@ import DashbaordLayout from "./pages/userPages/DashboardLayout";
 import Community from "./pages/userPages/Community";
 import Profile from "./pages/userPages/Profile";
 import AffiliatedTools from "./pages/userPages/AffiliatedTools";
-import Chats from "./pages/userPages/Chats";
+import CommunityChats from "./pages/userPages/CommunityChats";
+import ExclusiveRoomChat from "./pages/userPages/ExclusiveRoomChat";
+import QuestsCommunity from "./pages/userPages/QuestsCommunity";
 import QuestsDashboard from "./pages/userPages/QuestsDashboard";
 import DeployQuests from "./pages/userPages/DeployQuests";
 import AboutUs from "./pages/userProfileDashboard/AboutUs";
@@ -41,6 +43,7 @@ import SubscriptionsPage from "./pages/userProfileDashboard/SubscriptionsPage";
 import ContactUs from "./pages/userProfileDashboard/ContactUs";
 
 import AffiliateProductRequestPage from "./pages/visitorPages/AffiliateProductRequestPage ";
+import RequestAffilateProduct from "./pages/userPages/RequestAffilateProduct";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -67,7 +70,11 @@ function App() {
           <Route path="contact-step6" element={<ContactUsStep6 />} />
           <Route path="contact-step7" element={<ContactUsStep7 />} />
           <Route path="contact-step8" element={<ContactUsStep8 />} />
-          <Route path="affiliate-marketting-tool" element={<AffiliateProductRequestPage />} />
+          <Route path="contact" element={<ContactUsStep1 />} />
+          <Route
+            path="affiliate-marketting-tool"
+            element={<AffiliateProductRequestPage />}
+          />
           <Route path="login" element={<LogInPage />} />
           <Route path="register" element={<LogInPage />} />
           <Route path="aboutus" element={<AboutUs />} />
@@ -83,8 +90,14 @@ function App() {
         <Route path="/dashboard" element={<DashbaordLayout />}>
           <Route index element={<QuestsLandingPage />} />
           <Route path="community" element={<Community />} />
-          <Route path="chats" element={<Chats />} />
+          <Route path="community-chat" element={<CommunityChats />} />
+          <Route path="exclusive-room-chat" element={<ExclusiveRoomChat />} />
+          <Route path="quests-community" element={<QuestsCommunity />} />
           <Route path="affiliatetools" element={<AffiliatedTools />} />
+          <Route
+            path="request-affiliation"
+            element={<RequestAffilateProduct />}
+          />
           <Route path="quests-dashboard" element={<QuestsDashboard />} />
           <Route path="deploy-quests" element={<DeployQuests />} />
           <Route path="subscriptions-page" element={<SubscriptionsPage />} />
@@ -101,7 +114,6 @@ function App() {
           <Route path="events" element={<MyEventsPurchasedEvents />} />
           <Route path="payment-method" element={<PaymentMethod />} />
           <Route path="contact" element={<ContactUs />} />
-
         </Route>
         <Route path="/logout" element={<Navigate to="/" replace />} />
       </Routes>

@@ -1,7 +1,6 @@
-import React from 'react';
+import React from "react";
 import {
   nextIcons,
-  arrowIcon,
   monyImage,
   FiverStars1,
   FiverStars2,
@@ -11,48 +10,48 @@ import {
   FiverStars6,
   starsGroup,
   modalMan,
-  labImage,
+  computerLab,
   herobg,
-} from '../../images';
-import { AnimatedTooltip } from '../ui/animated-tooltip';
-import { Link } from 'react-router-dom';
-import { FaArrowUp } from 'react-icons/fa6';
+} from "../../images";
+import { AnimatedTooltip } from "../ui/animated-tooltip";
+import { Link } from "react-router-dom";
+import { FaArrowUp } from "react-icons/fa6";
 
 const people = [
   {
     id: 1,
-    name: 'John Doe',
-    designation: 'Software Engineer',
+    name: "John Doe",
+    designation: "Software Engineer",
     image: FiverStars1,
   },
   {
     id: 2,
-    name: 'Robert Johnson',
-    designation: 'Product Manager',
+    name: "Robert Johnson",
+    designation: "Product Manager",
     image: FiverStars2,
   },
   {
     id: 3,
-    name: 'Jane Smith',
-    designation: 'Data Scientist',
+    name: "Jane Smith",
+    designation: "Data Scientist",
     image: FiverStars3,
   },
   {
     id: 4,
-    name: 'Emily Davis',
-    designation: 'UX Designer',
+    name: "Emily Davis",
+    designation: "UX Designer",
     image: FiverStars4,
   },
   {
     id: 5,
-    name: 'Tyler Durden',
-    designation: 'Soap Developer',
+    name: "Tyler Durden",
+    designation: "Soap Developer",
     image: FiverStars5,
   },
   {
     id: 6,
-    name: 'Dora',
-    designation: 'The Explorer',
+    name: "Dora",
+    designation: "The Explorer",
     image: FiverStars6,
   },
 ];
@@ -63,14 +62,13 @@ export default function HeroSection() {
       <div
         style={{
           backgroundImage: `url(${herobg})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          height: '80%',
-          width: '100%',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: "80%",
+          width: "100%",
           top: 150,
           bottom: 0,
-          opacity:0.9
-        
+          opacity: 0.9,
         }}
         className="absolute bg-gray-950"
       ></div>
@@ -80,10 +78,7 @@ export default function HeroSection() {
         </h1>
         <h2 className="text-2xl mb-6">
           Quest, Connect & Earn:
-          <span className="font-semibold text-gray-400">
-            {' '}
-            An Exclusive Club
-          </span>
+          <span className="font-semibold text-gray-400">An Exclusive Club</span>
         </h2>
         <p className="text-xl mb-6 leading-relaxed">
           Welcome to a place where you don't just connect, you form alliances -
@@ -120,9 +115,7 @@ export default function HeroSection() {
             className="hidden group md:flex items-center border border-white w-[35%] pl-8 py-2.5 rounded-md text-white transition-transform duration-300 ease-in-out transform hover:scale-105"
           >
             <span>Secure my Spot</span>
-            <FaArrowUp
-              className=" h-6 ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1   hover:scale-110 group-hover:rotate-90 rotate-45"
-            />
+            <FaArrowUp className=" h-6 ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1   hover:scale-110 group-hover:rotate-90 rotate-45" />
             {/* <img
               src={arrowIcon}
               className="bg-white rounded-full h-6 ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1 hover:scale-110 hover:rotate-45"
@@ -135,16 +128,22 @@ export default function HeroSection() {
         <div className="grid gap-2  grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
           <img src={modalMan} alt="Image 1" className="w-full h-64 md:h-96" />
           <div className="z-10 space-y-2 ">
-            <img src={monyImage} alt="Image 2" className="w-full md:ml-5 h-40 md:h-52  rounded-lg" />
+            <img
+              src={monyImage}
+              alt="Image 2"
+              className="w-full md:ml-5 h-40 md:h-52  rounded-lg"
+            />
             <h3 className="md:text-5xl md:ml-5  text-3xl font-extrabold text-gray-400">
               Amazing
             </h3>
-            <p className="text-gray-200 md:ml-5  text-lg">Network of Exclusive Club</p>
+            <p className="text-gray-200 md:ml-5  text-lg">
+              Network of Exclusive Club
+            </p>
           </div>
         </div>
         <div className="bg-black p-4 rounded-lg mt-2">
           <img
-            src={labImage}
+            src={computerLab}
             alt="Image 3"
             className="w-full object-cover rounded-lg mb-4"
           />

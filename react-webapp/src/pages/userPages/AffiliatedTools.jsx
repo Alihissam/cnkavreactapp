@@ -1,7 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { waveInflue, waveCnkav, waveER } from "../../images";
 
+
 const AffiliatedTools = () => {
+  const navigate = useNavigate();
+  const handleAffilateNewProduct = () => {
+    navigate("/dashboard/request-affiliation");
+  };
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2  bg-black ">
       <div className="flex flex-col justify-center items-center mt-32">
@@ -38,6 +44,7 @@ const AffiliatedTools = () => {
               type="text"
               id="questName"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+              onClick={handleAffilateNewProduct}
               placeholder="Request New Affiliate Product"
             />
           </div>
@@ -74,7 +81,6 @@ const AffiliatedTools = () => {
           <div className="p-2">
             <p className="text-xl">Cnkav Subscription</p>
             <p>€199.99/ month</p>
-
           </div>
         </div>
 
@@ -84,7 +90,6 @@ const AffiliatedTools = () => {
           <div className="p-2">
             <p className="text-xl">Exclusive Room Subscription</p>
             <p>€49.99/ month</p>
-
           </div>
         </div>
 
@@ -94,11 +99,9 @@ const AffiliatedTools = () => {
           <div className="p-2">
             <p className="text-xl">Influwave Subscription</p>
             <p>€499.99/ month</p>
-
           </div>
         </div>
         {/* <img src={waveInflue} alt="" className="w-3/5 py-5" /> */}
-
 
         <button className="bg-white text-black py-3 w-4/6 mt-12 rounded-xl">
           Load More

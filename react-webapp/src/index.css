@@ -2,33 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.navbar{
-    background: black ;
-    opacity: 0.8;
-    z-index: 100;
+.navbar {
+  background: black;
+  opacity: 0.8;
+  z-index: 100;
 }
 
-.dropdown{
-    z-index: inherit;
+.dropdown {
+  z-index: inherit;
 }
 
-.pricemodal{
-    z-index: 200;
-
+.pricemodal {
+  z-index: 200;
 }
 
-
-.joinModal{
-    z-index: 200;
-
+.joinModal {
+  z-index: 200;
 }
 
-.PublishNewQuestmodal{
-
-    z-index: 200;
+.PublishNewQuestmodal {
+  z-index: 200;
 }
 
-.sidebar{
-    z-index: 1000;
+.sidebar {
+  z-index: 1000;
 }

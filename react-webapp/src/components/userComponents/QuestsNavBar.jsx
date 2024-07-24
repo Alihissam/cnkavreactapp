@@ -3,6 +3,7 @@ import { dropDownIcon, cnkavLogo, userLogedIn } from "../../images";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import PricingModal from "../visitorComponents/PricingModal";
+import CommunityChats from "../../pages/userPages/CommunityChats";
 
 export default function QuestsNavBar() {
   const [isCardVisible, setCardVisible] = useState(false);
@@ -65,14 +66,34 @@ export default function QuestsNavBar() {
                   alt="Dropdown Icon"
                 />
               </div>
-              <div className="relative group flex items-center">
-                <Link
+              <div className="relative group flex items-center ">
+                <span
                   className="hover:text-white text-gray-400"
-                  to="/dashboard/chats"
                   id="influewave-link"
                 >
                   Chat
-                </Link>
+                </span>
+                <div className="absolute w-[200px] mt-[140px] z-10 opacity-90 hidden space-y-2 bg-white text-black shadow-lg group-hover:block">
+                  <Link
+                    to="community-chat"
+                    className="block px-4 py-2 text-sm hover:bg-black hover:text-white "
+                  >
+                    Community Chat
+                  </Link>
+                  <Link
+                    to="exclusive-room-chat"
+                    className="block px-4 py-2 text-sm hover:bg-black hover:text-white"
+                  >
+                    Exclusive Room Chat
+                  </Link>
+                  <Link
+                    to="quests-community"
+                    className="block px-4 py-2 text-sm hover:bg-black hover:text-white"
+                  >
+                    Quest Community
+                  </Link>
+                </div>
+
                 <img
                   src={dropDownIcon}
                   className="h-6 bg-white rounded-full ml-2"

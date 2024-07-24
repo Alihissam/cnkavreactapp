@@ -1,7 +1,6 @@
-import React from 'react';
-import { twitterPost } from '../../images';
-import { FaHeart } from 'react-icons/fa';
-import { FaMessage, FaShare } from 'react-icons/fa6';
+import React from "react";
+import { FaHeart } from "react-icons/fa";
+import { FaMessage, FaShare } from "react-icons/fa6";
 
 const Community = () => {
   return (
@@ -34,7 +33,7 @@ const Community = () => {
           />
           <div className="px-3">
             <p className="text-center text-gray-500">
-              {' '}
+              {" "}
               Mariane @marianeee ·1/21/20
             </p>
 
@@ -75,7 +74,7 @@ const Community = () => {
           />
           <div className="px-3">
             <p className="text-center text-gray-500">
-              {' '}
+              {" "}
               Mariane @marianeee ·1/21/20
             </p>
 
