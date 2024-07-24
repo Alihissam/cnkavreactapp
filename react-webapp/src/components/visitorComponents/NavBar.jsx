@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { cnkavLogo, dropDownIcon, arrowIcon, humburger } from "../../images";
 import JoinUsModal from "./JoinUsModal";
 import PricingModal from "./PricingModal";
-import { FaArrowDown, FaArrowUp } from "react-icons/fa";
+import {  FaArrowUp } from "react-icons/fa";
 
 export default function NavBar() {
   const [isModal, setModal] = useState(false);

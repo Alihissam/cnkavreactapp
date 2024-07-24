@@ -141,7 +141,7 @@ export default function QuestsNavBar() {
             <span>Username</span>
             <img
               src={dropDownIcon}
-              className="h-6 bg-white rounded-full ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1"
+              className="h-6 rounded-full ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1"
               alt="Dropdown Icon"
             />
           </button>
