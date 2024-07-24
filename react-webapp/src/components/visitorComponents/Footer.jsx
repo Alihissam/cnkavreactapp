@@ -1,18 +1,15 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  cnkavLogo,
-  twitterImage,
-  linkedinImage,
-  facebookLogo,
-} from "../../images";
+import { cnkavLogo, twitterImage, linkedinImage } from "../../images";
+import { FaFacebook } from "react-icons/fa";
 import PricingModal from "./PricingModal";
 import JoinUsModal from "./JoinUsModal";
-import { FaFacebook } from "react-icons/fa";
+import NewsLetterModal from "./NewsLetterModal";
 
 export default function Footer() {
   const [isCardVisible, setCardVisible] = useState(false);
   const [isModal, setModal] = useState(false);
+  const [isNewsLetterModal, setNewsLetterModal] = useState(false);
   return (
     <footer className="container md:px-10 py-6 mt-40">
       <div className="flex flex-col md:flex-row justify-between mb-4">
@@ -71,8 +68,8 @@ export default function Footer() {
                 Pricing
               </Link>
               <button
-                onClick={() => setModal(!isModal)}
-                className="hover:text-gray-400 hover:underline  my-1"
+                onClick={() => setNewsLetterModal(!isNewsLetterModal)}
+                className="hover:text-gray-400 hover:underline my-1"
               >
                 <a>Newsletter Signup</a>
               </button>
@@ -142,6 +139,9 @@ export default function Footer() {
       </div>
       {isModal && <JoinUsModal isModal={isModal} setModal={setModal} />}
       {isCardVisible && <PricingModal setCardVisible={setCardVisible} />}
+      {isNewsLetterModal && (
+        <NewsLetterModal setNewsLetterModal={setNewsLetterModal} />
+      )}
     </footer>
   );
 }
