@@ -60,6 +60,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <Routes>
+        {/* Visistor Pages Routers */}
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="contact-step1" element={<ContactUsStep1 />} />
@@ -71,7 +72,6 @@ function App() {
           <Route path="contact-step7" element={<ContactUsStep7 />} />
           <Route path="contact-step8" element={<ContactUsStep8 />} />
           <Route path="contact" element={<ContactUsStep1 />} />
-        
           <Route path="login" element={<LogInPage />} />
           <Route path="register" element={<LogInPage />} />
           <Route path="aboutus" element={<AboutUs />} />
@@ -84,6 +84,7 @@ function App() {
             element={<SubscriptionsPage />}
           />
         </Route>
+        {/* User Pages Router */}
         <Route path="/dashboard" element={<DashbaordLayout />}>
           <Route index element={<QuestsLandingPage />} />
           <Route path="community" element={<Community />} />
@@ -91,10 +92,12 @@ function App() {
           <Route path="exclusive-room-chat" element={<ExclusiveRoomChat />} />
           <Route path="quests-community" element={<QuestsCommunity />} />
           <Route path="affiliatetools" element={<AffiliatedTools />} />
-          <Route
+          {/* <Route
             path="request-affiliation"
             element={<RequestAffilateProduct />}
-          />
+          /> */}
+
+          {/* User Dashboard router */}
           <Route path="quests-dashboard" element={<QuestsDashboard />} />
           <Route path="deploy-quests" element={<DeployQuests />} />
           <Route path="subscriptions-page" element={<SubscriptionsPage />} />

@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 import {
   googleLogo,
   facebookLogo,
   appleLogo,
   cnkavLogo,
   signupbg,
-} from '../../images';
-import { useNavigate } from 'react-router-dom';
+} from "../../images";
+import { useNavigate } from "react-router-dom";
 
-import { Button, Modal } from 'flowbite-react';
-import { useState } from 'react';
+import { Button, Modal } from "flowbite-react";
+import { useState } from "react";
 
 // export default function JoinUsModal({ isModal, setModal }) {
 
@@ -164,30 +164,29 @@ export default function Component({ isModal, toggleModal }) {
 
   return (
     <div>
-      <Modal show={isModal} onClose={() => toggleModal('closed')}>
+      <Modal show={isModal} onClose={() => toggleModal("closed")}>
         <div
           className="space-y-6 h-[90vh]  p-8 rounded-md "
           style={{
             backgroundImage: `url(${signupbg})`,
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-            backgroundColor: 'rgba(0, 0, 0, 0.8)', // Black overlay with 50% opacity
-            backgroundBlendMode: 'overlay',
-            overflowY: 'scroll',
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundColor: "rgba(0, 0, 0, 0.8)", // Black overlay with 50% opacity
+            backgroundBlendMode: "overlay",
+            overflowY: "scroll",
           }}
         >
-           <div className="flex justify-end">
+          <div className="flex justify-end">
             <button
-           onClick={() => toggleModal('closed')}
+              onClick={() => toggleModal("closed")}
               className="text-white text-2xl font-bold"
             >
               &times;
             </button>
           </div>
-            <h2 className="px-10 text-white text-2xl md:text-5xl font-bold py-3 ">
-              Create A Personal Account
-            </h2>
-          
+          <h2 className="px-10 text-white text-2xl md:text-5xl font-bold py-3 ">
+            Create A Personal Account
+          </h2>
 
           <form className="px-10">
             <div className="mb-4">
@@ -234,12 +233,12 @@ export default function Component({ isModal, toggleModal }) {
             </div>
             <div className="flex justify-center">
               <button
-                onClick={() => navigate('/dashboard')}
+                onClick={() => navigate("/dashboard")}
                 className="w-full text-white py-3 rounded-lg font-bold flex items-center justify-center mb-2 transition"
                 style={{
-                  backgroundColor: 'transparent',
-                  border: '2px solid transparent',
-                  borderImage: 'linear-gradient(120deg, red, yellow) 1',
+                  backgroundColor: "transparent",
+                  border: "2px solid transparent",
+                  borderImage: "linear-gradient(120deg, red, yellow) 1",
                 }}
               >
                 Sign up
@@ -251,8 +250,8 @@ export default function Component({ isModal, toggleModal }) {
             <button
               className="w-[60%] text-white py-3 rounded-lg font-bold flex items-center justify-center mb-2 transition"
               style={{
-                backgroundColor: 'transparent',
-                border: '2px solid transparent',
+                backgroundColor: "transparent",
+                border: "2px solid transparent",
                 // borderImage: 'linear-gradient(120deg, red, yellow) 1',
               }}
             >
@@ -282,9 +281,9 @@ export default function Component({ isModal, toggleModal }) {
               Sign up with Apple
             </button>
 
-            <button onClick={() => toggleModal('open-login')}>
+            <button onClick={() => toggleModal("open-login")}>
               <p>
-                Already Have An Account?{' '}
+                Already Have An Account?{" "}
                 <span className="underline text-blue-700 cursor-pointer">
                   Log in
                 </span>

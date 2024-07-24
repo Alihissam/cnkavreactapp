@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import AffiliateProductModal from "../../components/userComponents/AffiliateProductModal";
+import AffiliateModal from "./AffiliateModal";
 
 import { waveInflue, waveCnkav, waveER } from "../../images";
 
 const AffiliatedTools = () => {
-  const [isAffiliateProductModal, setAffiliateProductModal] = useState(false);
+  const [isAffiliateModal, setAffiliateModal] = useState(false);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2  bg-black ">
@@ -38,14 +38,15 @@ const AffiliatedTools = () => {
             </select>
           </div>
           <div>
-            <input
-              type="text"
-              id="questName"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-              onClick={() => setAffiliateProductModal(!isAffiliateProductModal)}
-              placeholder="Request New Affiliate Product"
-            />
+            <button
+              type="button"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm text-left rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+              onClick={() => setAffiliateModal(!isAffiliateModal)}
+            >
+              Request New Affiliate Product
+            </button>
           </div>
+
           <div>
             <select
               id="affiliateMarketingLinks"
@@ -105,7 +106,9 @@ const AffiliatedTools = () => {
           Load More
         </button>
       </div>
-      {isAffiliateProductModal && <AffiliateProductModal />}
+      {isAffiliateModal && (
+        <AffiliateModal setAffiliateModal={setAffiliateModal} />
+      )}
     </div>
   );
 };

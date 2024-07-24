@@ -71,9 +71,14 @@ export default function Footer() {
                 onClick={() => setNewsLetterModal(!isNewsLetterModal)}
                 className="hover:text-gray-400 hover:underline my-1"
               >
-                <a>Newsletter Signup</a>
+                <a>Newsletter</a>
               </button>
-
+              <button
+                onClick={() => setModal(!isModal)}
+                className="hover:text-gray-400 hover:underline my-1"
+              >
+                <a>Signup</a>
+              </button>
             </div>
           </div>
           <div>
