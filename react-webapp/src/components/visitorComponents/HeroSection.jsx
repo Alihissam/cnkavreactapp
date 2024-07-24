@@ -64,11 +64,11 @@ export default function HeroSection() {
           backgroundImage: `url(${herobg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          height: "80%",
+          height: "100%",
           width: "100%",
-          top: 150,
-          bottom: 0,
+          top: '140px',
           opacity: 0.9,
+          boxShadow: "0 -10px 15px rgba(0, 0, 0, 0.5)",
         }}
         className="absolute bg-gray-950"
       ></div>
@@ -109,13 +109,13 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
-        <div className="mt-12 bg-red-300">
+        <div className="mt-12 ">
           <Link
             to="subscriptions"
-            className=" group bg-red-600 items-center border border-white py-2.5 rounded-md text-white transition-transform duration-300 ease-in-out transform hover:scale-105"
+            className="group justify-center text-center w-[200px] p-4 flex items-center border border-white py-2.5 rounded-md text-white transition-transform duration-300 ease-in-out transform hover:scale-105"
           >
             <span>Secure my Spot</span>
-            {/* <FaArrowUp className=" h-6 ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1   hover:scale-110 group-hover:rotate-90 rotate-45" /> */}
+            <FaArrowUp className="h-6 ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1 hover:scale-110 group-hover:rotate-90 rotate-45" />
           </Link>
         </div>
       </div>

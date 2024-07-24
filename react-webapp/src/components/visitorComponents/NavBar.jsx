@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { cnkavLogo, dropDownIcon, arrowIcon, humburger } from "../../images";
 import JoinUsModal from "./JoinUsModal";
 import PricingModal from "./PricingModal";
-import { FaArrowUp } from "react-icons/fa";
+import { FaArrowDown, FaArrowUp } from "react-icons/fa";
 
 export default function NavBar() {
   const [isModal, setModal] = useState(false);
@@ -123,31 +123,16 @@ export default function NavBar() {
                     }
                     setTimeout(() => {
                       document
-                        .getElementById("influewave-section")
+                        .getElementById("subscriptions")
                         .scrollIntoView({ behavior: "smooth" });
                     }, 100);
                   }}
                 >
-                  Influewave
+                  Features
                 </Link>
-                <img
-                  src={dropDownIcon}
-                  className="h-6 bg-white rounded-full ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1"
-                  alt="Dropdown Icon"
-                />
+
                 <div className="absolute hidden group-hover:block w-[220px] bg-white text-black mt-[100px] leading-2 shadow-lg"></div>
               </div>
-              <Link
-                onClick={() => {
-                  document
-                    .getElementById("exclusive-section")
-                    .scrollIntoView({ behavior: "smooth" });
-                }}
-                className="hover:text-white text-gray-400"
-                to="/"
-              >
-                Exclusive Room
-              </Link>
 
               <Link
                 className="hover:text-white text-[##7A7A7A]"

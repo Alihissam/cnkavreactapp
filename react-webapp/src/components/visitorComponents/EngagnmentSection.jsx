@@ -4,8 +4,9 @@ import { galleryImage } from "../../images";
 import { FaArrowUp } from "react-icons/fa6";
 export default function EngagnmentSection() {
   return (
-    <div className="px-[1.5rem]">
-      <div className="flex flex-col md:flex-row gap-3  mb-6 mt-64">
+    <div className="px-[1.5rem] mt-24 py-11">
+      <div className="flex flex-col md:flex-row">
+        <div className="w-full md:w-[50%]">
         <div className="p-3">
           <h2 className="text-4xl font-black mt-4 mb-2">Engage and Innovate</h2>
           <h2 className="text-2xl mb-4 font-bold">Outsource and Accomplish</h2>
@@ -49,9 +50,12 @@ export default function EngagnmentSection() {
               <FaArrowUp className="h-6 ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1   hover:scale-110 group-hover:rotate-90 rotate-45" />
             </Link>
           </div>
+        </div> 
+  
         </div>
-        <div className=" ">
-          <img src={galleryImage} alt="" />
+        <div className="w-full md:w-[50%] flex justify-center">
+
+          <img src={galleryImage} alt="" className="w-[90%] h-[80%] object-contain" />
         </div>
       </div>
     </div>
