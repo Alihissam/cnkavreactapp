@@ -33,7 +33,7 @@ export default function QuestsNavBar() {
                 </Link>
                 <img
                   src={dropDownIcon}
-                  className="h-6 bg-white rounded-full ml-2"
+                  className="h-6 rounded-full ml-2"
                   alt="Dropdown Icon"
                 />
                 <div className="absolute hidden group-hover:block w-[200px] bg-white text-black mt-[90px] shadow-lg">
@@ -62,7 +62,7 @@ export default function QuestsNavBar() {
                 </Link>
                 <img
                   src={dropDownIcon}
-                  className="h-6 bg-white rounded-full ml-2"
+                  className="h-6 rounded-full ml-2"
                   alt="Dropdown Icon"
                 />
               </div>
@@ -96,7 +96,7 @@ export default function QuestsNavBar() {
 
                 <img
                   src={dropDownIcon}
-                  className="h-6 bg-white rounded-full ml-2"
+                  className="h-6 rounded-full ml-2"
                   alt="Dropdown Icon"
                 />
               </div>
@@ -110,7 +110,7 @@ export default function QuestsNavBar() {
                 </Link>
                 <img
                   src={dropDownIcon}
-                  className="h-6 bg-white rounded-full ml-2"
+                  className="h-6 rounded-full ml-2"
                   alt="Dropdown Icon"
                 />
               </div>

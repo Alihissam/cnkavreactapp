@@ -89,7 +89,7 @@ const AffiliatedTools = () => {
 
           <div className="p-2">
             <p className="text-xl">Exclusive Room Subscription</p>
-            <p>€49.99/ month</p>
+            <p>€499.99/ month</p>
           </div>
         </div>
 
@@ -98,7 +98,7 @@ const AffiliatedTools = () => {
 
           <div className="p-2">
             <p className="text-xl">Influwave Subscription</p>
-            <p>€499.99/ month</p>
+            <p>49.99/ month</p>
           </div>
         </div>
         {/* <img src={waveInflue} alt="" className="w-3/5 py-5" /> */}
