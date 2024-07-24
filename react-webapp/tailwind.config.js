@@ -5,16 +5,14 @@ const flowbite = require("flowbite-react/tailwind");
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}", flowbite.content()],
   theme: {
-    extend: {
-      container: {
-        center: true,
-        padding: {
-          DEFAULT: "2rem",
-          md: "1rem",
-          lg: "1rem",
-        },
+    container: {
+      center: true,
+      screens: {
+        "2xl": "1400px",
       },
+      padding: "1rem",
     },
+    extend: {},
   },
   plugins: [flowbite.plugin()],
 };

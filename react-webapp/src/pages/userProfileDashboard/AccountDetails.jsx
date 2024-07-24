@@ -25,7 +25,7 @@ const AccountDetails = () => {
     <div className="container mx-auto p-8">
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-4xl font-bold mb-6 mt-40">Account Details</h1>
-        <section className="bg-black w-3/6  shadow-md rounded-lg p-6">
+        <section className="bg-black md:w-3/6 w-full  shadow-md rounded-lg py-6">
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label className="block text-sm font-medium mb-2">
@@ -118,7 +118,7 @@ const AccountDetails = () => {
         <div className="pt-6 flex justify-center items-center w-[800px] ">
           <button
             type="submit"
-            className="rounded-3xl w-full bg-black text-white py-3 px-4 font-bold"
+            className="rounded-3xl w-3/6 md:w-2/3 bg-black text-white py-3 px-4 font-bold"
             style={{
               border: "2px solid transparent",
               borderImage: "linear-gradient(120deg, red, yellow)",

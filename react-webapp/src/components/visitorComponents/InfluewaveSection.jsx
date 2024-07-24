@@ -7,20 +7,20 @@ import VideoPlayingModal from "./VideoPlayingModal";
 export default function InfluewaveSection() {
   const [isVideoVisible, setVideoVisible] = useState(false);
   return (
-    <section className=" px-[1.5rem]  py-4 ">
-      <div className="  py-7 pt-[13rem] md:mb-0 flex items-center justify-center flex-col  text-center">
-        <div className="  space-y-4">
+    <section className="py-10">
+      <div className="pt-[13rem] md:mb-0 flex items-center justify-center flex-col  text-center">
+        <div className="w-[90%]  space-y-4 px-4">
           <h1 className="text-4xl md:text-6xl  font-extrabold " data-scroll>
             Influewave
           </h1>
           <h2 className="text-md md:text-2xl font-bold" data-scroll>
             Harness the Power of Community and Collaboration
           </h2>
-          <p className="text-xl leading-relaxed text-gray-200">
+          <p className="text-lg leading-relaxed text-gray-200">
             Welcome to Influewave, a space where you meet, interact, and grow
-            with a thriving community of innovative minds. But we are <br />
-            more than just a virtual meeting place, we are a launching pad to
-            elevate your ideas and projects through seamless
+            with a thriving community of innovative minds. But we are more than
+            just a virtual meeting place, we are a launching pad to elevate your
+            ideas and projects through seamless
             <br /> collaboration and enriched connections.
           </p>
         </div>
