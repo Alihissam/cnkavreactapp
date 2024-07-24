@@ -109,18 +109,13 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
-        <div className="mt-12">
+        <div className="mt-12 bg-red-300">
           <Link
             to="subscriptions"
-            className="hidden group md:flex items-center border border-white w-[35%] pl-8 py-2.5 rounded-md text-white transition-transform duration-300 ease-in-out transform hover:scale-105"
+            className=" group bg-red-600 items-center border border-white py-2.5 rounded-md text-white transition-transform duration-300 ease-in-out transform hover:scale-105"
           >
             <span>Secure my Spot</span>
-            <FaArrowUp className=" h-6 ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1   hover:scale-110 group-hover:rotate-90 rotate-45" />
-            {/* <img
-              src={arrowIcon}
-              className="bg-white rounded-full h-6 ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1 hover:scale-110 hover:rotate-45"
-              alt=""
-            /> */}
+            {/* <FaArrowUp className=" h-6 ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1   hover:scale-110 group-hover:rotate-90 rotate-45" /> */}
           </Link>
         </div>
       </div>

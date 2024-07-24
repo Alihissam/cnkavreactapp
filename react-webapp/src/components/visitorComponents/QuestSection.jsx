@@ -7,8 +7,8 @@ export default function QuestSection() {
         <img src={questImage} />
 
         <div className="z-20  space-y-3">
-          <h1 className="text-3xl md:text-6xl font-black">The Quest System</h1>
-          <h2 className="text-2xl  font-bold">Outsource and Accomplish</h2>
+          <h1 className="text-3xl md:text-6xl font-black text-center md:text-left">The Quest System</h1>
+          <h2 className="text-2xl font-bold text-center md:text-left">Outsource and Accomplish</h2>
           <p className="mb-4 leading-loose">
             Welcome to our innovative quest system, combining the flexibility of
             on-demand services with the assurance of video call verification.
