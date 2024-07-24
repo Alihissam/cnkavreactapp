@@ -36,7 +36,7 @@ export default function QuestsNavBar() {
       </div>
       <nav className="flex flex-col p-4 space-y-2">
         <Link
-          to="/"
+          to="/dashboard/account-details"
           className="hover:text-gray-400 items-center gap-4 rounded-lg bg-[#141414] p-2 flex"
           onClick={closeSidebar}
         >
@@ -49,7 +49,7 @@ export default function QuestsNavBar() {
           Username
         </Link>
         <Link
-          to="/"
+          to="/dashboard"
           className="hover:text-gray-400 rounded-lg bg-[#141414] p-2"
           onClick={closeSidebar}
         >
