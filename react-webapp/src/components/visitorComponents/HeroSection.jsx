@@ -58,7 +58,7 @@ const people = [
 
 export default function HeroSection() {
   return (
-    <section className=" md:pt-[20rem] pt-36  flex flex-col-reverse md:flex-row  relative">
+    <section className="pt-36 md:pt-[16rem]  flex flex-col-reverse md:flex-row  relative">
       <div
         style={{
           backgroundImage: `url(${herobg})`,
@@ -72,7 +72,7 @@ export default function HeroSection() {
         }}
         className="absolute bg-gray-950"
       ></div>
-      <div className="py-20 px-[2rem] md:w-[60%] z-20 ">
+      <div className="py-20 md:w-[60%] z-20  px-2">
         <h1 className="text-white text-6xl md:text-7xl font-extrabold mb-4">
           Different Social
         </h1>
@@ -110,13 +110,13 @@ export default function HeroSection() {
           </div>
         </div>
         <div className="mt-12 ">
-          <Link
-            to="subscriptions"
+          <a
+            href="#subscriptions"
             className="group justify-center text-center w-[200px] p-4 flex items-center border border-white py-2.5 rounded-md text-white transition-transform duration-300 ease-in-out transform hover:scale-105"
           >
             <span>Secure my Spot</span>
             <FaArrowUp className="h-6 ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1 hover:scale-110 group-hover:rotate-90 rotate-45" />
-          </Link>
+          </a>
         </div>
       </div>
       <div className="z-20 px-4 md:px-[2rem] mr-8">
@@ -143,7 +143,7 @@ export default function HeroSection() {
             className="w-full object-cover rounded-lg mb-4"
           />
         </div>
-      </div>
+      </div> 
     </section>
   );
 }

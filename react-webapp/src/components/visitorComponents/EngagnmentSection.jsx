@@ -10,7 +10,7 @@ export default function EngagnmentSection() {
         <div className="p-3">
           <h2 className="text-4xl font-black mt-4 mb-2">Engage and Innovate</h2>
           <h2 className="text-2xl mb-4 font-bold">Outsource and Accomplish</h2>
-          <p className="text-xl leading-relaxed text-gray-200">
+          <p className="text-lg leading-relaxed text-gray-200">
             The future of collaborative work and engaging community activities
             is here. Get <br />
             started today with Influewave, where the influence is not just about
@@ -21,7 +21,7 @@ export default function EngagnmentSection() {
           </p>
           <h2 className="text-4xl font-black mb-2 pt-6">Affiliate Marketing</h2>
           <h2 className="text-2xl mb-4 font-bold">Monetize Your Influence</h2>
-          <p className="text-xl leading-relaxed text-gray-200">
+          <p className="text-lg leading-relaxed text-gray-200">
             Expand your income sources with our integrated affiliate marketing
             system. Get <br />
             discounts, earn commissions, and monetize your influence, all within
@@ -32,7 +32,7 @@ export default function EngagnmentSection() {
           </p>
           <h2 className="text-4xl font-black mb-2 pt-6">eSports and Events</h2>
           <h2 className="text-2xl mb-4 font-bold">Step into the Spotlight</h2>
-          <p className="text-xl leading-relaxed text-gray-200">
+          <p className="text-lg leading-relaxed text-gray-200">
             Step into adrenaline-packed eSports events and competitions. Our
             well-curated
             <br /> community section provides access to various trends,
