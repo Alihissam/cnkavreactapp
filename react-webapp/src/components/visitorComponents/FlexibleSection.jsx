@@ -19,8 +19,8 @@ export default function FlexibleSection() {
           </p>
         </div>
 
-        <p className="mt-20 text-center text-gray-400">
-          * free tier has ads limited to one quest and quest post monthly.
+        <p className="my-10 text-center text-gray-400">
+          * free tier has ads. Limited to one quest and quest post monthly.
         </p>
       </div>
     </div>
