@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { cameraIcon } from "../../images";
 
-const AffiliateModal = ({ setAffiliateModal }) => {
+const AffiliateProductModal = ({ setAffiliateProductModal }) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -39,22 +39,24 @@ const AffiliateModal = ({ setAffiliateModal }) => {
       <div className="flex flex-col mx-[20%] bg-black px-[10%] ">
         <div className="text-right mt-20">
           <button
-            onClick={() => setAffiliateModal(false)}
+            onClick={() => setAffiliateProductModal(false)}
             className="text-3xl text-white"
           >
             &times;
           </button>
         </div>
-        <h1 className="text-2xl font-bold mb-6 mt-10">
-          Request Affiliate Products
-        </h1>
-        <p className="mb-10">Request for potential listing of an product.</p>
-        <p>
-          Steps are for listing after requesting , listing payments and
-          commissions and contracts. Also, after that process you paying the
-          commissions for the clients on the platform that sell as an affiliate
-          on sale.
-        </p>
+        <div className="mx-6">
+          <h1 className="text-2xl font-bold mb-6 mt-10">
+            Request Affiliate Products
+          </h1>
+          <p className="mb-10">Request for potential listing of an product.</p>
+          <p>
+            Steps are for listing after requesting , listing payments and
+            commissions and contracts. Also, after that process you paying the
+            commissions for the clients on the platform that sell as an
+            affiliate on sale.
+          </p>
+        </div>
 
         <section className="bg-black shadow-md rounded-lg p-6 mb-8">
           <form onSubmit={handleSubmit}>
@@ -165,4 +167,4 @@ const AffiliateModal = ({ setAffiliateModal }) => {
   );
 };
 
-export default AffiliateModal;
+export default AffiliateProductModal;

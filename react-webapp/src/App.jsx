@@ -42,8 +42,8 @@ import AddressPage from "./pages/userProfileDashboard/AddressPage";
 import SubscriptionsPage from "./pages/userProfileDashboard/SubscriptionsPage";
 import ContactUs from "./pages/userProfileDashboard/ContactUs";
 
-import AffiliateProductRequestPage from "./pages/visitorPages/AffiliateProductRequestPage ";
-import RequestAffilateProduct from "./pages/userPages/RequestAffilateProduct";
+// import AffiliateProductRequestPage from "./pages/visitorPages/AffiliateProductRequestPage ";
+// import RequestAffilateProduct from "./pages/userPages/RequestAffilateProduct";
 
 function ScrollToTop() {
   const { pathname } = useLocation();

@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import AffiliateModal from "./AffiliateModal";
+import AffiliateProductModal from "./AffiliateProductModal";
+import AffiliMarketLinkModal from "./AffiliMarketLinkModal";
 
 import { waveInflue, waveCnkav, waveER } from "../../images";
 
 const AffiliatedTools = () => {
-  const [isAffiliateModal, setAffiliateModal] = useState(false);
+  const [isAffiliateProductModal, setAffiliateProductModal] = useState(false);
+  const [isAffiliMarketLinkModal, setAffiliMarketLinkModal] = useState(false);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2  bg-black ">
@@ -41,25 +43,22 @@ const AffiliatedTools = () => {
             <button
               type="button"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm text-left rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-              onClick={() => setAffiliateModal(!isAffiliateModal)}
+              onClick={() => setAffiliateProductModal(!isAffiliateProductModal)}
             >
               Request New Affiliate Product
             </button>
           </div>
 
           <div>
-            <select
-              id="affiliateMarketingLinks"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            <button
+              type="button"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm text-left rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+              onClick={() => setAffiliMarketLinkModal(!isAffiliMarketLinkModal)}
             >
-              <option value="" disabled selected>
-                Select Affiliate Marketing Links
-              </option>
-              <option value="link1">Affiliate Link 1</option>
-              <option value="link2">Affiliate Link 2</option>
-              <option value="link3">Affiliate Link 3</option>
-            </select>
+              Select Affiliate Marketing Links
+            </button>
           </div>
+
           <div>
             <select
               id="affiliateLinks"
@@ -106,8 +105,15 @@ const AffiliatedTools = () => {
           Load More
         </button>
       </div>
-      {isAffiliateModal && (
-        <AffiliateModal setAffiliateModal={setAffiliateModal} />
+      {isAffiliateProductModal && (
+        <AffiliateProductModal
+          setAffiliateProductModal={setAffiliateProductModal}
+        />
+      )}
+      {isAffiliMarketLinkModal && (
+        <AffiliMarketLinkModal
+          setAffiliMarketLinkModal={setAffiliMarketLinkModal}
+        />
       )}
     </div>
   );
