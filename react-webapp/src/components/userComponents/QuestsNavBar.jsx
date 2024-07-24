@@ -264,7 +264,7 @@ export default function QuestsNavBar() {
             }, 100);
           }}
         >
-          Features
+          Featurs
         </Link>
 
         <div className="absolute hidden group-hover:block w-[220px] bg-white text-black mt-[100px] leading-2 shadow-lg"></div>
