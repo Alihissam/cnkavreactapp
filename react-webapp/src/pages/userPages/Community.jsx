@@ -1,6 +1,6 @@
-import React from "react";
-import { FaHeart } from "react-icons/fa";
-import { FaMessage, FaShare } from "react-icons/fa6";
+import React from 'react';
+import { FaHeart } from 'react-icons/fa';
+import { FaMessage, FaShare } from 'react-icons/fa6';
 
 const Community = () => {
   return (
@@ -33,7 +33,7 @@ const Community = () => {
           />
           <div className="px-3">
             <p className="text-center text-gray-500">
-              {" "}
+              {' '}
               Mariane @marianeee ·1/21/20
             </p>
 
@@ -60,9 +60,17 @@ const Community = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center gap-12">
-              <FaHeart />
-              <FaMessage />
+            <div className="flex justify-center items-center gap-12 ">
+             
+              <div className="flex items-center gap-1">
+                <FaMessage className="" />{' '}
+                <span className="text-sm">7</span>
+              </div>
+
+              <div className="flex items-center gap-1">
+                <FaHeart className="text-red-500" />{' '}
+                <span className="text-sm">3</span>
+              </div>
               <FaShare />
             </div>
           </div>
@@ -74,7 +82,7 @@ const Community = () => {
           />
           <div className="px-3">
             <p className="text-center text-gray-500">
-              {" "}
+              {' '}
               Mariane @marianeee ·1/21/20
             </p>
 
@@ -102,8 +110,15 @@ const Community = () => {
               </div>
             </div>
             <div className="flex justify-center gap-12">
-              <FaHeart />
-              <FaMessage />
+            <div className="flex items-center gap-1">
+                <FaMessage className="" />{' '}
+                <span className="text-sm">7</span>
+              </div>
+
+              <div className="flex items-center gap-1">
+                <FaHeart className="text-red-500" />{' '}
+                <span className="text-sm">3</span>
+              </div>
               <FaShare />
             </div>
           </div>
