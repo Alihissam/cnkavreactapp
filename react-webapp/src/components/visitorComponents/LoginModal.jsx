@@ -36,7 +36,7 @@ export default function Component({ isModal, toggleModal }) {
             </button>
           </div>
 
-          <div className="px-10 text-white text-5xl font-bold py-3 flex items-center">
+          <div className="px-10 text-white text-2xl md:text-5xl  font-bold py-3 flex items-center">
             Welcome Back{' '}
             <img src={helloHand} alt="Hello Hand" className="h-10 ml-2" />
           </div>

@@ -176,17 +176,18 @@ export default function Component({ isModal, toggleModal }) {
             overflowY: 'scroll',
           }}
         >
-          <div className="flex justify-between">
-            <h2 className="px-10 text-white text-5xl font-bold py-3 ">
-              Create A Personal Account
-            </h2>
+           <div className="flex justify-end">
             <button
-              onClick={() => toggleModal('closed')}
+           onClick={() => toggleModal('closed')}
               className="text-white text-2xl font-bold"
             >
               &times;
             </button>
           </div>
+            <h2 className="px-10 text-white text-2xl md:text-5xl font-bold py-3 ">
+              Create A Personal Account
+            </h2>
+          
 
           <form className="px-10">
             <div className="mb-4">
