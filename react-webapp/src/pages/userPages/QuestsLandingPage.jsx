@@ -51,7 +51,6 @@ const QuestslandingPage = () => {
           </div>
         </form>
 
-        <p className="border p-3 my-10"> Click on Image to Edit Quest</p>
         <button className="flex justify-center">
           <div className="w-[360px] md:w-[500px]  relative bg-red-200 ">
             <div className="bg-red-400 absolute right-0 rounded-md p-1 mt-[-10px]">

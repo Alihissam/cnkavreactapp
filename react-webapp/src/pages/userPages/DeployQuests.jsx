@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { cameraIcon } from "../../images";
-
+import PublishNewQuestModal from "./PublishNewQuestModal";
 const DeployQuests = () => {
+  const [isPublishModalOpen, setIsPublishModalOpen] = useState(false);
+  const handlePublishNewQuestClick = () => {
+    setIsPublishModalOpen(true);
+  };
+
+  const handlePublishNewQuestClose = () => {
+    setIsPublishModalOpen(false);
+  };
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2  bg-black ">
       <div className="flex flex-col justify-center  mt-32">
@@ -16,12 +24,12 @@ const DeployQuests = () => {
           </div>
           <div className="flex flex-col justify-center items-center">
             <div className="my-6 w-3/6 ">
-              <input
-                type="text"
-                id="questName"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                placeholder="Publish New Quest"
-              />
+              <button
+                className="bg-gray-50 border border-gray-300 text-left text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                onClick={handlePublishNewQuestClick}
+              >
+                Publish New Quest
+              </button>
             </div>
             <div className="my-6 w-3/6">
               <input
@@ -50,11 +58,11 @@ const DeployQuests = () => {
               Delete
             </button>
           </div>
-          <div 
+          <div
             className="bg-gray-400 px-4 rounded-2xl py-4 mx-24 h-[200px] my-4"
             onClick={() => {
-              const fileInput = document.createElement('input');
-              fileInput.type = 'file';
+              const fileInput = document.createElement("input");
+              fileInput.type = "file";
               fileInput.click();
             }}
           >
@@ -106,6 +114,10 @@ const DeployQuests = () => {
           Load More
         </button>
       </div>
+      <PublishNewQuestModal
+        isOpen={isPublishModalOpen}
+        onClose={handlePublishNewQuestClose}
+      />
     </div>
   );
 };

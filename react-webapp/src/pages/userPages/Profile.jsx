@@ -43,7 +43,9 @@ const Profile = () => {
             ) : (
               <Link
                 to={option.path}
-                className="block text-white py-2 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105"
+                className={`block text-white py-2 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 ${
+                  option.label === "General" ? "bg-gray-800 pl-2" : ""
+                }`}
               >
                 <h3 className="text-xl font-semibold">{option.label}</h3>
               </Link>

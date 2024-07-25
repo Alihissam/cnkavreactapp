@@ -1,30 +1,21 @@
 import React, { useState } from "react";
 import PublishNewEventModal from "./PublishNewEventModal";
-import { useNavigate } from "react-router-dom";
 
-const MyEventsPurchasedEvents = () => {
+const ExclusiveRoomEvents = () => {
   const [isPublishNewEventModal, setPublishNewEventModal] = useState(false);
-  const navigate = useNavigate();
-
-  const handleSelectChange = (event) => {
-    if (event.target.value === "exclusive-room-events") {
-      navigate("/dashboard/events/exclusive-room-events");
-    }
-  };
 
   return (
     <div className="flex flex-col justify-center items-center min-h-screen py-8 bg-gray-900">
       <div className="w-full max-w-lg mt-16">
+        <h1 className="mb-10 text-center text-3xl"> Exclusive Rooma Events</h1>
         <form className="space-y-4">
           <select
             id="eventType"
             className="bg-white border-gray-700 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3"
-            onChange={handleSelectChange}
           >
             <option value="" disabled selected>
               Select Event Type
             </option>
-
             <option value="exclusive-room-events">Exclusive Room Events</option>
             <option value="community-events">Community Events</option>
             <option value="conference">Conference</option>
@@ -56,6 +47,7 @@ const MyEventsPurchasedEvents = () => {
           <button
             type="submit"
             className="bg-white border border-gray-700 text-left text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3"
+            s
             onClick={() => setPublishNewEventModal(!isPublishNewEventModal)}
           >
             Post New Community Event
@@ -77,4 +69,4 @@ const MyEventsPurchasedEvents = () => {
   );
 };
 
-export default MyEventsPurchasedEvents;
+export default ExclusiveRoomEvents;

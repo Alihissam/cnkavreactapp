@@ -25,7 +25,7 @@ export default function PricingSection() {
             <p  className="text-[#858585]">Suitable for Individual looking to foster growth and income.</p>
 
             <Link
-              to="subscriptions"
+              to="choose-pay"
               className="w-full m-4 text-center text-white py-3 px-2 rounded-lg hover:bg-white hover:text-black border border-white text-xl font-bold transition-transform duration-300 ease-in-out transform hover:scale-105"
               onClick={() => setCardVisible(false)}
             >
@@ -101,7 +101,7 @@ export default function PricingSection() {
             </h2>
             <p  className="text-[#858585]">Suitable for Individual / Business looking to scale up.</p>
             <Link
-              to="subscriptions"
+              to="choose-pay"
               className="w-full m-4 text-center text-white py-3 px-2 rounded-lg hover:bg-white hover:text-black border border-white text-xl font-bold transition-transform duration-300 ease-in-out transform hover:scale-105"
               onClick={() => setCardVisible(false)}
             >
@@ -174,7 +174,7 @@ export default function PricingSection() {
               Suitable for premium members looking to build a valuable network.
             </p>
             <Link
-              to="subscriptions"
+              to="choose-pay"
               className="w-full m-4 text-center text-white py-3 px-2 rounded-lg hover:bg-white hover:text-black border border-white text-xl font-bold transition-transform duration-300 ease-in-out transform hover:scale-105"
               onClick={() => setCardVisible(false)}
             >
