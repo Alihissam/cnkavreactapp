@@ -3,6 +3,7 @@ import { dropDownIcon, cnkavLogo, humburger, userName } from "../../images";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import PricingModal from "../visitorComponents/PricingModal";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function QuestsNavBar() {
   const [isCardVisible, setCardVisible] = useState(false);
@@ -49,14 +50,16 @@ export default function QuestsNavBar() {
         </Link>
         <Link
           to="/dashboard"
-          className="hover:text-gray-400 rounded-lg bg-[#141414] p-2"
+          className="hover:text-gray-400  rounded-lg bg-[#141414] p-2 flex items-center justify-between"
+
           onClick={closeSidebar}
         >
-          Home
+          Home <span className="ml-2"><FaArrowRight /></span>
         </Link>
         <Link
           to="/"
-          className="hover:text-gray-400 bg-[#141414] rounded-lg p-2"
+          className="hover:text-gray-400  rounded-lg bg-[#141414] p-2 flex items-center justify-between"
+
           onClick={() => {
             document
               .getElementById("exclusive-section")
@@ -64,11 +67,12 @@ export default function QuestsNavBar() {
             closeSidebar();
           }}
         >
-          Featurs
+          Featurs <span className="ml-2"><FaArrowRight /></span>
         </Link>
         <Link
           to="/"
-          className="hover:text-gray-400 bg-[#141414] rounded-lg p-2"
+          className="hover:text-gray-400  rounded-lg bg-[#141414] p-2 flex items-center justify-between"
+
           onClick={() => {
             document
               .getElementById("exclusive-section")
@@ -76,14 +80,24 @@ export default function QuestsNavBar() {
             closeSidebar();
           }}
         >
-          Pricing
-        </Link>
+
+ Pricing  <span className="ml-2"><FaArrowRight /></span>
+</Link>
         <Link
           to="/contact"
-          className="hover:text-gray-400 rounded-lg bg-[#141414] p-2"
+          className="hover:text-gray-400  rounded-lg bg-[#141414] p-2 flex items-center justify-between"
+
           onClick={closeSidebar}
         >
-          Contact Us
+          Contact Us <span className="ml-2"><FaArrowRight /></span>
+        </Link>
+
+        <Link
+          to="/"
+          className="hover:text-gray-400  rounded-lg bg-[#141414] p-2 flex items-center justify-between"
+
+        >
+         Logout  <span className="ml-2"><FaArrowRight /></span>
         </Link>
       </nav>
     </div>
@@ -149,7 +163,7 @@ export default function QuestsNavBar() {
                 >
                   Chat
                 </span>
-                <div className="absolute w-[200px] mt-[140px] z-10 opacity-90 hidden space-y-2 bg-white text-black shadow-lg group-hover:block">
+                <div className="absolute navchat w-[200px] mt-[140px] z-50 opacity-90 hidden  bg-white text-black shadow-lg group-hover:block">
                   <Link
                     to="community-chat"
                     className="block px-4 py-2 text-sm hover:bg-black hover:text-white "

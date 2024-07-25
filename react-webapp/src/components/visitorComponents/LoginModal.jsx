@@ -9,6 +9,7 @@ import {
 import { helloHand } from '../../images';
 import { useNavigate } from 'react-router-dom';
 import { Button, Modal } from 'flowbite-react';
+import { FaAppStore, FaApple } from 'react-icons/fa';
 
 export default function Component({ isModal, toggleModal }) {
   const navigate = useNavigate();
@@ -108,6 +109,7 @@ export default function Component({ isModal, toggleModal }) {
               Sign up with Google
             </button>
             <button className="w-[60%] text-white py-3 rounded-lg font-bold flex items-center justify-center transition">
+            <FaApple className="w-8 h-8 mr-3" />
               Sign up with Apple
             </button>
 

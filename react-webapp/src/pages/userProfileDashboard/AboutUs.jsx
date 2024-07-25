@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { cnkavLogo, userLogedIn } from "../../images";
+import PricingModal from "../../components/visitorComponents/PricingModal";
 
 const AboutUs = () => {
+  const [isCardVisible, setCardVisible] = useState(false);
+
   return (
-    <div className="container mx-auto py-10 px-4 ">
+   <> <div className="container mx-auto py-10 px-4 ">
       <h1 className="text-4xl font-black  mb-8 mt-40">Who We Are?</h1>
       <p className="text-lg leading-relaxed  mb-8">
         In a realm of fragmented connections and vast opportunities, we are the
@@ -17,7 +20,7 @@ const AboutUs = () => {
       </p>
       <div className="pt-6 flex justify-center">
         <button
-          type="submit"
+          onClick={() => setCardVisible(true)}
           className="rounded-3xl w-3/12 bg-black text-white py-3 px-4 font-bold"
           style={{
             border: "2px solid transparent",
@@ -172,6 +175,8 @@ const AboutUs = () => {
         </div>
       </section>
     </div>
+    
+    {isCardVisible && <PricingModal setCardVisible={setCardVisible} />}</>
   );
 };
 
