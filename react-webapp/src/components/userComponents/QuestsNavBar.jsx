@@ -163,7 +163,7 @@ export default function QuestsNavBar() {
                 >
                   Chat
                 </span>
-                <div className="absolute w-[200px] mt-[140px] z-10 opacity-90 hidden space-y-2 bg-white text-black shadow-lg group-hover:block">
+                <div className="absolute navchat w-[200px] mt-[140px] z-50 opacity-90 hidden  bg-white text-black shadow-lg group-hover:block">
                   <Link
                     to="community-chat"
                     className="block px-4 py-2 text-sm hover:bg-black hover:text-white "

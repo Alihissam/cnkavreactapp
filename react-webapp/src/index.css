@@ -27,3 +27,8 @@
 .sidebar {
   z-index: 1000;
 }
+
+
+.navchat{
+  z-index: 100;
+}

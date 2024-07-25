@@ -26,6 +26,8 @@ const Community = () => {
             <option value="workshop">Workshop</option>
             <option value="webinar">Webinar</option>
             <option value="meetup">Meetup</option>
+            <option value="meetup">community</option>
+
           </select>
           <div className="relative">
             <input
