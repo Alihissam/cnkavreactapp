@@ -12,9 +12,9 @@ const RequestAffilateProduct = () => {
 
   return (
     <div className="min-h-screen bg-black flex flex-col items-center justify-center p-6">
-      <h1 className="text-3xl text-white font-black mb-3 mt-40">
-        Request Affiliate Products
-      </h1>
+     <button className="text-2xl font-bold mb-6 mt-10">
+            Request Affiliate Products
+          </button>
       <p>Request for potential listing of an product. </p>
 
       <div className="bg-black text-white p-8 rounded-lg shadow-lg w-full max-w-md">

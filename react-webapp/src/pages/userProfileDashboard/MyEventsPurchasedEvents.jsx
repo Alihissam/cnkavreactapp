@@ -2,7 +2,7 @@ import React from "react";
 
 const MyEventsPurchasedEvents = () => {
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen py-8 bg-gray-900">
+    <div className="flex flex-col justify-center items-center min-h-screen py-8 ">
       <div className="w-full max-w-lg mt-16">
         <form className="space-y-4">
           <select

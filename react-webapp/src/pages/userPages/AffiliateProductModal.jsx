@@ -46,9 +46,9 @@ const AffiliateProductModal = ({ setAffiliateProductModal }) => {
           </button>
         </div>
         <div className="mx-6">
-          <h1 className="text-2xl font-bold mb-6 mt-10">
-            Request Affiliate Products
-          </h1>
+          <button className="text-2xl font-bold mb-6 mt-10">
+            Request Affiliate Products
+          </button>
           <p className="mb-10">Request for potential listing of an product.</p>
           <p>
             Steps are for listing after requesting , listing payments and

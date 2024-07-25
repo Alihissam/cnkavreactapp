@@ -35,9 +35,9 @@ const AffiliateProductRequestPage = () => {
 
   return (
     <div className="container mx-auto p-8">
-      <h1 className="text-4xl font-bold mb-6 mt-40">
-        Request Affiliate Products
-      </h1>
+      <button className="text-2xl font-bold mb-6 mt-10">
+            Request Affiliate Products
+          </button>
       <p className="mb-4">
         In This Page You Will You Will Request To List Your Product As An
         Affiliate.
