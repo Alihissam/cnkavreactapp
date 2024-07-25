@@ -10,6 +10,7 @@ import { useNavigate } from "react-router-dom";
 
 import { Button, Modal } from "flowbite-react";
 import { useState } from "react";
+import { FaApple } from "react-icons/fa";
 
 // export default function JoinUsModal({ isModal, setModal }) {
 
@@ -277,6 +278,7 @@ export default function Component({ isModal, toggleModal }) {
               //   borderImage: 'linear-gradient(120deg, red, yellow) 1',
               // }}
             >
+              <FaApple className="w-8 h-8 mr-3" />
               {/* <img src={appleLogo} alt="Apple" className="w-6 h-6 mr-2" /> */}
               Sign up with Apple
             </button>
