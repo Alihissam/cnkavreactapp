@@ -14,12 +14,7 @@ const VideoPlayingModal = ({ setVideoVisible }) => {
         </button>
 
         <div className="w-3/4  h-3/4 mt-40 m-auto my-10 ">
-          <iframe
-            src={"https://www.youtube.com/embed/ixRanV-rdAQ"}
-            className="w-full h-full rounded-2xl"
-            frameBorder={0}
-            allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          ></iframe>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/C13OUyfIZW8?si=U1Iw6xN_fFRFz2VF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
     </div>
