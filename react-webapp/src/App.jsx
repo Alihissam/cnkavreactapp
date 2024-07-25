@@ -34,7 +34,7 @@ import PrivacyPolicy from "./pages/userProfileDashboard/PrivacyPolicy";
 import DownloadsPlugins from "./pages/userProfileDashboard/DownloadsAndPlugins";
 import Wallet from "./pages/userProfileDashboard/Wallet";
 import MyEventsPurchasedEvents from "./pages/userProfileDashboard/MyEventsPurchasedEvents";
-import PaymentMethod from "./pages/userProfileDashboard/PaymentMethod";
+// import PaymentMethod from "./pages/userProfileDashboard/PaymentMethod";
 import AccountDetails from "./pages/userProfileDashboard/AccountDetails";
 import OrderPage from "./pages/userProfileDashboard/OrderPage";
 import NotificationsPage from "./pages/userProfileDashboard/NotificationsPage";

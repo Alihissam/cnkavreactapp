@@ -12,7 +12,7 @@ const Profile = () => {
     { path: "/dashboard/address-page", label: "Addresses" },
     { path: "/dashboard/deploy-quests", label: "Upload Quest plugin" },
     { path: "/dashboard/quests-dashboard", label: "Quest Dashboard" },
-    { path: "/dashboard/payment-method", label: "Payment Method" },
+    { path: "/dashboard/choose-pay", label: "Payment Method" },
     { path: "/dashboard/events", label: "My Events and Purchased Events" },
     { path: "/dashboard/wallet", label: "Wallet" },
     { path: "/dashboard/downloads-plugins", label: "Downloads and plugins" },

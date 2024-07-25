@@ -1,20 +1,15 @@
 import React, { useState } from "react";
 import { cameraIcon } from "../../images";
-import PublishNewQuestModal from "./PublishNewQuestModal";
-const DeployQuests = () => {
-  const [isPublishModalOpen, setIsPublishModalOpen] = useState(false);
-  const handlePublishNewQuestClick = () => {
-    setIsPublishModalOpen(true);
-  };
+import DeployQuestsModal from "./DeployQuestsModal";
 
-  const handlePublishNewQuestClose = () => {
-    setIsPublishModalOpen(false);
-  };
+const DeployQuests = () => {
+  const [isDeployQuestsModal, setDeployQuestsModal] = useState(false);
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2  bg-black ">
-      <div className="flex flex-col justify-center  mt-32">
+    <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-black">
+      <div className="flex flex-col justify-center mt-32">
         <form className="">
-          <div className="my-6 ">
+          <div className="my-6">
             <input
               type="text"
               id="questName"
@@ -23,21 +18,21 @@ const DeployQuests = () => {
             />
           </div>
           <div className="flex flex-col justify-center items-center">
-            <div className="my-6 w-3/6 ">
-              <button
-                className="bg-gray-50 border border-gray-300 text-left text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                onClick={handlePublishNewQuestClick}
-              >
-                Publish New Quest
-              </button>
-            </div>
             <div className="my-6 w-3/6">
               <input
                 type="text"
-                id="questName"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                placeholder="Search Quest"
+                className="bg-gray-50 border border-gray-300 text-left text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                placeholder="Search Options"
               />
+            </div>
+            <div className="my-6 w-3/6">
+              <button
+                type="button"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 text-left"
+                onClick={() => setDeployQuestsModal(!isDeployQuestsModal)}
+              >
+                Deploy Quest Plugin
+              </button>
             </div>
           </div>
         </form>
@@ -46,7 +41,7 @@ const DeployQuests = () => {
             <input
               type="text"
               placeholder="Quest Plugin Title"
-              className="w-full rounded-xl bg-gray-700 text-white ml-2  py-1 "
+              className="w-full rounded-xl bg-gray-700 text-white ml-2 py-1"
             />
             <button className="w-1/5 rounded-xl bg-gray-700 text-white mr-2 py-1">
               Upload
@@ -71,7 +66,7 @@ const DeployQuests = () => {
             </div>
           </div>
 
-          <div className="main-conteent flex flex-row justify-between">
+          <div className="main-content flex flex-row justify-between">
             <div className="left-list w-3/4">
               <input
                 type="text"
@@ -114,10 +109,9 @@ const DeployQuests = () => {
           Load More
         </button>
       </div>
-      <PublishNewQuestModal
-        isOpen={isPublishModalOpen}
-        onClose={handlePublishNewQuestClose}
-      />
+      {isDeployQuestsModal && (
+        <DeployQuestsModal setDeployQuestsModal={setDeployQuestsModal} />
+      )}
     </div>
   );
 };
