@@ -42,6 +42,7 @@ import AddressPage from "./pages/userProfileDashboard/AddressPage";
 import SubscriptionsPage from "./pages/userProfileDashboard/SubscriptionsPage";
 import ContactUs from "./pages/userProfileDashboard/ContactUs";
 import PublishEvents from "./components/userComponents/PublishEvents";
+import ChoosePayMethod from "./components/visitorComponents/ChoosePayMethod";
 
 // import AffiliateProductRequestPage from "./pages/visitorPages/AffiliateProductRequestPage ";
 // import RequestAffilateProduct from "./pages/userPages/RequestAffilateProduct";
@@ -110,7 +111,7 @@ function App() {
           <Route path="wallet" element={<Wallet />} />
           <Route path="events" element={<MyEventsPurchasedEvents />} />
           <Route path="publishevents" element={<PublishEvents />} />
-          <Route path="payment-method" element={<PaymentMethod />} />
+          {/* <Route path="payment-method" element={<PaymentMethod />} /> */}
           <Route path="choose-pay" element={<ChoosePayMethod />} />
           <Route path="contact" element={<ContactUs />} />
 
