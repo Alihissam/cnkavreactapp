@@ -16,11 +16,11 @@ export default function Component({ isModal, toggleModal }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        navigate("contact-modal2");
+        navigate("/contact-step2");
     };
 
     return (
-        <div className='w-full h-full flex justify-center items-center text-center'>
+        <div className=' w-full h-full flex justify-center items-center text-center'>
             <Modal show={isModal} onClose={() => toggleModal('closed')}>
                 <div className=" bg-black flex flex-col justify-end items-end px-4 md:px-12">
 
@@ -67,7 +67,7 @@ export default function Component({ isModal, toggleModal }) {
                             </div>
                             <div className="pt-6">
                                 <Link
-                                    to="#"
+                                    to="#/contact-step2"
                                     // to="contact"
                                     onClick={() => {
                                         toggleModal('contact-modal2');

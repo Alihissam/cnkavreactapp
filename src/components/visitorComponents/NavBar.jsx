@@ -74,49 +74,49 @@ export default function NavBar() {
     if (type === 'contact-modal') {
       setisContactModal(true);
       setModal(false);
-      // setisLoginModal(false);
+
     }
     if (type === 'contact-modal2') {
       setisContactModal(false);
       setisContactModal2(true);
       setModal(false);
-      // setisLoginModal(false);
+
     }
     if (type === 'contact-modal3') {
       setisContactModal2(false);
       setisContactModal3(true);
       setModal(false);
-      // setisLoginModal(false);
+
     }
     if (type === 'contact-modal4') {
       setisContactModal3(false);
       setisContactModal4(true);
       setModal(false);
-      // setisLoginModal(false);
+
     }
     if (type === 'contact-modal5') {
       setisContactModal4(false);
       setisContactModal5(true);
       setModal(false);
-      // setisLoginModal(false);
+
     }
     if (type === 'contact-modal6') {
       setisContactModal5(false);
       setisContactModal6(true);
       setModal(false);
-      // setisLoginModal(false);
+
     }
     if (type === 'contact-modal7') {
       setisContactModal6(false);
       setisContactModal7(true);
       setModal(false);
-      // setisLoginModal(false);
+
     }
     if (type === 'contact-modal8') {
       setisContactModal7(false);
       setisContactModal8(true);
       setModal(false);
-      // setisLoginModal(false);
+
     }
 
 
@@ -177,7 +177,7 @@ export default function NavBar() {
           Pricing<span className="ml-2"><FaArrowRight /></span>
         </Link>
         <Link
-          to="#"
+          to="#/contact-step1"
           className="hover:text-gray-400 rounded-lg bg-[#141414] p-2 flex items-center justify-between"
           onClick={() => {
             toggleModal('contact-modal');
@@ -187,7 +187,7 @@ export default function NavBar() {
           Contact Us<span className="ml-2"><FaArrowRight /></span>
         </Link>
         <Link
-          to="#"
+          to="#/login"
           className="hover:text-gray-400 rounded-lg bg-[#141414] p-2 flex items-center justify-between"
           onClick={() => {
             toggleModal('open-login');
@@ -197,7 +197,7 @@ export default function NavBar() {
           Login<span className="ml-2"><FaArrowRight /></span>
         </Link>
         <Link
-          to="#"
+          to="#/signup"
           className="hover:text-gray-400  rounded-lg bg-[#141414] p-2 flex items-center justify-between"
           onClick={() => {
             toggleModal('open-signup');
@@ -221,7 +221,7 @@ export default function NavBar() {
             <Link to="/">
               <img src={cnkavLogo} alt="Logo" className="h-16 w-16" />
             </Link>
-            <nav className="hidden text-lg md:text-md md:flex space-x-12 text-[17px]  items-baseline">
+            <nav className="hidden text-lg md:text-md md:flex space-x-12 text-[16px] font-medium items-baseline">
               <Link className="text-white font-bold" to="/">
                 Home
               </Link>
@@ -249,14 +249,14 @@ export default function NavBar() {
 
               <Link
                 className="hover:text-white text-[##7A7A7A]"
-                to="#"
+                to="#/pricing"
                 onClick={() => setCardVisible(true)}
               >
                 Pricing
               </Link>
               <Link
                 className="hover:text-white text-[##7A7A7A]"
-                to="#"
+                to="#/contact-step1"
                 // to="contact"
                 onClick={() => {
                   toggleModal('contact-modal');
@@ -274,14 +274,17 @@ export default function NavBar() {
             src={humburger}
             alt="Menu"
           />
+          <Link to='#/signup'
 
-          <button
-            onClick={() => setModal(!isModal)}
-            className="hidden group font-bold cursor-pointer md:flex items-center border border-white lg:px-7 py-3 rounded-md text-white transition-transform duration-300 ease-in-out transform hover:scale-105"
           >
-            <span className="text-white">Join Us</span>
-            <FaArrowUp className="h-6 ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1 hover:scale-110 group-hover:rotate-90 rotate-45" />
-          </button>
+            <button
+              onClick={() => setModal(!isModal)}
+              className="hidden group font-medium text-[16px] cursor-pointer md:flex items-center border border-white lg:px-7 py-3 rounded-md text-white transition-transform duration-300 ease-in-out transform hover:scale-105"
+            >
+              <span className="text-white">Join Us</span>
+              <FaArrowUp className="h-6 ml-2 transition-transform duration-300 ease-in-out transform hover:translate-x-1 hover:scale-110 group-hover:rotate-90 rotate-45" />
+            </button>
+          </Link>
         </div>
       </div>
       {Sidebar}

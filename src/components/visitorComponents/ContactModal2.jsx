@@ -78,7 +78,7 @@ export default function Component({ isModal, toggleModal }) {
                             <div className="pt-6">
                                 <Link
 
-                                    to="#"
+                                    to="#/contact-step3"
                                     // to="contact"
                                     onClick={() => {
                                         toggleModal('contact-modal3');
@@ -87,6 +87,7 @@ export default function Component({ isModal, toggleModal }) {
 
                                 >
                                     <button
+
                                         type="submit"
                                         className="rounded-3xl w-full bg-black text-white py-3 px-4 font-bold"
                                         style={{

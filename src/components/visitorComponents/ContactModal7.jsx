@@ -16,7 +16,7 @@ export default function Component({ isModal, toggleModal }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        navigate("/contact-step2");
+        navigate("/contact-step8");
     };
 
     return (
@@ -70,7 +70,7 @@ export default function Component({ isModal, toggleModal }) {
                             </div>
                             <div className="pt-6">
                                 <Link
-                                    to="#"
+                                    to="#/contact-step8"
                                     // to="contact"
                                     onClick={() => {
                                         toggleModal('contact-modal8');

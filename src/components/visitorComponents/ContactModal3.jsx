@@ -85,7 +85,7 @@ export default function Component({ isModal, toggleModal }) {
                             </div>
                             <div className="pt-6">
                                 <Link
-                                    to="#"
+                                    to="#/contact-step4"
                                     // to="contact"
                                     onClick={() => {
                                         toggleModal('contact-modal4');

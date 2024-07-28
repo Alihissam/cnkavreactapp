@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   googleLogo,
   facebookLogo,
@@ -85,12 +86,16 @@ export default function Component({ isModal, toggleModal }) {
               />
             </div>
             <div className="mb-4 flex justify-end">
-              <button
-                onClick={() => toggleModal('open-forgot')}
-                className="text-blue-500 hover:underline"
+              <Link
+                to='#/forgot/password'
               >
-                Forgot password?
-              </button>
+                <button
+                  onClick={() => toggleModal('open-forgot')}
+                  className="text-blue-500 hover:underline"
+                >
+                  Forgot password?
+                </button>
+              </Link>
             </div>
             <div className="flex justify-center">
               <button
@@ -138,21 +143,23 @@ export default function Component({ isModal, toggleModal }) {
               </p>
 
             </button>
-
-            <button
-              className="py-2 "
+            <Link
+              to='#/signup'
               onClick={() => toggleModal('open-signup')}
             >
-              <p>
-                Don't you have an account?{' '}
-                <span
-                  className="text-blue-700 cursor-pointer"
-                  onClick={() => to}
-                >
-                  Sign up
-                </span>
-              </p>
-            </button>
+              <button
+                className="py-2 ">
+                <p>
+                  Don't you have an account?{' '}
+                  <span
+                    className="text-blue-700 cursor-pointer"
+                    onClick={() => to}
+                  >
+                    Sign up
+                  </span>
+                </p>
+              </button>
+            </Link>
           </div>
         </div>
       </Modal >

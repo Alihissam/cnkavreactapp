@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import {
   googleLogo,
   facebookLogo,
@@ -301,15 +302,18 @@ export default function Component({ isModal, toggleModal }) {
                 Sign up with Apple
               </p>
             </button>
-
-            <button onClick={() => toggleModal("open-login")}>
-              <p>
-                Already Have An Account?{" "}
-                <span className="underline text-blue-700 cursor-pointer">
-                  Log in
-                </span>
-              </p>
-            </button>
+            <Link to='#/login'
+              onClick={() => toggleModal("open-login")}
+            >
+              <button>
+                <p>
+                  Already Have An Account?{" "}
+                  <span className="underline text-blue-700 cursor-pointer">
+                    Log in
+                  </span>
+                </p>
+              </button>
+            </Link>
           </div>
         </div>
       </Modal>

@@ -8,14 +8,14 @@ import {
 import { useEffect } from "react";
 import Layout from "./pages/visitorPages/Layout";
 import Home from "./pages/visitorPages/Home";
-import ContactUsStep1 from "./pages/visitorPages/ContactUsStep1";
-import ContactUsStep2 from "./pages/visitorPages/ContactUsStep2";
-import ContactUsStep3 from "./pages/visitorPages/ContactUsStep3";
-import ContactUsStep4 from "./pages/visitorPages/ContactUsStep4";
-import ContactUsStep5 from "./pages/visitorPages/ContactUsStep5";
-import ContactUsStep6 from "./pages/visitorPages/ContactUsStep6";
-import ContactUsStep7 from "./pages/visitorPages/ContactUsStep7";
-import ContactUsStep8 from "./pages/visitorPages/ContactUsStep8";
+// import ContactUsStep1 from "./pages/visitorPages/ContactUsStep1";
+// import ContactUsStep2 from "./pages/visitorPages/ContactUsStep2";
+// import ContactUsStep3 from "./pages/visitorPages/ContactUsStep3";
+// import ContactUsStep4 from "./pages/visitorPages/ContactUsStep4";
+// import ContactUsStep5 from "./pages/visitorPages/ContactUsStep5";
+// import ContactUsStep6 from "./pages/visitorPages/ContactUsStep6";
+// import ContactUsStep7 from "./pages/visitorPages/ContactUsStep7";
+// import ContactUsStep8 from "./pages/visitorPages/ContactUsStep8";
 import LogInPage from "./pages/visitorPages/LogInPage";
 import ExclusiveRoomSection from "./components/visitorComponents/ExclusiveRoomSection";
 import QuestsLandingPage from "./pages/userPages/QuestsLandingPage";
@@ -43,6 +43,7 @@ import SubscriptionsPage from "./pages/userProfileDashboard/SubscriptionsPage";
 import ContactUs from "./pages/userProfileDashboard/ContactUs";
 import PublishEvents from "./components/userComponents/PublishEvents";
 import ChoosePayMethod from "./components/visitorComponents/ChoosePayMethod";
+import PageNotFound from "./PageNotFound";
 
 // import AffiliateProductRequestPage from "./pages/visitorPages/AffiliateProductRequestPage ";
 // import RequestAffilateProduct from "./pages/userPages/RequestAffilateProduct";
@@ -72,10 +73,10 @@ function App() {
           {/* <Route path="contact-step5" element={<ContactUsStep5 />} /> */}
           {/* <Route path="contact-step6" element={<ContactUsStep6 />} /> */}
           {/* <Route path="contact-step7" element={<ContactUsStep7 />} /> */}
-          <Route path="contact-step8" element={<ContactUsStep8 />} />
+          {/* <Route path="contact-step8" element={<ContactUsStep8 />} /> */}
           {/* <Route path="contact" element={<ContactUsStep1 />} /> */}
-          <Route path="/login" element={<LogInPage />} />
-          <Route path="register" element={<LogInPage />} />
+          {/* <Route path="/login" element={<LogInPage />} /> */}
+          {/* <Route path="register" element={<LogInPage />} /> */}
           <Route path="aboutus" element={<AboutUs />} />
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
           <Route path="terms-of-services" element={<TermsofServices />} />
@@ -121,6 +122,9 @@ function App() {
           /> */}
         </Route>
         <Route path="/logout" element={<Navigate to="/" replace />} />
+
+        <Route path='*' element={<PageNotFound />} />
+
       </Routes>
     </Router>
   );

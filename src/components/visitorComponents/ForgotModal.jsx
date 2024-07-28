@@ -18,7 +18,7 @@ export default function Component({ isModal, toggleModal }) {
       <Modal show={isModal} onClose={() => toggleModal('closed')}>
         <div
           className="space-y-5  bg-black  p-8 rounded-md "
-        
+
         >
           <div className="flex justify-end">
             <button
@@ -43,7 +43,7 @@ export default function Component({ isModal, toggleModal }) {
               <input
                 type="text"
                 id="email"
-                className="w-full p-3 border border-gray-700 rounded bg-transparent text-white"
+                className="w-full p-3 border  rounded-lg bg-white text-[#575757]"
                 placeholder="Enter Email"
               />
             </div>
@@ -57,25 +57,25 @@ export default function Component({ isModal, toggleModal }) {
                   borderImage: 'linear-gradient(120deg, red, yellow) 1',
                 }}
               >
-                Request New Password 
+                Request New Password
               </button>
 
 
             </div>
           </form>
 
-          
-         <div className='py-6'>
-         <p className="text-center text-white text-sm ">
-            By signing up, you agree to Cnkav's{' '},
-          </p>
-          <p className="text-center text-white text-sm">
-          <a href="/terms" className="underline ">
-              Terms and Conditions
-            </a>.
-          </p>
+
+          <div className='py-6'>
+            <p className="text-center text-white text-sm ">
+              By signing up, you agree to Cnkav's{' '},
+            </p>
+            <p className="text-center text-white text-sm">
+              <a href="/terms" className="underline ">
+                Terms and Conditions
+              </a>.
+            </p>
           </div>
-          
+
 
         </div>
       </Modal>
