@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar {
+  /* background: black; */
+  opacity: 0.8;
+  z-index: 40;
+}
+
+.dropdown {
+  z-index: inherit;
+}
+
+.pricemodal {
+  z-index: 200;
+}
+
+.joinModal {
+  z-index: 500;
+}
+
+.PublishNewQuestmodal {
+  z-index: 200;
+}
+
+.sidebar {
+  z-index: 1000;
+}
+
+.navchat {
+  z-index: 100;
+}
+
